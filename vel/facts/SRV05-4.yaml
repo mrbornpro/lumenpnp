@@ -1,0 +1,212 @@
+absent: []
+at: '2026-10-10T22:37:50.113308+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: vel/datasheets/SRV05-4.pdf
+doc_sha256: d2567e7f7b6e55c52a924a56e7b2e849eff013485e941d147a0528cc940e10ce
+facts:
+- conditions:
+    package: TSOP-6 (Case 318G)
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 6.0
+  page: 1
+  qualifiers: {}
+  quantity: pin_count
+  record: "{\"id\":\"fact:SRV05-4:pin_count:770b5dc2\",\"claim\":\"SRV05-4 pin_count\
+    \ is typ 6  at package=TSOP-6 (Case 318G)\",\"kind\":\"value\",\"origin\":{\"\
+    by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\"\
+    ,\"at\":null},\"basis\":\"read from SRV05-4.pdf page 1\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of SRV05-4.pdf shows\
+    \ typ 6 \",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ the claim gives no unit.\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
+    :\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"\
+    agrees\",\"detail\":\"SRV05-4.pdf says TSOP\u22126, CASE 318G. The pin configuration\
+    \ shows six pins, numbered 1 through 6. (Page 1, upper-right PIN CONFIGURATION\
+    \ AND SCHEMATIC and package illustration immediately below it.); the claim: SRV05-4\
+    \ pin_count is typ 6  at package=TSOP-6 (Case 318G) (read from SRV05-4.pdf page\
+    \ 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open SRV05-4.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ the claim gives no unit.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: 125.0
+  lo: -55.0
+  nominal: null
+  page: 1
+  qualifiers:
+    form: range
+    measured_on: junction
+    mode: operating
+  quantity: temp_max
+  record: "{\"id\":\"fact:SRV05-4:temp_max:07cdc7fb\",\"claim\":\"SRV05-4 temp_max\
+    \ is min -55, max 125 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from SRV05-4.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\"\
+    ,\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"result\"\
+    :\"disagrees\",\"detail\":\"min -55, max 125 C is on no page of SRV05-4.pdf; the\
+    \ read cited page 1\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"SRV05-4.pdf says Operating Junction Temperature Range,\
+    \ TJ: \u221255 to +125 \xB0C. (Page 1, MAXIMUM RATINGS table, Operating Junction\
+    \ Temperature Range row, Value and Unit columns.); the claim: SRV05-4 temp_max\
+    \ is min -55, max 125 C (read from SRV05-4.pdf page 1)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SRV05-4.pdf\
+    \ page 1 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ SRV05-4.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits:\
+    \ it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted: Nothing to compare:\
+    \ no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: not_found
+- conditions: {}
+  confidence: 0.0
+  hi: 150.0
+  lo: -55.0
+  nominal: null
+  page: 1
+  qualifiers:
+    form: range
+    measured_on: storage
+  quantity: temp_max
+  record: "{\"id\":\"fact:SRV05-4:temp_max:5aa3f0b6\",\"claim\":\"SRV05-4 temp_max\
+    \ is min -55, max 150 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from SRV05-4.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\"\
+    ,\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"result\"\
+    :\"disagrees\",\"detail\":\"min -55, max 150 C is on no page of SRV05-4.pdf; the\
+    \ read cited page 1\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"SRV05-4.pdf says Storage Temperature Range, Tstg: \u2212\
+    55 to +150 \xB0C. This is the storage range, not the operating junction range.\
+    \ (Page 1, MAXIMUM RATINGS table, Storage Temperature Range row, Value and Unit\
+    \ columns.); the claim: SRV05-4 temp_max is min -55, max 150 C (read from SRV05-4.pdf\
+    \ page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and read the value\",\"\
+    outcomes\":[\"the claimed value is there: it stands\",\"another value is there:\
+    \ correct it\"],\"effort\":\"desk\"},{\"action\":\"open SRV05-4.pdf page 1 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"contradicted: Nothing to compare: no unit is expected.\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: not_found
+manufacturer: onsemi
+model: anthropic/claude-opus-5-5
+mpn: SRV05-4
+observations:
+- conditions:
+    IT: 1mA
+    temp: 25C
+  label: Breakdown Voltage VBR (min)
+  page: 2
+  unit: V
+  value: 6.0
+- conditions:
+    IPP: 1A
+  label: Clamping Voltage VC (max)
+  page: 2
+  unit: V
+  value: 12.5
+- conditions:
+    IPP: 5A
+  label: Clamping Voltage VC (max)
+  page: 2
+  unit: V
+  value: 17.5
+- conditions: {}
+  label: ESD Human Body Model (HBM)
+  page: 1
+  unit: V
+  value: 16000.0
+- conditions: {}
+  label: ESD IEC 61000-4-2 Air
+  page: 1
+  unit: V
+  value: 30000.0
+- conditions: {}
+  label: ESD IEC 61000-4-2 Contact
+  page: 1
+  unit: V
+  value: 30000.0
+- conditions: {}
+  label: ESD Machine Model (MM)
+  page: 1
+  unit: V
+  value: 400.0
+- conditions: {}
+  label: IEC 61000-4-4 (5/50 ns) EFT
+  page: 1
+  unit: A
+  value: 40.0
+- conditions: {}
+  label: IEC 61000-4-5 (8 x 20 us)
+  page: 1
+  unit: A
+  value: 12.0
+- conditions:
+    VR: 0V
+    f: 1MHz
+    max: 3.0 pF
+  label: Junction Capacitance CJ between I/O Pins (typ)
+  page: 2
+  unit: F
+  value: 1.5e-12
+- conditions:
+    VR: 0V
+    f: 1MHz
+    max: 5.0 pF
+  label: Junction Capacitance CJ between I/O Pins and GND (typ)
+  page: 2
+  unit: F
+  value: 3.0e-12
+- conditions: {}
+  label: Lead Solder Temperature - Maximum (10 Seconds) TL
+  page: 1
+  unit: C
+  value: 260.0
+- conditions:
+    pulse: 8x20us
+    temp: 25C
+  label: "Peak Power Dissipation Ppk, 8 x 20 us @ TA = 25\xB0C (non-repetitive)"
+  page: 1
+  unit: W
+  value: 300.0
+- conditions:
+    VRWM: 5V
+    temp: 25C
+  label: Reverse Leakage Current IR (max)
+  page: 2
+  unit: A
+  value: 5.0e-06
+- conditions:
+    temp: 25C
+  label: Reverse Working Voltage VRWM (max)
+  page: 2
+  unit: V
+  value: 5.0
+part_class: ESD protection diode array (TVS)
+vocab: 710670161df3

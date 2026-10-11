@@ -1,5 +1,7 @@
 # LumenPnP Requirements
 
+Design: locked
+
 System-level expectations for the LumenPnP build, hand-written for compiler v1
 (spec 11's interview agent replaces hand-writing in phase 3). Each `req` block
 is machine-parsed by the skanda expectation compiler — edit values, keep the fields.
@@ -19,11 +21,14 @@ is machine-parsed by the skanda expectation compiler — edit values, keep the f
 id: REQ-001
 title: 24V input rail within PSU regulation
 quantity: voltage
-subject: "mobo/+24V"
+subject: mobo//Power/VIN
 target: 24.0
 unit: V
-tolerance: {lo: 22.8, hi: 25.2}
+tolerance:
+  lo: 22.8
+  hi: 25.2
 verification: dmm
+method: DMM at TP2 (/Power/VIN net), black lead on GND (TP1)
 ```
 
 ```req
@@ -35,11 +40,14 @@ verification: dmm
 id: REQ-002
 title: 5V logic rail within regulation
 quantity: voltage
-subject: "mobo/+5V"
+subject: mobo/+5V
 target: 5.0
 unit: V
-tolerance: {lo: 4.8, hi: 5.2}
+tolerance:
+  lo: 4.8
+  hi: 5.2
 verification: dmm
+method: DMM at mobo/+5V net
 ```
 
 ```req
@@ -51,11 +59,14 @@ verification: dmm
 id: REQ-003
 title: 3V3 MCU rail within regulation
 quantity: voltage
-subject: "mobo/+3.3V"
+subject: mobo/+3.3V
 target: 3.3
 unit: V
-tolerance: {lo: 3.2, hi: 3.4}
+tolerance:
+  lo: 3.2
+  hi: 3.4
 verification: dmm
+method: DMM at mobo/+3.3V net
 ```
 
 ```req
@@ -71,11 +82,14 @@ verification: dmm
 id: REQ-004
 title: motherboard idle current draw on 24V input
 quantity: current_idle
-subject: "mobo/+24V"
+subject: mobo/+24V
 target: 0.2
 unit: A
-tolerance: {lo: 0.05, hi: 0.5}
+tolerance:
+  lo: 0.18
+  hi: 0.22
 verification: psu
+method: PSU ammeter reading on 24V input, mode=idle
 ```
 
 ## Mechanical
@@ -90,11 +104,14 @@ verification: psu
 id: REQ-005
 title: total machine mass
 quantity: mass
-subject: "stage:step:machine"
+subject: stage:step:machine
 target: 14.0
 unit: kg
-tolerance: {lo: 8.0, hi: 20.0}
+tolerance:
+  lo: 8.0
+  hi: 20.0
 verification: scale
+method: Bench scale weighing of fully assembled machine
 ```
 
 ```req
@@ -112,8 +129,12 @@ quantity: dimension
 subject: machine
 target: 700.0
 unit: mm
-tolerance: {lo: 0.0, hi: 710.0}
+tolerance:
+  lo: 0.0
+  hi: 710.0
 verification: caliper
+method: Caliper/tape measurement of overall machine depth, compared against 710mm
+  bench-depth ceiling
 ```
 
 ## Harnesses
@@ -157,4 +178,60 @@ target: 3.0
 unit: N*m
 tolerance: {lo: 2.5, hi: 3.5}
 verification: torque_driver
+```
+
+## Product
+
+LumenPnP is a desktop pick-and-place machine built from a v-slot aluminum extrusion frame, a motherboard (STM32F407 MCU, TMC2226 stepper drivers, buck/LDO power stages), and stepper motors driving the mechanism.
+
+**What it must do:** Places electronic components onto PCBs.
+**Kind of hardware:** both
+**Interfaces with:** 24V DC power supply input; USB host connection; network connection
+**How many:** 1 prototype
+**By when:** October 1, 2026
+**Already exists:** KiCad schematics and STEP/CAD files for the designs exist; no physical prototype built yet
+
+## Design Scope
+
+```scope
+parts: []
+relationships: []
+electrical_behavior:
+- 24V input rail confirmed at 24.0V ± ~5% (22.8-25.2V), 5V rail at 5.0V ±4% (4.8-5.2V),
+  3.3V rail at 3.3V ±3% (3.2-3.4V) - all measured at the respective board nets.
+- Idle current draw on the 24V input is the only current-draw mode being spec'd (REQ-004);
+  engineer confirmed no separate active or sleep/standby current-draw requirement
+  is needed.
+assembly_order: []
+constraints:
+- 24V/6A-minimum PSU recommendation from the BOM is a sourcing guideline only - engineer
+  does not want a bench peak-current/rail-sag test for it.
+- No fuse on the 24V input; the SMF28A TVS diode is the only protection component,
+  per engineer confirmation.
+notes:
+- Reverse-polarity protection on the 24V input (keyed connector vs. circuit-level
+  check) was not determined - engineer skipped the question.
+- No labeled test points (TP1/TP2 etc.) were confirmed on the board; bench measurements
+  for REQ-001/002/003/004 should be taken at the named net/connector.
+- 'Mass chapter: engineer confirmed no sub-assembly (motherboard, gantry, motor, etc.)
+  needs its own scale check beyond total machine mass.'
+- 'Mass chapter: engineer confirmed no moving-part mass requirement is needed (no
+  speed/accuracy/motor-load mass sensitivity called out).'
+- REQ-005 total machine mass remains an unverified estimate (14.0 kg, wide band) pending
+  an actual bench-scale weighing; engineer chose to keep it as-is rather than provide
+  a real figure now.
+- 'Envelope chapter: engineer invoked auto-mode (''decide for me, finish quickly'')
+  before confirming REQ-006''s 700mm depth figure or providing overall width/height
+  dimensions - REQ-006 is carried forward unchanged from the prior draft, still flagged
+  as an unverified secondary citation (docs.opulo.io desk-depth guidance) pending
+  an actual caliper/tape measurement of the assembled frame.'
+- 'Envelope chapter: no width or height dimension was stated by the engineer (auto-mode
+  invoked before these were asked) - not captured as a requirement since no number
+  exists to record; needs a real measurement before it can be spec''d.'
+- 'Envelope chapter: no mounting interfaces or clearances (e.g. bench mounting, feet,
+  keepout zones) were stated by the engineer (auto-mode invoked before this was asked)
+  - not captured as a requirement.'
+- 'Envelope chapter: no connector or access-position reachability requirements (e.g.
+  USB port, power jack, network jack clearance) were stated by the engineer (auto-mode
+  invoked before this was asked) - not captured as a requirement.'
 ```

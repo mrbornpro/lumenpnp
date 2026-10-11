@@ -1,0 +1,303 @@
+absent: []
+at: '2026-10-10T22:37:50.001185+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: datasheets/AP1117-33.pdf
+doc_sha256: 102b3e3e42ab8cd5fe8ee89420706a2b33d8a0093358945b8fc68459929c90b2
+facts:
+- conditions:
+    note: tab is VOUT
+    package: SOT223
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 3.0
+  page: 1
+  qualifiers: {}
+  quantity: pin_count
+  record: '{"id":"fact:AP1117-33:pin_count:acbf0a64","claim":"AP1117-33 pin_count
+    is typ 3  at package=SOT223, note=tab is VOUT","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from AP1117-33.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of AP1117-33.pdf shows typ 3 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"agrees","detail":"AP1117-33.pdf
+    says The SOT223 top-view diagram shows three numbered pins: 1 Adj (GND), 2 VOUT,
+    and 3 VIN. It states \"Tab is VOUT.\" (Page 1, Pin Assignments, SOT223 top-view
+    diagram and caption beneath it.); the claim: AP1117-33 pin_count is typ 3  at
+    package=SOT223, note=tab is VOUT (read from AP1117-33.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: the claim gives no unit."}]}'
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions:
+    table: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 150.0
+  page: 3
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: "{\"id\":\"fact:AP1117-33:temp_max:d0c0f72f\",\"claim\":\"AP1117-33 temp_max\
+    \ is typ 150 C at table=Absolute Maximum Ratings\",\"kind\":\"value\",\"origin\"\
+    :{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\"\
+    ,\"at\":null},\"basis\":\"read from AP1117-33.pdf page 3\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 3 of AP1117-33.pdf shows\
+    \ typ 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"disagrees\"\
+    ,\"detail\":\"AP1117-33.pdf says Maximum Junction Temperature (TMJ): +150 \xB0\
+    C in the Rating column. This is an absolute maximum rating, not a typical value.\
+    \ (Page 3, continuation of Absolute Maximum Ratings, TMJ / Maximum Junction Temperature\
+    \ row, Rating and Unit columns.); the claim: AP1117-33 temp_max is typ 150 C at\
+    \ table=Absolute Maximum Ratings (read from AP1117-33.pdf page 3)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\":[\"the\
+    \ unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
+    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
+    \ AP1117-33.pdf says Maximum Junction Temperature (TMJ): +150 \xB0C in the Rating\
+    \ column. This is an absolute maximum rating, not a typical value. (Page 3, continuation\
+    \ of Absolute Maximum Ratings, TMJ / Maximum Junction Temperature row, Rating\
+    \ and Unit columns.); the claim: AP1117-33 temp_max is typ 150 C at table=Absolute\
+    \ Maximum Ratings (read from AP1117-33.pdf page 3)\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions:
+    board: FR-4 single sided, 2oz copper, 5mm x 5mm thermal pad, no air flow
+    package: SOT223
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 107.0
+  page: 4
+  qualifiers: {}
+  quantity: theta_ja
+  record: "{\"id\":\"fact:AP1117-33:theta_ja:35797274\",\"claim\":\"AP1117-33 theta_ja\
+    \ is typ 107 C/W at package=SOT223, board=FR-4 single sided, 2oz copper, 5mm x\
+    \ 5mm thermal pad, no air flow\",\"kind\":\"value\",\"origin\":{\"by\":\"model\"\
+    ,\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from AP1117-33.pdf page 4\",\"checks\":[{\"kind\":\"source\",\"\
+    by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 4 of AP1117-33.pdf shows typ 107 C/W\",\"\
+    at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"AP1117-33.pdf says SOT223 junction-to-ambient thermal resistance\
+    \ \u03B8JA: 107 \xB0C/W in the Typ column. Note 9 specifies an FR-4 substrate,\
+    \ single-sided PC board, 2 oz copper, a 5 mm \xD7 5 mm thermal pad layout, and\
+    \ no air flow. (Page 4, Electrical Characteristics (cont.), \u03B8JA Thermal Resistance\
+    \ Junction-to-Ambient row, Typ and Unit columns; Note 9 below the table.); the\
+    \ claim: AP1117-33 theta_ja is typ 107 C/W at package=SOT223, board=FR-4 single\
+    \ sided, 2oz copper, 5mm x 5mm thermal pad, no air flow (read from AP1117-33.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open AP1117-33.pdf page 4 and check the unit it\
+    \ gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"\
+    ],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"\
+    belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C/W
+  verified: confirmed
+- conditions:
+    iout: 10mA
+    temp: 25C
+    variant: AP1117-3.3
+    vin: 4.8V to 12V
+  confidence: 0.0
+  hi: 3.365
+  lo: 3.235
+  nominal: 3.3
+  page: 3
+  qualifiers:
+    form: fixed
+  quantity: v_out
+  record: "{\"id\":\"fact:AP1117-33:v_out:ea9e872e\",\"claim\":\"AP1117-33 v_out is\
+    \ typ 3.3, min 3.235, max 3.365 V at variant=AP1117-3.3, iout=10mA, temp=25C,\
+    \ vin=4.8V to 12V\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"\
+    anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\":\"\
+    read from AP1117-33.pdf page 3\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\"\
+    ,\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"result\"\
+    :\"agrees\",\"detail\":\"page 3 of AP1117-33.pdf shows typ 3.3, min 3.235, max\
+    \ 3.365 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"agrees\",\"\
+    detail\":\"The claim says 3.3 V, inside 3.235 to 3.365 V from the same row's min\
+    \ and max in AP1117-33.pdf.\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
+    :\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"\
+    agrees\",\"detail\":\"AP1117-33.pdf says AP1117-3.3 output voltage: minimum 3.235\
+    \ V, typical 3.300 V, maximum 3.365 V; conditions IOUT = 10 mA, TA = +25 \xB0\
+    C, 4.8 V \u2264 VIN \u2264 12 V. (Page 3, Electrical Characteristics, Output Voltage\
+    \ group, AP1117-3.3 row, Conditions, Min, Typ, Max, and Unit columns.); the claim:\
+    \ AP1117-33 v_out is typ 3.3, min 3.235, max 3.365 V at variant=AP1117-3.3, iout=10mA,\
+    \ temp=25C, vin=4.8V to 12V (read from AP1117-33.pdf page 3)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\":[\"the\
+    \ unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"\
+    standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 3.3\
+    \ V, inside 3.235 to 3.365 V from the same row's min and max in AP1117-33.pdf.\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    io: 10mA
+    temp: 25C
+    variant: AP1117-ADJ
+    vin_minus_vout: 1.5V
+  confidence: 0.0
+  hi: 1.275
+  lo: 1.225
+  nominal: 1.25
+  page: 3
+  qualifiers:
+    form: adjustable
+  quantity: v_ref
+  record: "{\"id\":\"fact:AP1117-33:v_ref:f721d489\",\"claim\":\"AP1117-33 v_ref is\
+    \ typ 1.25, min 1.225, max 1.275 V at variant=AP1117-ADJ, vin_minus_vout=1.5V,\
+    \ io=10mA, temp=25C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from AP1117-33.pdf page 3\",\"checks\":[{\"kind\":\"source\",\"by\":\"\
+    code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 3 of AP1117-33.pdf shows typ 1.25, min 1.225,\
+    \ max 1.275 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"agrees\",\"\
+    detail\":\"The claim says 1.25 V, inside 1.225 to 1.275 V from the same row's\
+    \ min and max in AP1117-33.pdf.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"AP1117-33.pdf says AP1117-ADJ reference voltage: minimum\
+    \ 1.225 V, typical 1.250 V, maximum 1.275 V; conditions TA = +25 \xB0C, (VIN-OUT)\
+    \ = 1.5 V, IO = 10 mA. (Page 3, Electrical Characteristics, Reference Voltage\
+    \ / AP1117-ADJ row, Conditions, Min, Typ, Max, and Unit columns.); the claim:\
+    \ AP1117-33 v_ref is typ 1.25, min 1.225, max 1.275 V at variant=AP1117-ADJ, vin_minus_vout=1.5V,\
+    \ io=10mA, temp=25C (read from AP1117-33.pdf page 3)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AP1117-33.pdf\
+    \ page 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 1.25 V, inside 1.225 to 1.275\
+    \ V from the same row's min and max in AP1117-33.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+manufacturer: Diodes Incorporated
+model: anthropic/claude-opus-5-5
+mpn: AP1117-33
+observations:
+- conditions:
+    vin_minus_vout: 5V
+  label: Current Limit (min)
+  page: 4
+  unit: A
+  value: 1.1
+- conditions:
+    tj: 0C to 125C (AP1117I -40C to 125C)
+    typ: 1.3V
+  label: Dropout Voltage (VIN-VOUT) max, IOUT=1A
+  page: 4
+  unit: V
+  value: 1.4
+- conditions:
+    tj: 0C to 125C
+    typ: 1.2V
+  label: Dropout Voltage (VIN-VOUT) max, IOUT=800mA
+  page: 4
+  unit: V
+  value: 1.3
+- conditions:
+    io: 10mA
+    vin: VOUT+1.5V to 12V
+  label: Line Regulation AP1117-XXX (max)
+  page: 3
+  unit: '%'
+  value: 0.2
+- conditions:
+    iout: 0 to 1A
+    temp: 25C
+    typ: 26mV
+    vin: 5V
+  label: Load Regulation AP1117-3.3 (max)
+  page: 3
+  unit: V
+  value: 0.033
+- conditions:
+    tj: 0C to 125C
+    typ: 5mA
+  label: Minimum Load Current (max)
+  page: 4
+  unit: A
+  value: 0.01
+- conditions:
+    min: 0C; AP1117I min -40C
+  label: Operating Junction Temperature Range AP1117 (max)
+  page: 3
+  unit: C
+  value: 125.0
+- conditions:
+    note: Internally limited by maximum junction temperature of +150C
+  label: Power Dissipation SOT223
+  page: 3
+  unit: ''
+  value: null
+- conditions:
+    f: 180Hz
+    iout: 1A
+    min: 60dB
+    vin: VOUT+3V
+  label: Ripple Rejection (typ)
+  page: 4
+  unit: dB
+  value: 70.0
+- conditions:
+    min: -65C
+  label: Storage Temperature (max)
+  page: 3
+  unit: C
+  value: 150.0
+- conditions:
+    io: 10mA
+  label: Temperature Stability (typ)
+  page: 4
+  unit: '%'
+  value: 0.5
+- conditions:
+    pulse: 30ms
+    typ: 0.008%/W
+  label: Thermal Regulation (max)
+  page: 4
+  unit: '%/W'
+  value: 0.04
+- conditions:
+    min: -0.3V
+  label: VIN DC Supply Voltage (absolute maximum)
+  page: 3
+  unit: V
+  value: 18.0
+- conditions: {}
+  label: "\u03B8JC Thermal Resistance Junction-to-Case SOT223"
+  page: 4
+  unit: C/W
+  value: 15.0
+part_class: LDO linear regulator
+vocab: 710670161df3

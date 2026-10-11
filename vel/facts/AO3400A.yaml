@@ -1,0 +1,377 @@
+absent: []
+at: '2026-10-10T22:37:49.962375+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: vel/datasheets/AO3400A.pdf
+doc_sha256: 9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033
+facts:
+- conditions:
+    package: SOT23
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 3.0
+  page: 1
+  qualifiers: {}
+  quantity: pin_count
+  record: '{"id":"fact:AO3400A:pin_count:c2f24266","claim":"AO3400A pin_count is typ
+    3  at package=SOT23","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of AO3400A.pdf shows typ 3 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"agrees","detail":"AO3400A.pdf
+    says The SOT23 top-view and bottom-view package illustrations each show three
+    leads, labeled D, G, and S. (Page 1, SOT23 package illustrations above the Absolute
+    Maximum Ratings table.); the claim: AO3400A pin_count is typ 3  at package=SOT23
+    (read from AO3400A.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: the claim gives no unit."}]}'
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions:
+    temp: TA=25C
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 1.4
+  page: 1
+  qualifiers:
+    measured_on: ambient
+  quantity: power_max
+  record: "{\"id\":\"fact:AO3400A:power_max:e95f7f11\",\"claim\":\"AO3400A power_max\
+    \ is typ 1.4 W at temp=TA=25C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\"\
+    ,\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows typ 1.4 W\",\"at\"\
+    :null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"disagrees\"\
+    ,\"detail\":\"AO3400A.pdf says Power Dissipation, PD, at TA=25\xB0C: 1.4 W in\
+    \ the Maximum column, not a typical value. (Page 1, Absolute Maximum Ratings table,\
+    \ Power Dissipation row, TA=25\xB0C subrow, Maximum and Units columns.); the claim:\
+    \ AO3400A power_max is typ 1.4 W at temp=TA=25C (read from AO3400A.pdf page 1)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
+    \ AO3400A.pdf says Power Dissipation, PD, at TA=25\xB0C: 1.4 W in the Maximum\
+    \ column, not a typical value. (Page 1, Absolute Maximum Ratings table, Power\
+    \ Dissipation row, TA=25\xB0C subrow, Maximum and Units columns.); the claim:\
+    \ AO3400A power_max is typ 1.4 W at temp=TA=25C (read from AO3400A.pdf page 1)\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: W
+  verified: confirmed
+- conditions:
+    temp: TA=70C
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 0.9
+  page: 1
+  qualifiers:
+    measured_on: ambient
+  quantity: power_max
+  record: "{\"id\":\"fact:AO3400A:power_max:5df94098\",\"claim\":\"AO3400A power_max\
+    \ is typ 0.9 W at temp=TA=70C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\"\
+    ,\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows typ 0.9 W\",\"at\"\
+    :null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"disagrees\"\
+    ,\"detail\":\"AO3400A.pdf says Power Dissipation, PD, at TA=70\xB0C: 0.9 W in\
+    \ the Maximum column, not a typical value. (Page 1, Absolute Maximum Ratings table,\
+    \ Power Dissipation row, TA=70\xB0C subrow, Maximum and Units columns.); the claim:\
+    \ AO3400A power_max is typ 0.9 W at temp=TA=70C (read from AO3400A.pdf page 1)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
+    \ AO3400A.pdf says Power Dissipation, PD, at TA=70\xB0C: 0.9 W in the Maximum\
+    \ column, not a typical value. (Page 1, Absolute Maximum Ratings table, Power\
+    \ Dissipation row, TA=70\xB0C subrow, Maximum and Units columns.); the claim:\
+    \ AO3400A power_max is typ 0.9 W at temp=TA=70C (read from AO3400A.pdf page 1)\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: W
+  verified: confirmed
+- conditions:
+    note: Junction and Storage Temperature Range
+  confidence: 0.0
+  hi: 150.0
+  lo: -55.0
+  nominal: null
+  page: 1
+  qualifiers:
+    form: range
+    measured_on: junction
+  quantity: temp_max
+  record: "{\"id\":\"fact:AO3400A:temp_max:07ab7024\",\"claim\":\"AO3400A temp_max\
+    \ is min -55, max 150 C at note=Junction and Storage Temperature Range\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from AO3400A.pdf page\
+    \ 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows\
+    \ min -55, max 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"AO3400A.pdf says Junction and Storage Temperature Range,\
+    \ TJ, TSTG: -55 to 150 \xB0C. (Page 1, Absolute Maximum Ratings table, Junction\
+    \ and Storage Temperature Range row.); the claim: AO3400A temp_max is min -55,\
+    \ max 150 C at note=Junction and Storage Temperature Range (read from AO3400A.pdf\
+    \ page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\"\
+    ,\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions:
+    board: 1in2 FR-4, 2oz Cu, still air
+    duration: steady-state
+  confidence: 0.0
+  hi: 125.0
+  lo: null
+  nominal: 100.0
+  page: 1
+  qualifiers: {}
+  quantity: theta_ja
+  record: "{\"id\":\"fact:AO3400A:theta_ja:0005e5d7\",\"claim\":\"AO3400A theta_ja\
+    \ is typ 100, max 125 C/W at duration=steady-state, board=1in2 FR-4, 2oz Cu, still\
+    \ air\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from AO3400A.pdf page\
+    \ 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows\
+    \ typ 100, max 125 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\"\
+    ,\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"agrees\",\"detail\":\"The claim says 100 C/W, inside at most 125 C/W from the\
+    \ same row's min and max in AO3400A.pdf.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"AO3400A.pdf says Maximum Junction-to-Ambient, R\u03B8\
+    JA, Steady-State: Typ 100 \xB0C/W, Max 125 \xB0C/W. Note A specifies a device\
+    \ mounted on a 1 in\xB2 FR-4 board with 2 oz. copper, in still air at TA=25\xB0\
+    C. (Page 1, Thermal Characteristics table, Maximum Junction-to-Ambient steady-state\
+    \ row, Typ and Max columns; page 2, footnote A below Electrical Characteristics.);\
+    \ the claim: AO3400A theta_ja is typ 100, max 125 C/W at duration=steady-state,\
+    \ board=1in2 FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
+    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
+    :0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 100 C/W, inside\
+    \ at most 125 C/W from the same row's min and max in AO3400A.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C/W
+  verified: confirmed
+- conditions:
+    board: 1in2 FR-4, 2oz Cu, still air
+    duration: t<=10s
+  confidence: 0.0
+  hi: 90.0
+  lo: null
+  nominal: 70.0
+  page: 1
+  qualifiers: {}
+  quantity: theta_ja
+  record: "{\"id\":\"fact:AO3400A:theta_ja:2f5dd3b2\",\"claim\":\"AO3400A theta_ja\
+    \ is typ 70, max 90 C/W at duration=t<=10s, board=1in2 FR-4, 2oz Cu, still air\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from AO3400A.pdf page\
+    \ 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows\
+    \ typ 70, max 90 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\"\
+    ,\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"agrees\",\"detail\":\"The claim says 70 C/W, inside at most 90 C/W from the\
+    \ same row's min and max in AO3400A.pdf.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"AO3400A.pdf says Maximum Junction-to-Ambient, R\u03B8\
+    JA, t \u2264 10s: Typ 70 \xB0C/W, Max 90 \xB0C/W. Note A specifies a device mounted\
+    \ on a 1 in\xB2 FR-4 board with 2 oz. copper, in still air at TA=25\xB0C. (Page\
+    \ 1, Thermal Characteristics table, Maximum Junction-to-Ambient t \u2264 10s row,\
+    \ Typ and Max columns; page 2, footnote A below Electrical Characteristics.);\
+    \ the claim: AO3400A theta_ja is typ 70, max 90 C/W at duration=t<=10s, board=1in2\
+    \ FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 70 C/W, inside at most 90 C/W\
+    \ from the same row's min and max in AO3400A.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C/W
+  verified: confirmed
+manufacturer: Alpha & Omega Semiconductor
+model: anthropic/claude-opus-5-5
+mpn: AO3400A
+observations:
+- conditions:
+    temp: TA=25C
+  label: Continuous Drain Current ID
+  page: 1
+  unit: A
+  value: 5.7
+- conditions:
+    temp: TA=70C
+  label: Continuous Drain Current ID
+  page: 1
+  unit: A
+  value: 4.7
+- conditions:
+    IS: 1A
+    typ: 0.7V
+  label: Diode Forward Voltage VSD (max)
+  page: 2
+  unit: V
+  value: 1.0
+- conditions:
+    ID: 250uA
+    VGS: 0V
+  label: Drain-Source Breakdown Voltage BVDSS (min)
+  page: 2
+  unit: V
+  value: 30.0
+- conditions: {}
+  label: Drain-Source Voltage VDS (absolute maximum)
+  page: 1
+  unit: V
+  value: 30.0
+- conditions:
+    ID: 250uA
+    max: 1.45V
+    min: 0.65V
+  label: Gate Threshold Voltage VGS(th) (typ)
+  page: 2
+  unit: V
+  value: 1.05
+- conditions:
+    VDS: 0V
+    VGS: "\xB112V"
+  label: Gate-Body leakage current IGSS (max)
+  page: 2
+  unit: A
+  value: 1.0e-07
+- conditions: {}
+  label: "Gate-Source Voltage VGS (absolute maximum, \xB1)"
+  page: 1
+  unit: V
+  value: 12.0
+- conditions:
+    VDS: 15V
+    VGS: 0V
+    f: 1MHz
+  label: Input Capacitance Ciss (typ)
+  page: 2
+  unit: F
+  value: 6.3e-10
+- conditions: {}
+  label: Maximum Body-Diode Continuous Current IS
+  page: 2
+  unit: A
+  value: 2.0
+- conditions:
+    duration: steady-state
+  label: "Maximum Junction-to-Lead R\u03B8JL (max)"
+  page: 1
+  unit: C/W
+  value: 80.0
+- conditions:
+    duration: steady-state
+  label: "Maximum Junction-to-Lead R\u03B8JL (typ)"
+  page: 1
+  unit: C/W
+  value: 63.0
+- conditions: {}
+  label: Pulsed Drain Current IDM
+  page: 1
+  unit: A
+  value: 30.0
+- conditions:
+    ID: 3A
+    VGS: 2.5V
+    typ: 24mohm
+  label: Static Drain-Source On-Resistance RDS(ON) (max)
+  page: 2
+  unit: ohm
+  value: 0.048
+- conditions:
+    ID: 5.7A
+    TJ: 125C
+    VGS: 10V
+    typ: 28mohm
+  label: Static Drain-Source On-Resistance RDS(ON) (max)
+  page: 2
+  unit: ohm
+  value: 0.038
+- conditions:
+    ID: 5.7A
+    VGS: 10V
+    typ: 18mohm
+  label: Static Drain-Source On-Resistance RDS(ON) (max)
+  page: 2
+  unit: ohm
+  value: 0.0265
+- conditions:
+    ID: 5A
+    VGS: 4.5V
+    typ: 19mohm
+  label: Static Drain-Source On-Resistance RDS(ON) (max)
+  page: 2
+  unit: ohm
+  value: 0.032
+- conditions:
+    ID: 5.7A
+    VDS: 15V
+    VGS: 4.5V
+    max: 7nC
+  label: Total Gate Charge Qg (typ)
+  page: 2
+  unit: C
+  value: 6.0e-09
+- conditions:
+    TJ: 55C
+    VDS: 30V
+    VGS: 0V
+  label: Zero Gate Voltage Drain Current IDSS (max)
+  page: 2
+  unit: A
+  value: 5.0e-06
+- conditions:
+    VDS: 30V
+    VGS: 0V
+  label: Zero Gate Voltage Drain Current IDSS (max)
+  page: 2
+  unit: A
+  value: 1.0e-06
+part_class: N-Channel MOSFET
+vocab: 710670161df3

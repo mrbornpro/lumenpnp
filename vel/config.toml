@@ -1,0 +1,39 @@
+# Written by the skanda repo survey; edit freely — the survey never overwrites this file.
+[paths]
+boards = ["pnp/pcb/mobo"]        # KiCad project dirs, repo-relative
+cad = "pnp/cad"                  # mechanical root (STEP/STL/FCStd tree)
+drawings = ["pnp/cad/MISC/drawings", "pnp/cad/DRW"]  # drawing-PDF dirs; later entries win on duplicate stems
+harnesses = "pnp/cad/CHA"        # WireViz harness dirs; omit if the repo has none
+datasheets = "datasheets"
+requirements = "requirements.md"
+bom = "bom.csv"                  # master BOM; omit if the repo has none
+sim = ["pnp/pcb/blade12", "pnp/pcb/blade13", "pnp/pcb/datum", "pnp/pcb/mobo", "pnp/pcb/ring-light", "pnp/pcb/staging-plate", "pnp/pcb/x-cable-chain-support", "pnp/pcb/xy-limit", "pnp/pcb/z-limit"]
+
+[bom.columns]
+name = "Part Name"
+qty = "Quantity"
+type = "Part Type"
+
+[bom.types]
+board = "PCA"                    # Part Type value meaning "assembled board"
+harness = "CHA"                  # Part Type value meaning "cable harness"
+
+[materials]                      # CAD category folder -> default material
+FST = "steel"
+PCB = "fr4"
+FDM = "ask"                      # "ask" = never guess (printed mass depends on infill) - always ask
+
+[scope]
+subassemblies = ["y1-motor"]     # v1: one mechanical subassembly (has a real harness BOM)
+
+[llm]
+mode = "confirm"                 # "auto" | "confirm"
+confidence_threshold = 0.8
+timeout_s = 120
+
+[llm.models]
+default = "anthropic/claude-sonnet-5"
+# optional per-task overrides, e.g.:
+# datasheet = "bedrock/us.anthropic.claude-fable-5-v1:0"
+# drawing   = "azure/my-finetuned-drawing-parser"
+# survey    = "openai/gpt-5"

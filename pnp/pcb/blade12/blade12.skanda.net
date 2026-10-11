@@ -1,0 +1,3999 @@
+(export
+	(version "E")
+	(design
+		(source "/Users/vihaanshah/Desktop/Skanda Inc./CoPilot/lumenpnp/pnp/pcb/blade12/blade12.kicad_sch")
+		(date "2026-08-15T23:18:53")
+		(tool "Eeschema 10.0.5")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "blade12.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/individual_slot/")
+			(tstamps "/7eda12b9-e9f1-46a8-8480-523c2d77a32a/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/individual_slot1/")
+			(tstamps "/f833681d-22a0-4048-9172-8330a377a031/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/individual_slot2/")
+			(tstamps "/546b4fe8-a896-4a3a-89b2-bcfbac098beb/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "5")
+			(name "/individual_slot3/")
+			(tstamps "/84778538-0057-4ac9-9bdf-7cb639e8e767/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "6")
+			(name "/individual_slot4/")
+			(tstamps "/db257b1d-dadf-4499-97c6-e4eca46a6732/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "7")
+			(name "/individual_slot5/")
+			(tstamps "/c3f8526a-aca8-4902-bf34-f57d55172693/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "8")
+			(name "/individual_slot6/")
+			(tstamps "/e8f44859-0d41-4183-bb49-c62fa778de99/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "9")
+			(name "/individual_slot7/")
+			(tstamps "/2763379a-d32a-4aba-86dc-b0d97268c46f/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "10")
+			(name "/individual_slot8/")
+			(tstamps "/e75ab4ef-22e8-4c68-9336-ed1f10f9f724/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "11")
+			(name "/individual_slot9/")
+			(tstamps "/6354f985-1166-412f-8d7c-6ec0b9da4988/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "12")
+			(name "/individual_slot10/")
+			(tstamps "/eec87013-c0ae-4287-b0b5-14c41145f946/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "13")
+			(name "/individual_slot11/")
+			(tstamps "/ede49f1b-a184-4d2a-b1b0-f2cf53068c3d/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "individual_slot.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "FID1")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(fields
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ca18a975-d46b-4562-8cf9-0206f507238d")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID2")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(fields
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c3e253b1-9a09-497c-8124-03d59a94e548")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "FID3")
+			(value "Fiducial")
+			(footprint "Fiducial:Fiducial_1mm_Mask2mm")
+			(fields
+				(field
+					(name "Footprint") "Fiducial:Fiducial_1mm_Mask2mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "Fiducial")
+				(description "Fiducial Marker")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "fiducial marker")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Fiducial*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e6bd15d4-8aa0-4a10-9f18-09275cecf001")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H1")
+			(value "MountingHole")
+			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "00000000-0000-0000-0000-000060165998")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H2")
+			(value "MountingHole")
+			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f536c39c-2424-4315-bbe8-a3e6612191d6")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H3")
+			(value "MountingHole")
+			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "71c468f4-626f-49ac-b9a3-417f9c63e1c3")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H4")
+			(value "MountingHole")
+			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d80f3287-6dc0-4589-bcab-cce68f885e3a")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "H5")
+			(value "MountingHole")
+			(footprint "MountingHole:MountingHole_3.2mm_M3")
+			(fields
+				(field
+					(name "Footprint") "MountingHole:MountingHole_3.2mm_M3")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Mechanical")
+				(part "MountingHole")
+				(description "Mounting Hole without connection")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "mounting hole")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "MountingHole*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "81b308d8-940c-4a35-8947-449cf2f23a6a")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "IN")
+			(footprint "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5725f66c-5f4b-4f79-8bf1-7e7a1b778ce5")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "OUT")
+			(footprint "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x04_Pin")
+				(description "Generic connector, single row, 01x04, script generated")
+			)
+			(property
+				(name "Sheetname")
+				(value "blade12")
+			)
+			(property
+				(name "Sheetfile")
+				(value "blade12.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ccc5a13c-edc2-4ad0-8560-d2c0062841a8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot/")
+				(tstamps "/7eda12b9-e9f1-46a8-8480-523c2d77a32a/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot/")
+				(tstamps "/7eda12b9-e9f1-46a8-8480-523c2d77a32a/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot/")
+				(tstamps "/7eda12b9-e9f1-46a8-8480-523c2d77a32a/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot1")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot1/")
+				(tstamps "/f833681d-22a0-4048-9172-8330a377a031/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot1")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot1/")
+				(tstamps "/f833681d-22a0-4048-9172-8330a377a031/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot1")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot1/")
+				(tstamps "/f833681d-22a0-4048-9172-8330a377a031/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot2")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot2/")
+				(tstamps "/546b4fe8-a896-4a3a-89b2-bcfbac098beb/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot2")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot2/")
+				(tstamps "/546b4fe8-a896-4a3a-89b2-bcfbac098beb/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot2")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot2/")
+				(tstamps "/546b4fe8-a896-4a3a-89b2-bcfbac098beb/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot3/")
+				(tstamps "/84778538-0057-4ac9-9bdf-7cb639e8e767/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot3/")
+				(tstamps "/84778538-0057-4ac9-9bdf-7cb639e8e767/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot3")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot3/")
+				(tstamps "/84778538-0057-4ac9-9bdf-7cb639e8e767/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot4")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot4/")
+				(tstamps "/db257b1d-dadf-4499-97c6-e4eca46a6732/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot4")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot4/")
+				(tstamps "/db257b1d-dadf-4499-97c6-e4eca46a6732/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot4")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot4/")
+				(tstamps "/db257b1d-dadf-4499-97c6-e4eca46a6732/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot5")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot5/")
+				(tstamps "/c3f8526a-aca8-4902-bf34-f57d55172693/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot5")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot5/")
+				(tstamps "/c3f8526a-aca8-4902-bf34-f57d55172693/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot5")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot5/")
+				(tstamps "/c3f8526a-aca8-4902-bf34-f57d55172693/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot6")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot6/")
+				(tstamps "/e8f44859-0d41-4183-bb49-c62fa778de99/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot6")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot6/")
+				(tstamps "/e8f44859-0d41-4183-bb49-c62fa778de99/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot6")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot6/")
+				(tstamps "/e8f44859-0d41-4183-bb49-c62fa778de99/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot7")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot7/")
+				(tstamps "/2763379a-d32a-4aba-86dc-b0d97268c46f/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot7")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot7/")
+				(tstamps "/2763379a-d32a-4aba-86dc-b0d97268c46f/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot7")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot7/")
+				(tstamps "/2763379a-d32a-4aba-86dc-b0d97268c46f/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot8")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot8/")
+				(tstamps "/e75ab4ef-22e8-4c68-9336-ed1f10f9f724/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot8")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot8/")
+				(tstamps "/e75ab4ef-22e8-4c68-9336-ed1f10f9f724/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot8")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot8/")
+				(tstamps "/e75ab4ef-22e8-4c68-9336-ed1f10f9f724/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot9")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot9/")
+				(tstamps "/6354f985-1166-412f-8d7c-6ec0b9da4988/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot9")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot9/")
+				(tstamps "/6354f985-1166-412f-8d7c-6ec0b9da4988/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot9")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot9/")
+				(tstamps "/6354f985-1166-412f-8d7c-6ec0b9da4988/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot10")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot10/")
+				(tstamps "/eec87013-c0ae-4287-b0b5-14c41145f946/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot10")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot10/")
+				(tstamps "/eec87013-c0ae-4287-b0b5-14c41145f946/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot10")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot10/")
+				(tstamps "/eec87013-c0ae-4287-b0b5-14c41145f946/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "SPRING_PINS")
+			(footprint "index:AVX-915-005-541-Contact-Surface")
+			(fields
+				(field
+					(name "Footprint") "index:AVX-915-005-541-Contact-Surface")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "Conn_01x05_Female")
+				(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot11")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/individual_slot11/")
+				(tstamps "/ede49f1b-a184-4d2a-b1b0-f2cf53068c3d/")
+			)
+			(tstamps "99843ce1-8342-45f8-9f2b-45417c20a9c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "1M")
+			(footprint "Resistor_SMD:R_0805_2012Metric")
+			(fields
+				(field
+					(name "JLCPCB") "C17437")
+				(field
+					(name "LCSC") "C61683")
+				(field
+					(name "Digikey") "RMCF0805JT120RCT-ND")
+				(field
+					(name "Mouser") "652-CR0805FX-1200ELF")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0805_2012Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Device")
+				(part "R_Small")
+				(description "Resistor, small symbol")
+			)
+			(property
+				(name "JLCPCB")
+				(value "C17437")
+			)
+			(property
+				(name "LCSC")
+				(value "C61683")
+			)
+			(property
+				(name "Digikey")
+				(value "RMCF0805JT120RCT-ND")
+			)
+			(property
+				(name "Mouser")
+				(value "652-CR0805FX-1200ELF")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot11")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(property
+				(name "dnp")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/individual_slot11/")
+				(tstamps "/ede49f1b-a184-4d2a-b1b0-f2cf53068c3d/")
+			)
+			(tstamps "11fbdc3a-c144-4e17-95c5-bcd63e042143")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "DS28E07")
+			(footprint "index:DS28E07_MULTI")
+			(fields
+				(field
+					(name "Footprint") "index:DS28E07_MULTI")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "feeder")
+				(part "DS28E07")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "individual_slot11")
+			)
+			(property
+				(name "Sheetfile")
+				(value "individual_slot.kicad_sch")
+			)
+			(sheetpath
+				(names "/individual_slot11/")
+				(tstamps "/ede49f1b-a184-4d2a-b1b0-f2cf53068c3d/")
+			)
+			(tstamps "641ae623-1ee7-49bb-973d-412f68a42a6b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x04_Pin")
+			(description "Generic connector, single row, 01x04, script generated")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x04_Pin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Connector")
+			(part "Conn_01x05_Female")
+			(description "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x05_Female")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "Pin_5")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R_Small")
+			(description "Resistor, small symbol")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R_Small")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, small symbol")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "Fiducial")
+			(description "Fiducial Marker")
+			(footprints
+				(fp "Fiducial*")
+			)
+			(fields
+				(field
+					(name "Reference") "FID")
+				(field
+					(name "Value") "Fiducial")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Fiducial Marker")
+			)
+		)
+		(libpart
+			(lib "Mechanical")
+			(part "MountingHole")
+			(description "Mounting Hole without connection")
+			(footprints
+				(fp "MountingHole*")
+			)
+			(fields
+				(field
+					(name "Reference") "H")
+				(field
+					(name "Value") "MountingHole")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Mounting Hole without connection")
+			)
+		)
+		(libpart
+			(lib "feeder")
+			(part "DS28E07")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "DS28E07")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "IO")
+					(type "unspecified")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "Mechanical")
+			(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "/individual_slot/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "2")
+			(name "/individual_slot1/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "3")
+			(name "/individual_slot2/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "4")
+			(name "/individual_slot3/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "5")
+			(name "/individual_slot4/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "6")
+			(name "/individual_slot5/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "7")
+			(name "/individual_slot6/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "8")
+			(name "/individual_slot7/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "9")
+			(name "/individual_slot8/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "10")
+			(name "/individual_slot9/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "11")
+			(name "/individual_slot10/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "12")
+			(name "/individual_slot11/1WIRE")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "IO_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "13")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "14")
+			(name "RS-485+")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "RS-485-")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "VIN")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "5")
+				(pinfunction "Pin_5_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+		)
+	)
+)

@@ -1,4 +1,4 @@
-# LumenPnP Design Decisions
+# LumenPnP Design Decisions (Updated for Skanda Copilot)
 
 This page aims to illustrate the design decisions behind the LumenPnP. The design process started in early 2020, and has seen hundreds of iterations and approaches. This page gives background about why things are done the way they are, to help communicate to folks new to the project what has been tried, and why it was not chosen.
 

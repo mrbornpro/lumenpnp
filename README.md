@@ -1,4 +1,4 @@
-# LumenPnP
+# LumenPnP (Updated for Skanda)
 
 The LumenPnP is an open source [pick and place machine](https://en.wikipedia.org/wiki/Pick-and-place_machine) that reliably and accurately assembles electronic components onto circuit boards.
 

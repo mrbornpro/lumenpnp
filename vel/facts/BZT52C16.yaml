@@ -1,0 +1,207 @@
+absent: []
+at: '2026-10-02T22:40:14.763345+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: vel/datasheets/BZT52C16.pdf
+doc_sha256: ada2fc2ecf5e0524bdba71978c0eac7c1500feb81310b57e315e0b347c6c6c5d
+facts:
+- conditions:
+    note: approx.
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 0.01
+  page: 1
+  qualifiers: {}
+  quantity: mass
+  record: '{"id":"fact:BZT52C16:mass:e4c21039","claim":"BZT52C16 mass is typ 0.01
+    g at note=approx.","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from BZT52C16.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of BZT52C16.pdf shows typ 0.01 g","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read BZT52C16.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    BZT52C16.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: g
+  verified: confirmed
+- conditions:
+    mounting: P.C. board, 25 mm2 copper pads per terminal
+    series: BZT52B2V4...BZT52B39 (document does not list BZT52C16)
+    temp: TT=75C
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 0.5
+  page: 1
+  qualifiers: {}
+  quantity: power_max
+  record: '{"id":"fact:BZT52C16:power_max:884c5068","claim":"BZT52C16 power_max is
+    typ 0.5 W at temp=TT=75C, mounting=P.C. board, 25 mm2 copper pads per terminal,
+    series=BZT52B2V4...BZT52B39 (document does not list BZT52C16)","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from BZT52C16.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of BZT52C16.pdf shows typ 0.5 W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read BZT52C16.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    BZT52C16.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: W
+  verified: confirmed
+- conditions:
+    rating: Junction/Storage temperature Tj/S -50...+150C
+    series: BZT52B2V4...BZT52B39
+  confidence: 0.0
+  hi: 150.0
+  lo: -50.0
+  nominal: null
+  page: 1
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: '{"id":"fact:BZT52C16:temp_max:d2bb19ec","claim":"BZT52C16 temp_max is min
+    -50, max 150 C at rating=Junction/Storage temperature Tj/S -50...+150C, series=BZT52B2V4...BZT52B39","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from BZT52C16.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of BZT52C16.pdf shows min -50, max 150 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read BZT52C16.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    BZT52C16.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions:
+    mounting: P.C. board, 25 mm2 copper pads per terminal
+    note: typical
+    series: BZT52B2V4...BZT52B39
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 340.0
+  page: 1
+  qualifiers: {}
+  quantity: theta_ja
+  record: '{"id":"fact:BZT52C16:theta_ja:5fcc2a15","claim":"BZT52C16 theta_ja is typ
+    340 K/W at note=typical, mounting=P.C. board, 25 mm2 copper pads per terminal,
+    series=BZT52B2V4...BZT52B39","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from BZT52C16.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of BZT52C16.pdf shows typ 340 K/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read BZT52C16.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    BZT52C16.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: K/W
+  verified: confirmed
+- conditions:
+    note: "~\xB12% tolerance of Zener voltage, stated for the B series; BZT52C16 is\
+      \ not listed in this document"
+    series: BZT52B2V4...BZT52B39
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 2.0
+  page: 1
+  qualifiers: {}
+  quantity: tolerance_pct
+  record: "{\"id\":\"fact:BZT52C16:tolerance_pct:ff275446\",\"claim\":\"BZT52C16 tolerance_pct\
+    \ is typ 2 % at note=~\xB12% tolerance of Zener voltage, stated for the B series;\
+    \ BZT52C16 is not listed in this document, series=BZT52B2V4...BZT52B39\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from BZT52C16.pdf page\
+    \ 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of BZT52C16.pdf shows\
+    \ typ 2 %\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"couldnt_run\"\
+    ,\"detail\":\"a second reader could not read BZT52C16.pdf for this; it tries again\
+    \ next compile\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\"\
+    :[],\"would_settle\":[{\"action\":\"open BZT52C16.pdf page 1 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
+    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
+    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: '%'
+  verified: confirmed
+manufacturer: Diotec Semiconductor AG
+model: anthropic/claude-opus-5-5
+mpn: BZT52C16
+observations:
+- conditions: {}
+  label: "Datasheet part mismatch: document covers BZT52B2V4...BZT52B39 (\xB12%),\
+    \ not BZT52C16"
+  page: 1
+  unit: ''
+  value: null
+- conditions: {}
+  label: Dynamic resistance rzj max (BZT52B16, IZ = 5 mA, f = 1 kHz)
+  page: 2
+  unit: ohm
+  value: 40.0
+- conditions: {}
+  label: Reverse current IR at VR=12V (BZT52B16)
+  page: 2
+  unit: A
+  value: 1.0e-07
+- conditions: {}
+  label: Reverse voltage VR at IR (BZT52B16)
+  page: 2
+  unit: V
+  value: 12.0
+- conditions: {}
+  label: "Temp. coefficient of Z-voltage \u03B1VZ max (BZT52B16)"
+  page: 2
+  unit: 1/C
+  value: 0.0011
+- conditions: {}
+  label: "Temp. coefficient of Z-voltage \u03B1VZ min (BZT52B16)"
+  page: 2
+  unit: 1/C
+  value: 0.0003
+- conditions: {}
+  label: Typ. thermal resistance junction to terminal RthT
+  page: 1
+  unit: K/W
+  value: 150.0
+- conditions: {}
+  label: Z-current IZmax (BZT52B16, TA = 25C)
+  page: 2
+  unit: A
+  value: 0.031
+- conditions:
+    note: BZT52B16 row
+    temp: Tj=25C
+  label: Z-voltage range VZ max (BZT52B16, IZ = 5 mA)
+  page: 2
+  unit: V
+  value: 16.32
+- conditions:
+    note: BZT52B16 row; BZT52C16 not in table
+    temp: Tj=25C
+  label: Z-voltage range VZ min (BZT52B16, IZ = 5 mA)
+  page: 2
+  unit: V
+  value: 15.68
+part_class: Zener diode
+vocab: 710670161df3

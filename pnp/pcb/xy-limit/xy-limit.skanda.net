@@ -1,0 +1,450 @@
+(export
+	(version "E")
+	(design
+		(source "/Users/vihaanshah/Desktop/Skanda Inc./CoPilot/lumenpnp/pnp/pcb/xy-limit/xy-limit.kicad_sch")
+		(date "2026-08-15T23:19:22")
+		(tool "Eeschema 10.0.5")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "xy-limit.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "J2")
+			(value "Conn_01x04_MountingPin")
+			(footprint "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2307071616_HCTL-HC-PH-4ALT_C2845453.pdf")
+			(fields
+				(field
+					(name "LCSC Part Number") "C2845453")
+				(field
+					(name "MFG Part Number") "HC-PH-4ALT")
+				(field
+					(name "Footprint") "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2307071616_HCTL-HC-PH-4ALT_C2845453.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector_Generic_MountingPin")
+				(part "Conn_01x04_MountingPin")
+				(description "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "LCSC Part Number")
+				(value "C2845453")
+			)
+			(property
+				(name "MFG Part Number")
+				(value "HC-PH-4ALT")
+			)
+			(property
+				(name "Sheetname")
+				(value "xy-limit")
+			)
+			(property
+				(name "Sheetfile")
+				(value "xy-limit.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??-1MP*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "11395d09-5af6-4cf4-8102-36d811d74ef1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "MP")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "X_LIM")
+			(footprint "index:D2FS-FL-N-A")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2110111230_XKB-Connection-DM1-12UC-1_C466018.pdf")
+			(fields
+				(field
+					(name "LCSC Part Number") "C466018")
+				(field
+					(name "MFG Part Number") " DM1-12UC-1")
+				(field
+					(name "Footprint") "index:D2FS-FL-N-A")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2110111230_XKB-Connection-DM1-12UC-1_C466018.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "LCSC Part Number")
+				(value "C466018")
+			)
+			(property
+				(name "MFG Part Number")
+				(value " DM1-12UC-1")
+			)
+			(property
+				(name "Sheetname")
+				(value "xy-limit")
+			)
+			(property
+				(name "Sheetfile")
+				(value "xy-limit.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "336c2016-0c86-4b8a-aed6-d8e0cb2bd649")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "Y_LIM")
+			(footprint "index:D2FS-FL-N")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2110111230_XKB-Connection-DM1-135P-1_C405946.pdf")
+			(fields
+				(field
+					(name "LCSC Part Number") "C405946")
+				(field
+					(name "MFG Part Number") " DM1-135P-1")
+				(field
+					(name "Footprint") "index:D2FS-FL-N")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2110111230_XKB-Connection-DM1-135P-1_C405946.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Switch")
+				(part "SW_SPDT")
+				(description "Switch, single pole double throw")
+			)
+			(property
+				(name "LCSC Part Number")
+				(value "C405946")
+			)
+			(property
+				(name "MFG Part Number")
+				(value " DM1-135P-1")
+			)
+			(property
+				(name "Sheetname")
+				(value "xy-limit")
+			)
+			(property
+				(name "Sheetfile")
+				(value "xy-limit.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "switch single-pole double-throw spdt ON-ON")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6db28015-5c38-491f-9d6a-929982fa0a99")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector_Generic_MountingPin")
+			(part "Conn_01x04_MountingPin")
+			(description "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??-1MP*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x04_MountingPin")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+				(pin
+					(num "MP")
+					(name "MountPin")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Switch")
+			(part "SW_SPDT")
+			(description "Switch, single pole double throw")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "SW_SPDT")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Switch, single pole double throw")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "A")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "B")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "C")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector_Generic_MountingPin")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic_MountingPin.kicad_sym")
+		)
+		(library
+			(logical "Switch")
+			(uri "${KICAD10_SYMBOL_DIR}/Switch.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "+3V3")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "3")
+				(pinfunction "C_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "MP")
+				(pinfunction "MountPin_MP")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "B_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "X_SIG")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "Y_SIG")
+			(class "Default")
+			(node
+				(ref "J2")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "A_1")
+				(pintype "passive")
+			)
+		)
+	)
+)

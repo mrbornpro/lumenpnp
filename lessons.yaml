@@ -1,0 +1,57 @@
+# Lessons — one row per closed problem worth remembering: a board fault or a setup
+# mistake, each labelled (updates 28, 33).
+# Edited by Vel; hand-written comments are not preserved. Ids are never reused.
+- id: LSN-0001
+  status: proposed
+  names:
+    part: board:mobo
+    net: VIN
+    refdes: []
+  check:
+    kind: net_voltage
+    quantity: voltage
+    instrument: dmm
+    lo: 22.8
+    hi: 25.2
+    unit: V
+  when: {}
+  because: The TP2 voltage check on /Power/VIN read 24 V on Wed 30 Sep 23:11 and was
+    marked out-of-band. Yet 24 V sits exactly at the nominal of the derived 22.8 to
+    25.2 V band, so the board is fine here. The verdict step most likely applied a
+    different band, unit or check than the one shown, or attached the reading to the
+    wrong check. TP2 is not among the test points the pack lists for this board, which
+    supports a mapping fault. Nothing on the board needs fixing for this problem.
+  fixed_by: ''
+  lesson_class: setup
+  from:
+    incident: 01a0ffab-083e-7ba6-a3a0-a4f5f07403e0
+    unit: board-1
+    entry: net_voltage:mobo//Power/VIN:voltage
+    date: '2026-10-03'
+    measured_before:
+      value: 24.0
+      unit: V
+- id: LSN-0002
+  status: proposed
+  names:
+    part: board:mobo
+    net: VIN
+    refdes: []
+  check:
+    kind: net_voltage
+    quantity: voltage
+    instrument: dmm
+    lo: 22.8
+    hi: 25.2
+    unit: V
+  when: {}
+  because: The 28V value that was expected was changed by the engineer
+  fixed_by: The 28V value that was expected was changed by the engineer
+  from:
+    incident: 01a127ef-5603-726b-8ab8-37a1910a150b
+    unit: board-1
+    entry: net_voltage:mobo//Power/VIN:voltage
+    date: '2026-10-10'
+    measured_before:
+      value: 24.0
+      unit: V

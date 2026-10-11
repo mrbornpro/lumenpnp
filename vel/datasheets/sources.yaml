@@ -1,0 +1,44 @@
+AO3400A:
+  by: python
+  fetched: '2026-08-28T08:46:05+00:00'
+  sha256: 9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033
+  url: http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf
+BZT52C16:
+  by: python
+  fetched: '2026-08-28T08:46:04+00:00'
+  sha256: ada2fc2ecf5e0524bdba71978c0eac7c1500feb81310b57e315e0b347c6c6c5d
+  url: https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf
+MAX3078E:
+  by: app
+  failed: 'invoke_failed: {''code'': ''call_failed'', ''message'': "FileNotFoundError:
+    [Errno 2] No such file or directory: ''/data/workspaces/50afe5ee-d649-4b9d-bf64-dfdf92c2d346/55dc5a50e9850bc6904068118f858997/workspace/.skanda/datasheets/MAX3078E.pdf''"}'
+  url: https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf
+SM712_SOT23:
+  by: app
+  failed: 'invoke_failed: {''code'': ''call_failed'', ''message'': "FileNotFoundError:
+    [Errno 2] No such file or directory: ''/data/workspaces/50afe5ee-d649-4b9d-bf64-dfdf92c2d346/55dc5a50e9850bc6904068118f858997/workspace/.skanda/datasheets/SM712_SOT23.pdf''"}'
+  url: https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf
+SMF28A:
+  by: python
+  fetched: '2026-08-28T08:46:05+00:00'
+  sha256: 4dcce5361b9c6c3a30e7b670755a1c9066bac6f6d7da71549e4263dd84f8317f
+  url: https://www.vishay.com/doc?85881
+SRV05-4:
+  by: python
+  fetched: '2026-08-28T08:46:48+00:00'
+  sha256: d2567e7f7b6e55c52a924a56e7b2e849eff013485e941d147a0528cc940e10ce
+  url: http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF
+STM32F407VETx:
+  by: app
+  failed: 'invoke_failed: {''code'': ''call_failed'', ''message'': "FileNotFoundError:
+    [Errno 2] No such file or directory: ''/data/workspaces/50afe5ee-d649-4b9d-bf64-dfdf92c2d346/55dc5a50e9850bc6904068118f858997/workspace/.skanda/datasheets/STM32F407VETx.pdf''"}'
+  url: http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf
+TMC2226-SA:
+  by: app
+  failed: 'invoke_failed: {''code'': ''call_failed'', ''message'': "FileNotFoundError:
+    [Errno 2] No such file or directory: ''/data/workspaces/50afe5ee-d649-4b9d-bf64-dfdf92c2d346/55dc5a50e9850bc6904068118f858997/workspace/.skanda/datasheets/TMC2226-SA.pdf''"}'
+  url: https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2226_datasheet_rev1.10.pdf
+XGZP6857D:
+  by: app
+  failed: HTTP 200, text/html; charset=UTF-8
+  url: https://cfsensor.com/wp-content/uploads/2022/11/XGZP6857D-Pressure-Sensor-V2.5.pdf

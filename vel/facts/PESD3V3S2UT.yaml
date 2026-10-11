@@ -1,0 +1,243 @@
+absent: []
+at: '2026-10-10T22:37:50.057223+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: datasheets/PESD3V3S2UT.pdf
+doc_sha256: 3f156078f2050aacc7a8af9d5b560b66bfc6762a2b55b87b37b3fdcdf1806b01
+facts:
+- conditions:
+    package: SOT23
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 3.0
+  page: 2
+  qualifiers: {}
+  quantity: pin_count
+  record: '{"id":"fact:PESD3V3S2UT:pin_count:c2f24266","claim":"PESD3V3S2UT pin_count
+    is typ 3  at package=SOT23","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from PESD3V3S2UT.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of PESD3V3S2UT.pdf shows typ 3 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"agrees","detail":"PESD3V3S2UT.pdf
+    says SOT23: plastic, surface-mounted package; 3 terminals; 1.9 mm pitch; 2.9 mm
+    x 1.3 mm x 1 mm body. (Page 2, Table 3, Ordering information, PESD3V3S2UT row,
+    Package Name and Description cells; Table 2 also lists pins 1, 2 and 3.); the
+    claim: PESD3V3S2UT pin_count is typ 3  at package=SOT23 (read from PESD3V3S2UT.pdf
+    page 2)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    PESD3V3S2UT.pdf page 2 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: the claim gives no unit."}]}'
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: 150.0
+  lo: -65.0
+  nominal: null
+  page: 3
+  qualifiers:
+    measured_on: ambient
+  quantity: temp_max
+  record: "{\"id\":\"fact:PESD3V3S2UT:temp_max:5fd38f40\",\"claim\":\"PESD3V3S2UT\
+    \ temp_max is min -65, max 150 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\"\
+    ,\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from PESD3V3S2UT.pdf page 3\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"agrees\",\"detail\":\"page 3 of PESD3V3S2UT.pdf shows min -65,\
+    \ max 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"PESD3V3S2UT.pdf says Tamb, ambient temperature: Min -65 \xB0C; Max\
+    \ 150 \xB0C. (Page 3, Table 5, Limiting values, Tamb (ambient temperature) row,\
+    \ Min, Max and Unit columns.); the claim: PESD3V3S2UT temp_max is min -65, max\
+    \ 150 C (read from PESD3V3S2UT.pdf page 3)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf\
+    \ page 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: 150.0
+  lo: null
+  nominal: null
+  page: 3
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: "{\"id\":\"fact:PESD3V3S2UT:temp_max:30ddb3bf\",\"claim\":\"PESD3V3S2UT\
+    \ temp_max is max 150 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from PESD3V3S2UT.pdf page 3\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 3 of PESD3V3S2UT.pdf shows max 150 C\",\"\
+    at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"PESD3V3S2UT.pdf says Tj, junction temperature: Min \u2014; Max 150\
+    \ \xB0C. (Page 3, Table 5, Limiting values, Tj (junction temperature) row, Min,\
+    \ Max and Unit columns.); the claim: PESD3V3S2UT temp_max is max 150 C (read from\
+    \ PESD3V3S2UT.pdf page 3)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf page 3 and check\
+    \ the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit:\
+    \ correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: 150.0
+  lo: -65.0
+  nominal: null
+  page: 3
+  qualifiers:
+    measured_on: storage
+  quantity: temp_max
+  record: "{\"id\":\"fact:PESD3V3S2UT:temp_max:0590a603\",\"claim\":\"PESD3V3S2UT\
+    \ temp_max is min -65, max 150 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\"\
+    ,\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from PESD3V3S2UT.pdf page 3\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"agrees\",\"detail\":\"page 3 of PESD3V3S2UT.pdf shows min -65,\
+    \ max 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"PESD3V3S2UT.pdf says Tstg, storage temperature: Min -65 \xB0C; Max\
+    \ 150 \xB0C. (Page 3, Table 5, Limiting values, Tstg (storage temperature) row,\
+    \ Min, Max and Unit columns.); the claim: PESD3V3S2UT temp_max is min -65, max\
+    \ 150 C (read from PESD3V3S2UT.pdf page 3)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf\
+    \ page 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+manufacturer: Nexperia
+model: anthropic/claude-opus-5-5
+mpn: PESD3V3S2UT
+observations:
+- conditions:
+    VR: 0V
+    f: 1MHz
+    temp: 25C
+  label: Cd diode capacitance max
+  page: 4
+  unit: F
+  value: 3.0e-10
+- conditions:
+    VR: 0V
+    f: 1MHz
+    temp: 25C
+  label: Cd diode capacitance typ
+  page: 4
+  unit: F
+  value: 2.07e-10
+- conditions:
+    tp: 8/20us
+  label: IPPM rated peak pulse current
+  page: 3
+  unit: A
+  value: 18.0
+- conditions:
+    VRWM: 3.3V
+    temp: 25C
+  label: IRM reverse leakage current max
+  page: 4
+  unit: A
+  value: 2.0e-06
+- conditions:
+    VRWM: 3.3V
+    temp: 25C
+  label: IRM reverse leakage current typ
+  page: 4
+  unit: A
+  value: 7.0e-07
+- conditions:
+    pins: 1 or 2 to 3
+    tp: 8/20us
+  label: PPPM rated peak pulse power
+  page: 3
+  unit: W
+  value: 330.0
+- conditions:
+    IR: 1mA
+    temp: 25C
+  label: Rdiff differential resistance max
+  page: 4
+  unit: ohm
+  value: 400.0
+- conditions:
+    IR: 5mA
+    temp: 25C
+  label: VBR breakdown voltage max
+  page: 4
+  unit: V
+  value: 6.0
+- conditions:
+    IR: 5mA
+    temp: 25C
+  label: VBR breakdown voltage min
+  page: 4
+  unit: V
+  value: 5.2
+- conditions:
+    IR: 5mA
+    temp: 25C
+  label: VBR breakdown voltage typ
+  page: 4
+  unit: V
+  value: 5.6
+- conditions:
+    IPP: 18A
+    temp: 25C
+  label: VCL clamping voltage max
+  page: 4
+  unit: V
+  value: 20.0
+- conditions:
+    IPP: 1A
+    temp: 25C
+  label: VCL clamping voltage max
+  page: 4
+  unit: V
+  value: 7.0
+- conditions: {}
+  label: VESD electrostatic discharge voltage (IEC 61000-4-2 air)
+  page: 3
+  unit: V
+  value: 15000.0
+- conditions: {}
+  label: VESD electrostatic discharge voltage (IEC 61000-4-2 contact)
+  page: 3
+  unit: V
+  value: 30000.0
+- conditions: {}
+  label: VESD electrostatic discharge voltage (MIL-STD-883 HBM)
+  page: 3
+  unit: V
+  value: 10000.0
+- conditions:
+    temp: 25C
+  label: VRWM reverse standoff voltage (max)
+  page: 4
+  unit: V
+  value: 3.3
+part_class: ESD protection diode
+vocab: 710670161df3

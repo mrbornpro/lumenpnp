@@ -1,0 +1,553 @@
+# Groups — what belongs together on this design (update 30).
+# Written once by Vel on 2026-09-30; edit freely, Vel never rewrites this file.
+# "reset the groups" starts over.
+- name: Cable MGMT
+  because: cable management components for control box wiring
+  parts: []
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/FDM/PartShape284.*
+- name: Head / Toolhead
+  because: the pick-and-place head assembly including nozzle holders, Z-gantry backplates,
+    cameras and rotary pneumatic adapters
+  parts:
+  - mech:DRW/nozzle-holder-inner-body
+  - mech:DRW/nozzle-holder-outer-body
+  - mech:MISC/nozzle-holder
+  - mech:MISC/nozzle-holder-inner-body
+  - mech:MISC/nozzle-holder-outer-body
+  - mech:MISC/nozzle-holder-spring
+  - mech:MISC/rotary-pneumatic-adapter
+  - mech:MISC/NEMA11-hollow-shaft-stepper
+  - mech:MISC/MGN12H-linear-rail-carriage
+  - mech:MISC/mgn9-linear-rail-carriage
+  - mech:FDM/nozzle-camera-mask
+  - mech:FDM/z-gantry
+  - mech:FDM/z-gantry-backplate-left
+  - mech:FDM/z-gantry-backplate-right
+  - mech:CHA/head-harness
+  - mech:cha/head
+  - mech:stage:step:harness/head
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/MISC/nozzle-holder-outer-body.FCStd
+  - pnp/cad/PartShape5.*
+- name: Linear Rail & Block LML9B v3
+  because: linear rail and carriage hardware used across gantries
+  parts:
+  - mech:MISC/linear-rail-100mm
+  - mech:MISC/mgn9-linear-rail-carriage
+  - mech:MISC/MGN12H-linear-rail-carriage
+  - mech:MISC/525mm-MGN12H
+  - mech:MISC/550mm-MGN12H
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/MISC/linear-rail-100mm.FCStd
+  - pnp/cad/MISC/mgn9-linear-rail-carriage.FCStd
+  - pnp/cad/MISC/PartShape.*
+- name: nozzle-holder-outer-body
+  because: standalone nozzle holder outer body part model
+  parts:
+  - mech:MISC/nozzle-holder-outer-body
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/MISC/nozzle-holder-outer-body.FCStd
+  - pnp/cad/MISC/PartShape5.*
+- name: Blade PCB Assemblies (blade12/blade13)
+  because: feeder blade PCB assemblies used in the strip feeder system
+  parts:
+  - mech:PCB/blade12-PCB
+  - mech:PCB/blade13-PCB
+  - mech:FDM/blade12
+  - mech:FDM/blade13
+  - mech:stage:step:board/blade12-PCB
+  - mech:stage:step:board/blade13-PCB
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/PCB/blade12-PCB.FCStd
+  - pnp/cad/PCB/blade13-PCB.FCStd
+- name: Ring Lighting (Top/Bottom)
+  because: bottom and top ring-light PCB assemblies used for camera illumination
+  parts:
+  - mech:PCB/bottom-ring-light
+  - mech:PCB/top-ring-light
+  - mech:FDM/bottom-light-mount
+  - mech:FDM/top-light-mount
+  - mech:CHA/bottom-light-harness
+  - mech:stage:step:board/bottom-ring-light
+  - mech:stage:step:board/top-ring-light
+  - mech:stage:step:harness/bottom-light
+  nets:
+  - /Lighting/BTM_LIGHT
+  - TOP_LIGHT
+  refdes: []
+  files:
+  - pnp/cad/PCB/bottom-ring-light.FCStd
+  - pnp/cad/PCB/top-ring-light.FCStd
+- name: Motherboard / Control Electronics (mobo)
+  because: the main control PCB (mobo-REV05) driving motors, sensors and communication
+  parts:
+  - board:mobo
+  - mech:PCB/mobo-REV05
+  - mech:FDM/control-box
+  - mech:FDM/control-box-lid
+  - mech:stage:step:board/mobo-REV05
+  nets:
+  - +3.3V
+  - +5V
+  - GND
+  - VBUS
+  - VDC
+  - BOOT
+  - RESET
+  - /Power/POWER_SUPPLY
+  - /Power/VIN
+  - /RS485/RS-485+
+  - /RS485/RS-485-
+  - /Microcontroller/AUX
+  - /Microcontroller/BOOT1
+  - /Microcontroller/BUZZER
+  - /Microcontroller/CHIMERA
+  - /Microcontroller/FAN
+  - /Microcontroller/I2C_SCL
+  - /Microcontroller/I2C_SDA
+  - /Microcontroller/ID0
+  - /Microcontroller/ID1
+  - /Microcontroller/ID2
+  - /Microcontroller/ID3
+  - /Microcontroller/USB_D+
+  - /Microcontroller/USB_D-
+  - /Microcontroller/SWCLK
+  - /Microcontroller/SWDIO
+  refdes:
+  - U1
+  - U2
+  - U3
+  - U4
+  - U5
+  - U6
+  - U7
+  - U8
+  - U9
+  - U10
+  - U11
+  - U12
+  - U13
+  - U14
+  - U15
+  - U16
+  - U17
+  - U18
+  - U19
+  - U20
+  - U21
+  - U22
+  - U23
+  - U24
+  - U25
+  - U26
+  - U27
+  - BZ1
+  - SW1
+  - SW2
+  - JP1
+  - JP2
+  - F1
+  - Y1
+  files:
+  - pnp/cad/PCB/mobo-REV05.FCStd
+  - pnp/pcb/mobo/mobo.skanda-bom.csv
+  - pnp/pcb/mobo/mobo.skanda.net
+- name: Motor Drive Electronics
+  because: stepper motor driver circuits for X, Y1, Y2, Z and L/R motors on the mobo
+    board
+  parts: []
+  nets:
+  - /Motor L/5VOUT
+  - /Motor L/A1
+  - /Motor L/A2
+  - /Motor L/B1
+  - /Motor L/B2
+  - /Motor R/5VOUT
+  - /Motor R/A1
+  - /Motor R/A2
+  - /Motor R/B1
+  - /Motor R/B2
+  - /Motor X/5VOUT
+  - /Motor X/A1
+  - /Motor X/A2
+  - /Motor X/B1
+  - /Motor X/B2
+  - /Motor Y1/5VOUT
+  - /Motor Y1/A1
+  - /Motor Y1/A2
+  - /Motor Y1/B1
+  - /Motor Y1/B2
+  - /Motor Y2/5VOUT
+  - /Motor Y2/A1
+  - /Motor Y2/A2
+  - /Motor Y2/B1
+  - /Motor Y2/B2
+  - /Motor Z/5VOUT
+  - /Motor Z/A1
+  - /Motor Z/A2
+  - /Motor Z/B1
+  - /Motor Z/B2
+  refdes:
+  - U10
+  - U11
+  - U6
+  - U7
+  - U8
+  - U9
+  files: []
+- name: Secondary Fiducial PCB
+  because: secondary fiducial reference PCB used for machine vision calibration
+  parts:
+  - mech:PCB/secondary-fid-pcb
+  - mech:FDM/secondary-fid-bracket
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/PCB/secondary-fid-pcb.FCStd
+- name: X Cable Chain Support
+  because: support structure for the X-axis drag chain
+  parts:
+  - mech:PCB/x-cable-chain-support
+  - mech:MISC/drag-chain-end
+  - mech:MISC/drag-chain-end-link
+  - mech:MISC/drag-chain-link
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/PCB/x-cable-chain-support.FCStd
+- name: XY Limit Switches
+  because: limit switch PCB and mechanical bracket for X/Y axis homing
+  parts:
+  - mech:PCB/xy-limit
+  - mech:stage:step:board/xy-limit
+  nets:
+  - /Microcontroller/X_LIMIT
+  - /Microcontroller/Y_LIMIT
+  refdes: []
+  files:
+  - pnp/cad/PCB/xy-limit.FCStd
+- name: Z Limit Switch
+  because: limit switch PCB and mechanical bracket for Z axis homing
+  parts:
+  - mech:PCB/z-limit
+  - mech:stage:step:board/z-limit
+  nets:
+  - /Microcontroller/Z_LIMIT
+  refdes: []
+  files:
+  - pnp/cad/PCB/z-limit.FCStd
+- name: Frame / Legs
+  because: the four machine legs and their extensions forming the base frame
+  parts:
+  - mech:FDM/front-left-leg
+  - mech:FDM/front-right-leg
+  - mech:FDM/back-leg
+  - mech:FDM/front-leg-extension
+  - mech:FDM/back-leg-extension
+  - mech:FST/M5-tslot-nut
+  - mech:MISC/GT2-idler
+  - mech:MISC/GT2-pulley
+  - mech:MISC/NEMA17-stepper
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/Nut033.Shape.*
+  - pnp/cad/Nut045.Shape.*
+  - pnp/cad/Nut046.Shape.*
+  - pnp/cad/Nut047.Shape.*
+  - pnp/cad/Nut048.Shape.*
+  - pnp/cad/Nut049.Shape.*
+  - pnp/cad/Nut122.Shape.*
+  - pnp/cad/Nut178.Shape.*
+  - pnp/cad/Nut179.Shape.*
+  - pnp/cad/Nut180.Shape.*
+  - pnp/cad/Nut181.Shape.*
+  - pnp/cad/Nut182.Shape.*
+  - pnp/cad/Nut183.Shape.*
+- name: Gantry (X/Y/Z)
+  because: the linear motion gantries for X, Y and Z axes including rails, belts,
+    motors and endstops
+  parts:
+  - mech:FDM/y-gantry-left
+  - mech:FDM/y-gantry-right
+  - mech:FDM/x-gantry-front
+  - mech:FDM/x-gantry-back
+  - mech:FDM/x-idler-mount
+  - mech:FDM/x-motor-mount
+  - mech:FDM/belt-clamp
+  - mech:FDM/belt-tension-arm
+  - mech:FDM/z-belt-loop
+  - mech:FDM/y-limit-striker
+  - mech:MISC/x-gantry-gt2-belt
+  - mech:MISC/y-gantry-gt2-belt
+  - mech:MISC/gt2-timing-belt
+  - mech:MISC/m3_t-nut_bar-525mm
+  - mech:MISC/vslot-extrusion-20mmx20mmx600mm
+  - mech:PCB/xy-limit
+  - mech:PCB/z-limit
+  - mech:CHA/y1-motor-harness
+  - mech:CHA/y2-motor-harness
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/assembly.FCStd
+- name: Staging Plates & Cameras
+  because: primary and auxiliary staging plates carrying the up/down cameras and lighting
+    for vision alignment
+  parts:
+  - mech:PCB/staging-plate
+  - mech:FDM/aux-staging-plate-foot
+  - mech:FDM/bottom-camera-cover
+  - mech:FDM/bottom-camera-mount
+  - mech:FDM/static-camera-foot
+  - mech:FDM/datum-board-mount
+  - mech:FDM/peek-cable-clamp
+  - mech:MISC/bottom-camera
+  - mech:MISC/top-camera
+  - mech:PCB/datum-board
+  - mech:CHA/bottom-camera-cable
+  - mech:CHA/top-camera-cable
+  - mech:cha/top-camera
+  - mech:stage:step:board/bottom-camera
+  - mech:stage:step:board/top-camera
+  - mech:stage:step:harness/bottom-camera
+  - mech:stage:step:harness/top-camera
+  nets: []
+  refdes: []
+  files: []
+- name: Feeders
+  because: the strip feeder family (8mm to 32mm and adjustable) used to present components
+    for pickup
+  parts:
+  - mech:FDM/8mm-strip-feeder
+  - mech:FDM/12mm-strip-feeder
+  - mech:FDM/16mm-strip-feeder
+  - mech:FDM/24mm-strip-feeder
+  - mech:FDM/32mm-strip-feeder
+  - mech:FDM/adj-strip-feeder
+  - mech:FST/M3x8-ULP-BHCS
+  nets: []
+  refdes: []
+  files:
+  - pnp/cad/8mm-strip-feeder-sticker.*
+- name: Feeder Rails
+  because: front and rear feeder mounting rails holding the strip feeders
+  parts:
+  - mech:MISC/corner-bracket
+  - mech:MISC/vslot-extrusion-20mmx20mmx600mm
+  - mech:FST/M5-tslot-nut
+  nets: []
+  refdes: []
+  files: []
+- name: Pneumatics
+  because: vacuum pump, solenoid valves and tubing that generate and control pick-up
+    suction
+  parts:
+  - mech:MISC/vacuum-pump
+  - mech:MISC/solenoid-valve
+  - mech:MISC/reducing-union-tee-4-6-4
+  - mech:PNU/pu-tube-4x2.5-blue
+  - mech:PNU/pu-tube-4x2.5-red
+  - mech:PNU/soft-pvc-tubing-6x4-blue
+  - mech:PNU/soft-pvc-tubing-6x4-red
+  - mech:CHA/pump1-harness
+  - mech:CHA/pump2-harness
+  - mech:cha/pump1
+  - mech:cha/pump2
+  - mech:MISC/XGZP6857D200KPGPN33
+  - mech:stage:step:harness/pump1
+  - mech:stage:step:harness/pump2
+  nets:
+  - /Vacuum sensors/SC0
+  - /Vacuum sensors/SC1
+  - /Vacuum sensors/SD0
+  - /Vacuum sensors/SD1
+  refdes: []
+  files: []
+- name: Power
+  because: the 24V power supply and its wiring into the control box
+  parts:
+  - mech:PSU/24v-power-supply
+  - mech:FDM/control-box
+  - mech:FDM/control-box-lid
+  nets:
+  - VDC
+  - /Power/VIN
+  - /Power/POWER_SUPPLY
+  refdes: []
+  files: []
+- name: Drag Chains
+  because: cable drag chains for X and Y axes carrying moving-axis wiring
+  parts:
+  - mech:MISC/drag-chain-link
+  - mech:MISC/drag-chain-end
+  - mech:MISC/drag-chain-end-link
+  - mech:FDM/cable-splay
+  - mech:FDM/extrusion-cable-clip
+  - mech:PCB/x-cable-chain-support
+  - mech:cha/x-harness
+  - mech:stage:step:harness/x-harness
+  nets: []
+  refdes: []
+  files: []
+- name: Wiring Harnesses
+  because: point-to-point wiring harnesses connecting boards, motors and peripherals
+    to the mobo
+  parts:
+  - mech:CHA/blade-jumper-harness
+  - mech:CHA/blade2-blade3-harness
+  - mech:CHA/bottom-camera-cable
+  - mech:CHA/bottom-light-harness
+  - mech:CHA/head-harness
+  - mech:CHA/mobo-blade1-harness
+  - mech:CHA/pump1-harness
+  - mech:CHA/pump2-harness
+  - mech:CHA/top-camera-cable
+  - mech:CHA/usb-b-to-usb-a-cable
+  - mech:CHA/y1-motor-harness
+  - mech:CHA/y2-motor-harness
+  - mech:cha/blade2-blade3
+  - mech:cha/head
+  - mech:cha/pump1
+  - mech:cha/pump2
+  - mech:cha/top-camera
+  - mech:cha/x-harness
+  - mech:stage:step:harness/blade-jumper
+  - mech:stage:step:harness/blade2-blade3
+  - mech:stage:step:harness/bottom-camera
+  - mech:stage:step:harness/bottom-light
+  - mech:stage:step:harness/head
+  - mech:stage:step:harness/mobo-blade1
+  - mech:stage:step:harness/pump1
+  - mech:stage:step:harness/pump2
+  - mech:stage:step:harness/top-camera
+  - mech:stage:step:harness/x-harness
+  - mech:stage:step:harness/y1-motor
+  - mech:stage:step:harness/y2-motor
+  nets: []
+  refdes: []
+  files: []
+- name: Fasteners & Hardware Kits
+  because: generic fastener stock and kitted hardware bags used throughout assembly
+  parts:
+  - mech:FST/DIN315 Nut M3 Wingnut
+  - mech:FST/DIN557 Nut M5
+  - mech:FST/DIN562 Nut M3
+  - mech:FST/DIN985 Nut M5
+  - mech:FST/ISO10642 Screw M3x16
+  - mech:FST/ISO10642 Screw M5x16
+  - mech:FST/ISO4017 Screw M3x10
+  - mech:FST/ISO4032 Nut M3
+  - mech:FST/ISO4032 Nut M5
+  - mech:FST/ISO4762 Screw M2.5
+  - mech:FST/ISO4762 Screw M3x16
+  - mech:FST/ISO4762 Screw M3x30
+  - mech:FST/ISO4762 Screw M5x10
+  - mech:FST/ISO4762 Screw M5x16
+  - mech:FST/ISO4762 Screw M5x25
+  - mech:FST/ISO4762 Screw M5x40
+  - mech:FST/ISO7380-1 Screw M3x14
+  - mech:FST/ISO7380-1 Screw M3x8
+  - mech:FST/ISO7380-1 Screw M5x8
+  - mech:FST/M3-cap-nut
+  - mech:FST/M3-tslot-nut
+  - mech:FST/M3x12mm-self-tapping-button-head
+  - mech:FST/M3x12mm-self-tapping-flat-head
+  - mech:FST/M3x8mm-self-tapping-flat-head
+  - mech:FST/M5-tslot-nut
+  - mech:FST/m3x10-thumb-screw
+  - mech:FST/m5-thumb-screw
+  nets: []
+  refdes: []
+  files: []
+- name: Nozzle Rack & Consumables
+  because: the nozzle storage rack plus spare nozzles, filaments, lubricants and consumable
+    supplies
+  parts:
+  - mech:FDM/nozzle-rack
+  - mech:MISC/n045-nozzle
+  - mech:MISC/n08-nozzle
+  - mech:MISC/n14-nozzle
+  - mech:MISC/n24-nozzle
+  - mech:MISC/n40-nozzle
+  - mech:MISC/n75-nozzle
+  - mech:FIL/PETG-filament
+  - mech:FIL/PLA-filament
+  - mech:MISC/lubricant-packet
+  - mech:MISC/precision-machine-oil
+  - mech:MISC/rubber-band
+  - mech:MISC/rubber-feet
+  - mech:MISC/zip-tie
+  - mech:MISC/4mmIDx0.6mmCS-o-ring
+  - mech:MISC/2mm-Pin
+  nets: []
+  refdes: []
+  files: []
+- name: Fixture Kit
+  because: the universal fixture kit hardware used for holding boards during pick-and-place
+    jobs
+  parts:
+  - mech:FDM/board-mount-dynamic
+  - mech:FDM/board-mount-static
+  - mech:FDM/board-support
+  nets: []
+  refdes: []
+  files: []
+- name: User-Installed Components
+  because: components and brackets installed by the end user during setup
+  parts:
+  - mech:FDM/squaring-bracket
+  - mech:FDM/blade-adapter-pin-cover
+  nets: []
+  refdes: []
+  files: []
+- name: USB & Communication
+  because: USB and RS-485 communication interfaces on the mobo board
+  parts:
+  - mech:MISC/USB-Type-B
+  - mech:CHA/usb-b-to-usb-a-cable
+  nets:
+  - /Microcontroller/USB_D+
+  - /Microcontroller/USB_D-
+  - /RS485/RS-485+
+  - /RS485/RS-485-
+  - /Microcontroller/RS485_DE
+  - /Microcontroller/RS485_RE
+  - /Microcontroller/RS485_RX
+  - /Microcontroller/RS485_TX
+  - /Microcontroller/X_UART
+  refdes:
+  - J1
+  - J2
+  - J3
+  files: []
+- name: Requirements & Documentation
+  because: project requirements and documentation artifacts
+  parts:
+  - doc:NEMA17
+  nets: []
+  refdes:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  - REQ-008
+  files:
+  - requirements.md
+  - bom_updated.csv
+  - pnp/cad/DRW/nozzle-holder-inner-body.pdf
+  - pnp/cad/DRW/nozzle-holder-outer-body.pdf

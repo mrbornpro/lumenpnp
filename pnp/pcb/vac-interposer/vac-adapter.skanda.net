@@ -1,0 +1,624 @@
+(export
+	(version "E")
+	(design
+		(source "/Users/vihaanshah/Desktop/Skanda Inc./CoPilot/lumenpnp/pnp/pcb/vac-interposer/vac-adapter.kicad_sch")
+		(date "2026-08-15T23:19:21")
+		(tool "Eeschema 10.0.5")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "vac-adapter.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e696710a-337e-4c6e-be30-0f9b1ed8139b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "57aeb75e-6ab0-4d3f-a43d-3c42cb5ef6dc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f67d8b41-3fa8-4664-bdab-ac193e585a34")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "db3f83d1-5d39-4b36-bc49-cd4ca5d8d9aa")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b8fa20ba-68d6-4a95-a64e-c95b4fed3589")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6ddc4722-3700-470f-8a68-ff16ccf7e609")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "XGZP")
+			(footprint "index:SO-6_7x7mm_P2.54mm")
+			(datasheet "http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf")
+			(fields
+				(field
+					(name "Footprint") "index:SO-6_7x7mm_P2.54mm")
+				(field
+					(name "Datasheet") "http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "index")
+				(part "XGZP")
+				(description "XGZP Pressure Sensor (SOP6)")
+			)
+			(property
+				(name "Sheetname")
+				(value "vac-adapter")
+			)
+			(property
+				(name "Sheetfile")
+				(value "vac-adapter.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "vacuum")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f6486377-85d6-48fe-835a-be04c2146811")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "index")
+			(part "XGZP")
+			(description "XGZP Pressure Sensor (SOP6)")
+			(docs "http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XGZP")
+				(field
+					(name "Footprint") "index:SO-6_7x7mm_P2.54mm")
+				(field
+					(name "Datasheet") "http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf")
+				(field
+					(name "Description") "XGZP Pressure Sensor (SOP6)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Vo-")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Vs+")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "Vo+")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "N/C")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "Vo-")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "index")
+			(uri "/Users/stephen/lumenpnp/lib/kicad/index.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "Net-(TP1-Pad1)")
+			(class "Default")
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "6")
+				(pinfunction "Vo-_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "Net-(TP4-Pad1)")
+			(class "Default")
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "Vo-_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "Net-(U1-GND)")
+			(class "Default")
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "4")
+			(name "Net-(U1-N{slash}C)")
+			(class "Default")
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "N/C_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "Net-(U1-Vo+)")
+			(class "Default")
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "Vo+_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "Net-(U1-Vs+)")
+			(class "Default")
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "Vs+_2")
+				(pintype "input")
+			)
+		)
+	)
+)

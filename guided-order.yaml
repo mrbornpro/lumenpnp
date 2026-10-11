@@ -1,0 +1,263 @@
+# Guided order (update 30). `instructed` is your dictated order — this design's default
+# for every unit. `advised` was written once by Vel and is never rewritten by a compile:
+# "reset the order" clears instructed, "replan the order" clears advised and the next
+# compile rebuilds it. Hand-written comments are not preserved.
+advised:
+  order:
+  - connectivity:mobo/+3.3V|+5V:isolation
+  - connectivity:mobo/+3.3V|GND:isolation
+  - connectivity:mobo/+3.3V|VBUS:isolation
+  - connectivity:mobo/+5V|GND:isolation
+  - connectivity:mobo/+5V|VBUS:isolation
+  - connectivity:mobo/VBUS|GND:isolation
+  - net_voltage:mobo/+5V:voltage
+  - net_voltage:mobo//Power/VIN:voltage
+  - net_voltage:mobo/VBUS:voltage
+  - net_voltage:mobo/+3.3V:voltage
+  - net_voltage:mobo//Motor L/5VOUT:voltage
+  - net_voltage:mobo//Motor R/5VOUT:voltage
+  - net_voltage:mobo//Motor X/5VOUT:voltage
+  - net_voltage:mobo//Motor Y1/5VOUT:voltage
+  - net_voltage:mobo//Motor Y2/5VOUT:voltage
+  - net_voltage:mobo//Motor Z/5VOUT:voltage
+  - rail_current:mobo/+5V:current_idle
+  - rail_current:mobo/+5V:current_active
+  - rail_current:mobo/VBUS:current_idle
+  - rail_current:mobo/VBUS:current_active
+  - rail_current:mobo/+3.3V:current_idle
+  - rail_current:mobo/+3.3V:current_active
+  - dimension:DRW/nozzle-holder-inner-body:4.425mm@4.425..4.45
+  - dimension:DRW/nozzle-holder-inner-body:5.325mm@5.275..5.325
+  - dimension:DRW/nozzle-holder-inner-body:0.7mm@0.7..0.8
+  - dimension:DRW/nozzle-holder-inner-body:6.5mm@6.45..6.475
+  - dimension:DRW/nozzle-holder-inner-body:2mm@1.93..1.98
+  - dimension:DRW/nozzle-holder-inner-body:4.25mm@4.2..4.3
+  - dimension:DRW/nozzle-holder-outer-body:2.98mm@2.98..3.08
+  - dimension:DRW/nozzle-holder-outer-body:8mm@7.8..8
+  - dimension:DRW/nozzle-holder-outer-body:17mm@16.95..17.05
+  - dimension:DRW/nozzle-holder-outer-body:2mm@2.01..2.05
+  - dimension:DRW/nozzle-holder-outer-body:15.625mm@15.625..15.725
+  - dimension:DRW/nozzle-holder-outer-body:1.25mm@1.15..1.25
+  - dimension:DRW/nozzle-holder-outer-body:24.5mm@24.4..24.6
+  - dimension:DRW/nozzle-holder-outer-body:6.5mm@6.525..6.55
+  - dimension:DRW/nozzle-holder-outer-body:7.5mm@7.4..7.6
+  - dimension:DRW/nozzle-holder-outer-body:8.5mm@8.4..8.6
+  - dimension:DRW/nozzle-holder-outer-body:9.25mm@9.15..9.35
+  - dimension:DRW/nozzle-holder-outer-body:1.5mm@1.4..1.6
+  - mass:FDM/12mm-strip-feeder:mass
+  - mass:FDM/16mm-strip-feeder:mass
+  - mass:FDM/24mm-strip-feeder:mass
+  - mass:FDM/32mm-strip-feeder:mass
+  - mass:FDM/8mm-strip-feeder:mass
+  - mass:FDM/adj-strip-feeder:mass
+  - mass:FDM/aux-staging-plate-foot:mass
+  - mass:FDM/back-leg-extension:mass
+  - mass:FDM/back-leg:mass
+  - mass:FDM/belt-clamp:mass
+  - mass:FDM/belt-tension-arm:mass
+  - mass:FDM/blade-adapter-pin-cover:mass
+  - mass:FDM/blade12:mass
+  - mass:FDM/blade13:mass
+  - mass:FDM/board-mount-dynamic:mass
+  - mass:FDM/board-mount-static:mass
+  - mass:FDM/board-support:mass
+  - mass:FDM/bottom-camera-cover:mass
+  - mass:FDM/bottom-camera-mount:mass
+  - mass:FDM/bottom-light-mount:mass
+  - mass:FDM/cable-splay:mass
+  - mass:FDM/control-box-lid:mass
+  - mass:FDM/control-box:mass
+  - mass:FDM/datum-board-mount:mass
+  - mass:FDM/extrusion-cable-clip:mass
+  - mass:FDM/front-left-leg:mass
+  - mass:FDM/front-leg-extension:mass
+  - mass:FDM/front-right-leg:mass
+  - mass:FDM/nozzle-camera-mask:mass
+  - mass:FDM/nozzle-rack:mass
+  - mass:FDM/peek-cable-clamp:mass
+  - mass:FDM/secondary-fid-bracket:mass
+  - mass:FDM/squaring-bracket:mass
+  - mass:FDM/static-camera-foot:mass
+  - mass:FDM/top-light-mount:mass
+  - mass:FDM/x-gantry-back:mass
+  - mass:FDM/x-gantry-front:mass
+  - mass:FDM/x-idler-mount:mass
+  - mass:FDM/x-motor-mount:mass
+  - mass:FDM/y-gantry-left:mass
+  - mass:FDM/y-gantry-right:mass
+  - mass:FDM/y-limit-striker:mass
+  - mass:FDM/z-gantry-backplate-left:mass
+  - mass:FDM/z-gantry-backplate-right:mass
+  - mass:FDM/z-gantry:mass
+  - mass:FST/M3-cap-nut:mass
+  - torque:FST/M3-cap-nut:torque
+  - dimension:FST/M3-cap-nut:bbox_x
+  - dimension:FST/M3-cap-nut:bbox_y
+  - dimension:FST/M3-cap-nut:bbox_z
+  - mass:FST/M3-tslot-nut:mass
+  - torque:FST/M3-tslot-nut:torque
+  - mass:FST/M3x8-ULP-BHCS:mass
+  - torque:FST/M3x8-ULP-BHCS:torque
+  - mass:FST/M5-tslot-nut:mass
+  - torque:FST/M5-tslot-nut:torque
+  - dimension:FST/M5-tslot-nut:bbox_x
+  - dimension:FST/M5-tslot-nut:bbox_y
+  - dimension:FST/M5-tslot-nut:bbox_z
+  - mass:FST/m3x10-thumb-screw:mass
+  - torque:FST/m3x10-thumb-screw:torque
+  - mass:FST/m5-thumb-screw:mass
+  - torque:FST/m5-thumb-screw:torque
+  - mass:MISC/2mm-Pin:mass
+  - mass:MISC/4mmIDx0.6mmCS-o-ring:mass
+  - mass:MISC/525mm-MGN12H:mass
+  - mass:MISC/550mm-MGN12H:mass
+  - mass:MISC/GT2-idler:mass
+  - dimension:MISC/GT2-idler:bbox_x
+  - dimension:MISC/GT2-idler:bbox_y
+  - dimension:MISC/GT2-idler:bbox_z
+  - mass:MISC/GT2-pulley:mass
+  - dimension:MISC/GT2-pulley:bbox_x
+  - dimension:MISC/GT2-pulley:bbox_y
+  - dimension:MISC/GT2-pulley:bbox_z
+  - mass:MISC/MGN12H-linear-rail-carriage:mass
+  - mass:MISC/NEMA11-hollow-shaft-stepper:mass
+  - mass:MISC/NEMA17-stepper:mass
+  - dimension:MISC/NEMA17-stepper:bbox_x
+  - dimension:MISC/NEMA17-stepper:bbox_y
+  - dimension:MISC/NEMA17-stepper:bbox_z
+  - mass:MISC/USB-Type-B:mass
+  - mass:MISC/XGZP6857D200KPGPN33:mass
+  - mass:MISC/bottom-camera:mass
+  - mass:MISC/corner-bracket:mass
+  - dimension:MISC/corner-bracket:bbox_x
+  - dimension:MISC/corner-bracket:bbox_y
+  - dimension:MISC/corner-bracket:bbox_z
+  - mass:MISC/drag-chain-end-link:mass
+  - mass:MISC/drag-chain-link:mass
+  - mass:MISC/linear-rail-100mm:mass
+  - mass:MISC/m3_t-nut_bar-525mm:mass
+  - torque:MISC/m3_t-nut_bar-525mm:torque
+  - mass:MISC/mgn9-linear-rail-carriage:mass
+  - mass:MISC/n045-nozzle:mass
+  - mass:MISC/n08-nozzle:mass
+  - mass:MISC/n14-nozzle:mass
+  - mass:MISC/n24-nozzle:mass
+  - mass:MISC/n40-nozzle:mass
+  - mass:MISC/n75-nozzle:mass
+  - mass:MISC/nozzle-holder-inner-body:mass
+  - mass:MISC/nozzle-holder-outer-body:mass
+  - mass:MISC/nozzle-holder-spring:mass
+  - mass:MISC/nozzle-holder:mass
+  - mass:MISC/reducing-union-tee-4-6-4:mass
+  - dimension:MISC/reducing-union-tee-4-6-4:bbox_x
+  - dimension:MISC/reducing-union-tee-4-6-4:bbox_y
+  - dimension:MISC/reducing-union-tee-4-6-4:bbox_z
+  - mass:MISC/rotary-pneumatic-adapter:mass
+  - mass:MISC/solenoid-valve:mass
+  - mass:MISC/top-camera:mass
+  - mass:MISC/vacuum-pump:mass
+  - mass:MISC/vslot-extrusion-20mmx20mmx600mm:mass
+  - dimension:MISC/vslot-extrusion-20mmx20mmx600mm:bbox_x
+  - dimension:MISC/vslot-extrusion-20mmx20mmx600mm:bbox_y
+  - dimension:MISC/vslot-extrusion-20mmx20mmx600mm:bbox_z
+  - mass:MISC/x-gantry-gt2-belt:mass
+  - mass:MISC/y-gantry-gt2-belt:mass
+  - mass:MISC/z-belt-loop:mass
+  - mass:PCB/D2FS-FL-N-A:mass
+  - mass:PCB/blade12-PCB:mass
+  - mass:PCB/blade13-PCB:mass
+  - mass:PCB/bottom-ring-light:mass
+  - mass:PCB/datum-board:mass
+  - dimension:PCB/datum-board:bbox_x
+  - dimension:PCB/datum-board:bbox_y
+  - dimension:PCB/datum-board:bbox_z
+  - mass:PCB/mobo-REV05:mass
+  - mass:PCB/secondary-fid-pcb:mass
+  - mass:PCB/staging-plate:mass
+  - mass:PCB/top-ring-light:mass
+  - mass:PCB/x-cable-chain-support:mass
+  - mass:PCB/xy-limit:mass
+  - mass:PCB/z-limit:mass
+  - mass:BOM/NEMA17-stepper:mass
+  - dimension:BOM/NEMA17-stepper:face_width
+  - dimension:BOM/NEMA17-stepper:shaft_diameter
+  - mass:stage:step:machine:mass
+  - mass:cha/pump1:mass
+  - mass:cha/pump2:mass
+  - mass:cha/x-harness:mass
+  - mass:cha/head:mass
+  - mass:cha/top-camera:mass
+  - mass:cha/blade2-blade3:mass
+  - mass:FIL/PLA-filament:mass
+  - mass:FIL/PETG-filament:mass
+  - mass:FST/DIN315 Nut M3 Wingnut:mass
+  - mass:FST/DIN557 Nut M5:mass
+  - mass:FST/DIN562 Nut M3:mass
+  - mass:FST/DIN985 Nut M5:mass
+  - mass:FST/M3x12mm-self-tapping-flat-head:mass
+  - mass:FST/ISO10642 Screw M3x16:mass
+  - mass:FST/M3x8mm-self-tapping-flat-head:mass
+  - mass:FST/ISO10642 Screw M5x16:mass
+  - mass:FST/ISO4017 Screw M3x10:mass
+  - mass:FST/ISO4032 Nut M3:mass
+  - mass:FST/ISO4032 Nut M5:mass
+  - mass:FST/ISO4762 Screw M2.5:mass
+  - mass:FST/ISO4762 Screw M3x16:mass
+  - mass:FST/ISO4762 Screw M3x30:mass
+  - mass:FST/ISO4762 Screw M5x10:mass
+  - mass:FST/ISO4762 Screw M5x16:mass
+  - mass:FST/ISO4762 Screw M5x25:mass
+  - mass:FST/ISO4762 Screw M5x40:mass
+  - mass:FST/M3x12mm-self-tapping-button-head:mass
+  - mass:FST/ISO7380-1 Screw M3x14:mass
+  - mass:FST/ISO7380-1 Screw M3x8:mass
+  - mass:FST/ISO7380-1 Screw M5x8:mass
+  - mass:MISC/gt2-timing-belt:mass
+  - mass:MISC/precision-machine-oil:mass
+  - mass:MISC/lubricant-packet:mass
+  - mass:CHA/pump1-harness:mass
+  - mass:CHA/pump2-harness:mass
+  - mass:PNU/soft-pvc-tubing-6x4-red:mass
+  - mass:PNU/soft-pvc-tubing-6x4-blue:mass
+  - mass:CHA/usb-b-to-usb-a-cable:mass
+  - mass:MISC/drag-chain-end:mass
+  - mass:CHA/head-harness:mass
+  - mass:CHA/top-camera-cable:mass
+  - mass:PNU/pu-tube-4x2.5-red:mass
+  - mass:PNU/pu-tube-4x2.5-blue:mass
+  - mass:CHA/y1-motor-harness:mass
+  - mass:CHA/y2-motor-harness:mass
+  - mass:CHA/bottom-light-harness:mass
+  - mass:CHA/bottom-camera-cable:mass
+  - mass:CHA/mobo-blade1-harness:mass
+  - mass:CHA/blade2-blade3-harness:mass
+  - mass:CHA/blade-jumper-harness:mass
+  - mass:PSU/24v-power-supply:mass
+  - mass:MISC/zip-tie:mass
+  - mass:MISC/rubber-band:mass
+  - mass:MISC/rubber-feet:mass
+  - mass:stage:step:board/blade12-PCB:mass
+  - mass:stage:step:board/blade13-PCB:mass
+  - mass:stage:step:board/bottom-camera:mass
+  - mass:stage:step:board/bottom-ring-light:mass
+  - mass:stage:step:board/mobo-REV05:mass
+  - mass:stage:step:board/top-camera:mass
+  - mass:stage:step:board/top-ring-light:mass
+  - mass:stage:step:board/xy-limit:mass
+  - mass:stage:step:board/z-limit:mass
+  - mass:stage:step:harness/blade-jumper:mass
+  - mass:stage:step:harness/blade2-blade3:mass
+  - mass:stage:step:harness/bottom-camera:mass
+  - mass:stage:step:harness/bottom-light:mass
+  - mass:stage:step:harness/head:mass
+  - mass:stage:step:harness/mobo-blade1:mass
+  - mass:stage:step:harness/pump1:mass
+  - mass:stage:step:harness/pump2:mass
+  - mass:stage:step:harness/top-camera:mass
+  - mass:stage:step:harness/x-harness:mass
+  - mass:stage:step:harness/y1-motor:mass
+  - mass:stage:step:harness/y2-motor:mass
+  reason: 'Nothing to move: there are no active lessons, no escalations and no new
+    or changed checks, so no shop history points at any check.
+
+    The deterministic order stands as given.'

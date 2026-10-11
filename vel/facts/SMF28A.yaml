@@ -1,0 +1,237 @@
+absent: []
+at: '2026-10-02T22:40:14.871685+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: vel/datasheets/SMF28A.pdf
+doc_sha256: 4dcce5361b9c6c3a30e7b670755a1c9066bac6f6d7da71549e4263dd84f8317f
+facts:
+- conditions:
+    package: SMF (DO-219AB)
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 0.015
+  page: 1
+  qualifiers: {}
+  quantity: mass
+  record: '{"id":"fact:SMF28A:mass:d5fba22b","claim":"SMF28A mass is typ 0.015 g at
+    package=SMF (DO-219AB)","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of SMF28A.pdf shows typ 0.015 g","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: g
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 2.0
+  page: 1
+  qualifiers: {}
+  quantity: pin_count
+  record: '{"id":"fact:SMF28A:pin_count:bf21a9e8","claim":"SMF28A pin_count is typ
+    2 ","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of SMF28A.pdf shows typ 2 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: the claim gives no unit."}]}'
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions:
+    parameter: Operating temperature range Top
+  confidence: 0.0
+  hi: 175.0
+  lo: -65.0
+  nominal: null
+  page: 2
+  qualifiers:
+    form: range
+    mode: operating
+  quantity: temp_max
+  record: '{"id":"fact:SMF28A:temp_max:af5773a3","claim":"SMF28A temp_max is min -65,
+    max 175 C at parameter=Operating temperature range Top","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: 175.0
+  lo: -65.0
+  nominal: null
+  page: 2
+  qualifiers:
+    form: range
+    measured_on: storage
+  quantity: temp_max
+  record: '{"id":"fact:SMF28A:temp_max:5aa3f0b6","claim":"SMF28A temp_max is min -65,
+    max 175 C","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions: {}
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 175.0
+  page: 2
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: '{"id":"fact:SMF28A:temp_max:30ddb3bf","claim":"SMF28A temp_max is typ 175
+    C","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of SMF28A.pdf shows typ 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions:
+    mounting: epoxy glass PCB, 3 mm x 3 mm Cu pads >= 40 um thick
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 180.0
+  page: 2
+  qualifiers: {}
+  quantity: theta_ja
+  record: '{"id":"fact:SMF28A:theta_ja:5f65bc6f","claim":"SMF28A theta_ja is typ 180
+    C/W at mounting=epoxy glass PCB, 3 mm x 3 mm Cu pads >= 40 um thick","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
+    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of SMF28A.pdf shows typ 180 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
+    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
+    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C/W
+  verified: confirmed
+manufacturer: Vishay Semiconductors
+model: anthropic/claude-opus-5-5
+mpn: SMF28A
+observations:
+- conditions: {}
+  label: ESD immunity VESD, air discharge acc. IEC 61000-4-2
+  page: 2
+  unit: V
+  value: 30000.0
+- conditions: {}
+  label: ESD immunity VESD, contact discharge acc. IEC 61000-4-2
+  page: 2
+  unit: V
+  value: 30000.0
+- conditions: {}
+  label: Forward clamping voltage VF, IF = 50 A, tp = 400 us
+  page: 2
+  unit: V
+  value: 2.5
+- conditions: {}
+  label: Maximum peak pulse current IPPM, tp = 10/1000 us (SMF28A)
+  page: 2
+  unit: A
+  value: 4.4
+- conditions: {}
+  label: Maximum reverse clamping voltage VC at IPPM (SMF28A)
+  page: 2
+  unit: V
+  value: 45.4
+- conditions: {}
+  label: Maximum reverse current IR at VRWM (SMF28A)
+  page: 2
+  unit: A
+  value: 1.0e-07
+- conditions: {}
+  label: Peak forward surge current IFSM, 8.3 ms single half sine-wave
+  page: 2
+  unit: A
+  value: 50.0
+- conditions: {}
+  label: Peak pulse power PPP, tp = 10/1000 us
+  page: 2
+  unit: W
+  value: 200.0
+- conditions: {}
+  label: Peak pulse power PPP, tp = 8/20 us acc. IEC 61000-4-5
+  page: 2
+  unit: W
+  value: 1000.0
+- conditions: {}
+  label: Protection paths Nchannel (SMF28A)
+  page: 2
+  unit: ''
+  value: 1.0
+- conditions:
+    IT: 1mA
+    tp: 5ms
+  label: Reverse breakdown voltage VBR max (SMF28A)
+  page: 2
+  unit: V
+  value: 34.4
+- conditions:
+    IT: 1mA
+    tp: 5ms
+  label: Reverse breakdown voltage VBR min (SMF28A)
+  page: 2
+  unit: V
+  value: 31.1
+- conditions: {}
+  label: Stand-off voltage VRWM (SMF28A)
+  page: 2
+  unit: V
+  value: 28.0
+- conditions: {}
+  label: Test current IT (SMF28A)
+  page: 2
+  unit: A
+  value: 0.001
+- conditions: {}
+  label: Typical capacitance CD at VR = 0 V, f = 1 MHz (SMF28A)
+  page: 2
+  unit: F
+  value: 2.27e-10
+part_class: TVS / ESD protection diode
+vocab: 710670161df3

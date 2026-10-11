@@ -1,0 +1,1026 @@
+absent: []
+at: '2026-10-10T22:37:50.205124+00:00'
+by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
+doc_path: datasheets/TPS54560BDDA.pdf
+doc_sha256: a941117b779ded588724f785356659557c85382e02c22056165609695ed7336d
+facts:
+- conditions:
+    FB: 0.9V
+    TA: 25C
+  confidence: 0.0
+  hi: 0.000175
+  lo: null
+  nominal: 0.000146
+  page: 5
+  qualifiers:
+    mode: nonswitching
+  quantity: current_active
+  record: "{\"id\":\"fact:TPS54560BDDA:current_active:b61edba5\",\"claim\":\"TPS54560BDDA\
+    \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, TA=25C\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 0.000146, max 0.000175 A\",\"at\":null},{\"kind\":\"units\",\"by\"\
+    :\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"\
+    couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"\
+    kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"\
+    company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 146 \xB5A, inside\
+    \ at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\",\"\
+    at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Operating: nonswitching supply current: TYP 146 \u03BCA, MAX 175 \u03BCA; FB\
+    \ = 0.9 V, TA = 25\xB0C. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE\
+    \ (VIN PIN), Operating: nonswitching supply current row.); the claim: TPS54560BDDA\
+    \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, TA=25C (read from\
+    \ TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 146 \xB5A, inside at most 175\
+    \ \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: A
+  verified: confirmed
+- conditions:
+    FB: 0.9V
+    temp: TA=25C
+  confidence: 0.0
+  hi: 0.000175
+  lo: null
+  nominal: 0.000146
+  page: 5
+  qualifiers:
+    mode: nonswitching
+  quantity: current_active
+  record: "{\"id\":\"fact:TPS54560BDDA:current_active:89e492e4\",\"claim\":\"TPS54560BDDA\
+    \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, temp=TA=25C\",\"\
+    kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 0.000146, max 0.000175 A\",\"at\":null},{\"kind\":\"units\",\"by\"\
+    :\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"\
+    couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"\
+    kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"\
+    company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 146 \xB5A, inside\
+    \ at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\",\"\
+    at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Operating: nonswitching supply current: TYP 146 \u03BCA, MAX 175 \u03BCA; FB\
+    \ = 0.9 V, TA = 25\xB0C. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE\
+    \ (VIN PIN), Operating: nonswitching supply current row.); the claim: TPS54560BDDA\
+    \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, temp=TA=25C (read\
+    \ from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 146 \xB5A, inside at most 175\
+    \ \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: A
+  verified: confirmed
+- conditions:
+    EN: 0V
+    temp: 25C
+    vin: 4.5V to 60V
+  confidence: 0.0
+  hi: 4.5e-06
+  lo: null
+  nominal: 2.25e-06
+  page: 5
+  qualifiers:
+    mode: shutdown
+  quantity: current_idle
+  record: "{\"id\":\"fact:TPS54560BDDA:current_idle:a6b21f4e\",\"claim\":\"TPS54560BDDA\
+    \ current_idle is typ 2.25e-06, max 4.5e-06 A at EN=0V, temp=25C, vin=4.5V to\
+    \ 60V\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 2.25e-06, max 4.5e-06 A\",\"at\":null},{\"kind\":\"units\",\"by\"\
+    :\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"\
+    couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"\
+    kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"\
+    company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 2.25 \xB5A, inside\
+    \ at most 4.5 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\",\"\
+    at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Shutdown supply current: TYP 2.25 \u03BCA, MAX 4.5 \u03BCA; EN = 0 V, 25\xB0\
+    C, 4.5 V \u2264 VIN \u2264 60 V. (Page 5, \xA76.5 Electrical Characteristics,\
+    \ SUPPLY VOLTAGE (VIN PIN), Shutdown supply current row.); the claim: TPS54560BDDA\
+    \ current_idle is typ 2.25e-06, max 4.5e-06 A at EN=0V, temp=25C, vin=4.5V to\
+    \ 60V (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 2.25 \xB5A, inside at most 4.5\
+    \ \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: A
+  verified: confirmed
+- conditions:
+    package: DDA (HSOIC)
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 8.0
+  page: 4
+  qualifiers: {}
+  quantity: pin_count
+  record: "{\"id\":\"fact:TPS54560BDDA:pin_count:3c67f44a\",\"claim\":\"TPS54560BDDA\
+    \ pin_count is typ 8  at package=DDA (HSOIC)\",\"kind\":\"value\",\"origin\":{\"\
+    by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\"\
+    ,\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 4\",\"checks\":[{\"\
+    kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows typ 8 \",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ the claim gives no unit.\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
+    :\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"\
+    agrees\",\"detail\":\"TPS54560BDDA.pdf says The thermal-information column identifies\
+    \ TPS54560B, DDA (HSOIC), 8 PINS. (Page 4, \xA76.4 Thermal Information, device/package\
+    \ column heading.); the claim: TPS54560BDDA pin_count is typ 8  at package=DDA\
+    \ (HSOIC) (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: the claim gives no unit.\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: ''
+  verified: confirmed
+- conditions:
+    parameter: Operating junction temperature
+    table: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: 150.0
+  lo: -40.0
+  nominal: null
+  page: 4
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:4bb00852\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at table=Absolute Maximum Ratings, parameter=Operating\
+    \ junction temperature\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from TPS54560BDDA.pdf page 4\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"couldnt_run\",\"detail\":\"min -40, max 150 C appears on several pages\
+    \ of TPS54560BDDA.pdf; the read cited page 4, so which one is unclear\",\"at\"\
+    :null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says Operating junction temperature: MIN \u2013\
+    40\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings, Operating junction\
+    \ temperature row, MIN and MAX cells.); the claim: TPS54560BDDA temp_max is min\
+    \ -40, max 150 C at table=Absolute Maximum Ratings, parameter=Operating junction\
+    \ temperature (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
+    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
+    :0},\"history\":[{\"at\":null,\"text\":\"unverified: Nothing to compare: no unit\
+    \ is expected.\"},{\"at\":null,\"text\":\"unverified \u2192 likely: TPS54560BDDA.pdf\
+    \ says Operating junction temperature: MIN \u201340\xB0C, MAX 150\xB0C. (Page\
+    \ 4, \xA76.1 Absolute Maximum Ratings, Operating junction temperature row, MIN\
+    \ and MAX cells.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at table=Absolute\
+    \ Maximum Ratings, parameter=Operating junction temperature (read from TPS54560BDDA.pdf\
+    \ page 4)\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: wrong_page
+- conditions:
+    parameter: Storage temperature range, Tstg
+    table: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: 150.0
+  lo: -65.0
+  nominal: null
+  page: 4
+  qualifiers:
+    measured_on: storage
+  quantity: temp_max
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:9272603f\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -65, max 150 C at table=Absolute Maximum Ratings, parameter=Storage\
+    \ temperature range, Tstg\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"\
+    name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"\
+    basis\":\"read from TPS54560BDDA.pdf page 4\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"disagrees\",\"detail\":\"min -65, max 150 C is on no page of\
+    \ TPS54560BDDA.pdf; the read cited page 4\",\"at\":null},{\"kind\":\"units\",\"\
+    by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\"\
+    :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Storage temperature range, Tstg: MIN \u201365\xB0C, MAX 150\xB0C. (Page 4, \xA7\
+    6.1 Absolute Maximum Ratings, Storage temperature range, Tstg row, MIN and MAX\
+    \ cells.); the claim: TPS54560BDDA temp_max is min -65, max 150 C at table=Absolute\
+    \ Maximum Ratings, parameter=Storage temperature range, Tstg (read from TPS54560BDDA.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and read the value\"\
+    ,\"outcomes\":[\"the claimed value is there: it stands\",\"another value is there:\
+    \ correct it\"],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"contradicted: Nothing to compare: no unit is expected.\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: not_found
+- conditions:
+    source: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: 150.0
+  lo: -40.0
+  nominal: null
+  page: 4
+  qualifiers:
+    measured_on: junction
+    mode: operating
+  quantity: temp_max
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:4410793e\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at source=Absolute Maximum Ratings\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"min -40, max 150 C appears\
+    \ on several pages of TPS54560BDDA.pdf; the read cited page 4, so which one is\
+    \ unclear\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says Operating junction temperature: MIN \u2013\
+    40\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings, Operating junction\
+    \ temperature row.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at\
+    \ source=Absolute Maximum Ratings (read from TPS54560BDDA.pdf page 4)\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"\
+    the claimed value is there: it stands\",\"another value is there: correct it\"\
+    ],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the\
+    \ unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
+    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says Operating junction temperature:\
+    \ MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings,\
+    \ Operating junction temperature row.); the claim: TPS54560BDDA temp_max is min\
+    \ -40, max 150 C at source=Absolute Maximum Ratings (read from TPS54560BDDA.pdf\
+    \ page 4)\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: wrong_page
+- conditions:
+    source: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: 150.0
+  lo: -65.0
+  nominal: null
+  page: 4
+  qualifiers:
+    measured_on: storage
+  quantity: temp_max
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:8ea966d0\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -65, max 150 C at source=Absolute Maximum Ratings\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"disagrees\",\"detail\":\"min -65, max 150 C is\
+    \ on no page of TPS54560BDDA.pdf; the read cited page 4\",\"at\":null},{\"kind\"\
+    :\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"\
+    result\":\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\"\
+    ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Storage temperature range, Tstg: MIN \u201365\xB0C, MAX 150\xB0C. (Page 4, \xA7\
+    6.1 Absolute Maximum Ratings, Storage temperature range, Tstg row.); the claim:\
+    \ TPS54560BDDA temp_max is min -65, max 150 C at source=Absolute Maximum Ratings\
+    \ (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted: Nothing to compare:\
+    \ no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: not_found
+- conditions:
+    table: Recommended Operating Conditions
+  confidence: 0.0
+  hi: 150.0
+  lo: -40.0
+  nominal: null
+  page: 4
+  qualifiers:
+    measured_on: junction
+    mode: operating
+  quantity: temp_max
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:6e848be1\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at table=Recommended Operating Conditions\",\"\
+    kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"min -40, max 150 C appears\
+    \ on several pages of TPS54560BDDA.pdf; the read cited page 4, so which one is\
+    \ unclear\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says TJ, Junction Temperature: MIN \u201340\xB0\
+    C, MAX 150\xB0C. (Page 4, \xA76.3 Recommended Operating Conditions, TJ Junction\
+    \ Temperature row.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at\
+    \ table=Recommended Operating Conditions (read from TPS54560BDDA.pdf page 4)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\"\
+    :[\"the claimed value is there: it stands\",\"another value is there: correct\
+    \ it\"],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check\
+    \ the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit:\
+    \ correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
+    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says TJ, Junction Temperature:\
+    \ MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.3 Recommended Operating Conditions,\
+    \ TJ Junction Temperature row.); the claim: TPS54560BDDA temp_max is min -40,\
+    \ max 150 C at table=Recommended Operating Conditions (read from TPS54560BDDA.pdf\
+    \ page 4)\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: wrong_page
+- conditions:
+    package: DDA (HSOIC) 8 pins
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 42.0
+  page: 4
+  qualifiers: {}
+  quantity: theta_ja
+  record: "{\"id\":\"fact:TPS54560BDDA:theta_ja:5d95fdef\",\"claim\":\"TPS54560BDDA\
+    \ theta_ja is typ 42 C/W at package=DDA (HSOIC) 8 pins\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\"\
+    :\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 4\",\"\
+    checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows typ 42 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says R\u03B8JA, Junction-to-ambient\
+    \ thermal resistance: 42\xB0C/W, under TPS54560B, DDA (HSOIC), 8 PINS. The table\
+    \ does not label the value TYP. (Page 4, \xA76.4 Thermal Information, R\u03B8\
+    JA row and device/package column heading.); the claim: TPS54560BDDA theta_ja is\
+    \ typ 42 C/W at package=DDA (HSOIC) 8 pins (read from TPS54560BDDA.pdf page 4)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: C/W
+  verified: confirmed
+- conditions:
+    applies_to: internal voltage reference 0.8 V
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 1.0
+  page: 1
+  qualifiers: {}
+  quantity: tolerance_pct
+  record: "{\"id\":\"fact:TPS54560BDDA:tolerance_pct:5a23e60d\",\"claim\":\"TPS54560BDDA\
+    \ tolerance_pct is typ 1 % at applies_to=internal voltage reference 0.8 V\",\"\
+    kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 1\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of TPS54560BDDA.pdf\
+    \ shows typ 1 %\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says \u201C0.8 V 1% Internal voltage\
+    \ reference.\u201D (Page 1, \xA71 Features, internal voltage reference bullet.);\
+    \ the claim: TPS54560BDDA tolerance_pct is typ 1 % at applies_to=internal voltage\
+    \ reference 0.8 V (read from TPS54560BDDA.pdf page 1)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: '%'
+  verified: confirmed
+- conditions:
+    applies_to: voltage reference
+    note: derived from 0.792/0.8/0.808 V limits; not printed as percent
+  confidence: 0.0
+  hi: 1.0
+  lo: -1.0
+  nominal: null
+  page: 5
+  qualifiers: {}
+  quantity: tolerance_pct
+  record: "{\"id\":\"fact:TPS54560BDDA:tolerance_pct:dcbb9762\",\"claim\":\"TPS54560BDDA\
+    \ tolerance_pct is min -1, max 1 % at applies_to=voltage reference, note=derived\
+    \ from 0.792/0.8/0.808 V limits; not printed as percent\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\"\
+    :\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 5\",\"\
+    checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows min -1, max 1 %\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"\
+    who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\"\
+    ,\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\"\
+    :\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf says Voltage\
+    \ reference: MIN 0.792 V, TYP 0.8 V, MAX 0.808 V. This row does not print percentage\
+    \ limits. (Page 5, \xA76.5 Electrical Characteristics, VOLTAGE REFERENCE, Voltage\
+    \ reference row.); the claim: TPS54560BDDA tolerance_pct is min -1, max 1 % at\
+    \ applies_to=voltage reference, note=derived from 0.792/0.8/0.808 V limits; not\
+    \ printed as percent (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second\
+    \ reader check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader\
+    \ disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\"\
+    :\"contradicted\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: TPS54560BDDA.pdf says Voltage\
+    \ reference: MIN 0.792 V, TYP 0.8 V, MAX 0.808 V. This row does not print percentage\
+    \ limits. (Page 5, \xA76.5 Electrical Characteristics, VOLTAGE REFERENCE, Voltage\
+    \ reference row.); the claim: TPS54560BDDA tolerance_pct is min -1, max 1 % at\
+    \ applies_to=voltage reference, note=derived from 0.792/0.8/0.808 V limits; not\
+    \ printed as percent (read from TPS54560BDDA.pdf page 5)\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: '%'
+  verified: confirmed
+- conditions:
+    min: VO + VDO
+    parameter: VIN supply input voltage
+    table: Recommended Operating Conditions
+  confidence: 0.0
+  hi: 60.0
+  lo: null
+  nominal: null
+  page: 4
+  qualifiers:
+    mode: operating
+  quantity: v_in_max
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_max:c902fef8\",\"claim\":\"TPS54560BDDA\
+    \ v_in_max is max 60 V at table=Recommended Operating Conditions, parameter=VIN\
+    \ supply input voltage, min=VO + VDO\",\"kind\":\"value\",\"origin\":{\"by\":\"\
+    model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\"\
+    :null},\"basis\":\"read from TPS54560BDDA.pdf page 4\",\"checks\":[{\"kind\":\"\
+    source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"\
+    company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf shows\
+    \ max 60 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says VIN, Supply input voltage: MIN VO + VDO, MAX\
+    \ 60 V. (Page 4, \xA76.3 Recommended Operating Conditions, VIN Supply input voltage\
+    \ row.); the claim: TPS54560BDDA v_in_max is max 60 V at table=Recommended Operating\
+    \ Conditions, parameter=VIN supply input voltage, min=VO + VDO (read from TPS54560BDDA.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    parameter: Operating input voltage
+    table: Electrical Characteristics
+  confidence: 0.0
+  hi: 60.0
+  lo: null
+  nominal: null
+  page: 5
+  qualifiers:
+    mode: operating
+  quantity: v_in_max
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_max:27f30ee0\",\"claim\":\"TPS54560BDDA\
+    \ v_in_max is max 60 V at table=Electrical Characteristics, parameter=Operating\
+    \ input voltage\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"\
+    anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\":\"\
+    read from TPS54560BDDA.pdf page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"\
+    code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf shows max 60 V\",\"\
+    at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says Operating input voltage: MIN 4.5 V, MAX 60\
+    \ V. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE (VIN PIN), Operating\
+    \ input voltage row.); the claim: TPS54560BDDA v_in_max is max 60 V at table=Electrical\
+    \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    source: Electrical Characteristics, operating input voltage
+  confidence: 0.0
+  hi: 60.0
+  lo: null
+  nominal: null
+  page: 5
+  qualifiers:
+    mode: operating
+  quantity: v_in_max
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_max:f55cac67\",\"claim\":\"TPS54560BDDA\
+    \ v_in_max is max 60 V at source=Electrical Characteristics, operating input voltage\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows max 60 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating input voltage: MIN 4.5\
+    \ V, MAX 60 V. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE (VIN\
+    \ PIN), Operating input voltage row.); the claim: TPS54560BDDA v_in_max is max\
+    \ 60 V at source=Electrical Characteristics, operating input voltage (read from\
+    \ TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    source: Recommended Operating Conditions; min is VO + VDO
+  confidence: 0.0
+  hi: 60.0
+  lo: null
+  nominal: null
+  page: 4
+  qualifiers:
+    mode: operating
+  quantity: v_in_max
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_max:29f9656b\",\"claim\":\"TPS54560BDDA\
+    \ v_in_max is max 60 V at source=Recommended Operating Conditions; min is VO +\
+    \ VDO\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows max 60 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says VIN, Supply input voltage: MIN\
+    \ VO + VDO, MAX 60 V. (Page 4, \xA76.3 Recommended Operating Conditions, VIN Supply\
+    \ input voltage row.); the claim: TPS54560BDDA v_in_max is max 60 V at source=Recommended\
+    \ Operating Conditions; min is VO + VDO (read from TPS54560BDDA.pdf page 4)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    parameter: Operating input voltage
+    table: Electrical Characteristics
+  confidence: 0.0
+  hi: null
+  lo: 4.5
+  nominal: null
+  page: 5
+  qualifiers:
+    mode: operating
+  quantity: v_in_min
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_min:27f30ee0\",\"claim\":\"TPS54560BDDA\
+    \ v_in_min is min 4.5 V at table=Electrical Characteristics, parameter=Operating\
+    \ input voltage\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"\
+    anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\":\"\
+    read from TPS54560BDDA.pdf page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"\
+    code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf shows min 4.5 V\"\
+    ,\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"agrees\"\
+    ,\"detail\":\"TPS54560BDDA.pdf says Operating input voltage: MIN 4.5 V, MAX 60\
+    \ V. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE (VIN PIN), Operating\
+    \ input voltage row.); the claim: TPS54560BDDA v_in_min is min 4.5 V at table=Electrical\
+    \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    source: Electrical Characteristics, operating input voltage
+  confidence: 0.0
+  hi: null
+  lo: 4.5
+  nominal: null
+  page: 5
+  qualifiers:
+    mode: operating
+  quantity: v_in_min
+  record: "{\"id\":\"fact:TPS54560BDDA:v_in_min:f55cac67\",\"claim\":\"TPS54560BDDA\
+    \ v_in_min is min 4.5 V at source=Electrical Characteristics, operating input\
+    \ voltage\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows min 4.5 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating input voltage: MIN 4.5\
+    \ V, MAX 60 V. (Page 5, \xA76.5 Electrical Characteristics, SUPPLY VOLTAGE (VIN\
+    \ PIN), Operating input voltage row.); the claim: TPS54560BDDA v_in_min is min\
+    \ 4.5 V at source=Electrical Characteristics, operating input voltage (read from\
+    \ TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    source: Recommended Operating Conditions
+  confidence: 0.0
+  hi: 58.8
+  lo: 0.8
+  nominal: null
+  page: 4
+  qualifiers:
+    form: adjustable
+  quantity: v_out
+  record: "{\"id\":\"fact:TPS54560BDDA:v_out:11a74c63\",\"claim\":\"TPS54560BDDA v_out\
+    \ is min 0.8, max 58.8 V at source=Recommended Operating Conditions\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows min 0.8, max 58.8 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\"\
+    ,\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\"\
+    :\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says VO, Output\
+    \ voltage: MIN 0.8 V, MAX 58.8 V. (Page 4, \xA76.3 Recommended Operating Conditions,\
+    \ VO Output voltage row.); the claim: TPS54560BDDA v_out is min 0.8, max 58.8\
+    \ V at source=Recommended Operating Conditions (read from TPS54560BDDA.pdf page\
+    \ 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    table: Recommended Operating Conditions
+  confidence: 0.0
+  hi: 58.8
+  lo: 0.8
+  nominal: null
+  page: 4
+  qualifiers:
+    form: adjustable
+  quantity: v_out
+  record: "{\"id\":\"fact:TPS54560BDDA:v_out:db171126\",\"claim\":\"TPS54560BDDA v_out\
+    \ is min 0.8, max 58.8 V at table=Recommended Operating Conditions\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows min 0.8, max 58.8 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\"\
+    ,\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\"\
+    :\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says VO, Output\
+    \ voltage: MIN 0.8 V, MAX 58.8 V. (Page 4, \xA76.3 Recommended Operating Conditions,\
+    \ VO Output voltage row.); the claim: TPS54560BDDA v_out is min 0.8, max 58.8\
+    \ V at table=Recommended Operating Conditions (read from TPS54560BDDA.pdf page\
+    \ 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    TJ: -40C to 150C
+  confidence: 0.0
+  hi: 0.808
+  lo: 0.792
+  nominal: 0.8
+  page: 5
+  qualifiers: {}
+  quantity: v_ref
+  record: "{\"id\":\"fact:TPS54560BDDA:v_ref:46971de7\",\"claim\":\"TPS54560BDDA v_ref\
+    \ is typ 0.8, min 0.792, max 0.808 V at TJ=-40C to 150C\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"company\"\
+    :\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 5\",\"\
+    checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 0.8, min 0.792, max 0.808 V\",\"at\":null},{\"kind\":\"units\",\"\
+    by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\"\
+    :null},{\"kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 800 mV, inside\
+    \ 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\",\"at\"\
+    :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Voltage reference: MIN 0.792 V, TYP 0.8 V, MAX 0.808 V. Table conditions: TJ\
+    \ = \u201340\xB0C to +150\xB0C, VIN = 4.5 V to 60 V, unless otherwise noted. (Page\
+    \ 5, \xA76.5 Electrical Characteristics, table conditions line and VOLTAGE REFERENCE,\
+    \ Voltage reference row.); the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792,\
+    \ max 0.808 V at TJ=-40C to 150C (read from TPS54560BDDA.pdf page 5)\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
+    \ 800 mV, inside 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\"\
+    }]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    temp: TJ -40C to 150C
+    vin: 4.5V to 60V
+  confidence: 0.0
+  hi: 0.808
+  lo: 0.792
+  nominal: 0.8
+  page: 5
+  qualifiers: {}
+  quantity: v_ref
+  record: "{\"id\":\"fact:TPS54560BDDA:v_ref:d2f28cc0\",\"claim\":\"TPS54560BDDA v_ref\
+    \ is typ 0.8, min 0.792, max 0.808 V at temp=TJ -40C to 150C, vin=4.5V to 60V\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf\
+    \ page 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 0.8, min 0.792, max 0.808 V\",\"at\":null},{\"kind\":\"units\",\"\
+    by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\"\
+    :null},{\"kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 800 mV, inside\
+    \ 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\",\"at\"\
+    :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Voltage reference: MIN 0.792 V, TYP 0.8 V, MAX 0.808 V. Table conditions: TJ\
+    \ = \u201340\xB0C to +150\xB0C, VIN = 4.5 V to 60 V, unless otherwise noted. (Page\
+    \ 5, \xA76.5 Electrical Characteristics, table conditions line and VOLTAGE REFERENCE,\
+    \ Voltage reference row.); the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792,\
+    \ max 0.808 V at temp=TJ -40C to 150C, vin=4.5V to 60V (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: The claim says 800 mV, inside 792 to 808 mV from the same row's\
+    \ min and max in TPS54560BDDA.pdf.\"}]}"
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+manufacturer: Texas Instruments
+model: anthropic/claude-opus-5-5
+mpn: TPS54560BDDA
+observations:
+- conditions: {}
+  label: Absolute maximum BOOT
+  page: 4
+  unit: V
+  value: 73.0
+- conditions: {}
+  label: Absolute maximum BOOT voltage
+  page: 4
+  unit: V
+  value: 73.0
+- conditions: {}
+  label: Absolute maximum BOOT-SW
+  page: 4
+  unit: V
+  value: 8.0
+- conditions: {}
+  label: Absolute maximum BOOT-SW voltage
+  page: 4
+  unit: V
+  value: 8.0
+- conditions: {}
+  label: Absolute maximum EN
+  page: 4
+  unit: V
+  value: 8.4
+- conditions: {}
+  label: Absolute maximum EN voltage
+  page: 4
+  unit: V
+  value: 8.4
+- conditions:
+    min: -0.6V
+  label: Absolute maximum VSW
+  page: 4
+  unit: V
+  value: 65.0
+- conditions:
+    min: -0.3V
+  label: Absolute maximum input voltage VIN
+  page: 4
+  unit: V
+  value: 65.0
+- conditions:
+    max: 9.5A
+    min: 6.3A
+    open_loop: 'yes'
+  label: Current limit (typ)
+  page: 5
+  unit: A
+  value: 7.9
+- conditions:
+    max: 9.5A
+    min: 6.3A
+  label: Current limit (typ)
+  page: 5
+  unit: A
+  value: 7.9
+- conditions: {}
+  label: ESD CDM
+  page: 4
+  unit: V
+  value: 500.0
+- conditions: {}
+  label: ESD HBM
+  page: 4
+  unit: V
+  value: 2000.0
+- conditions: {}
+  label: Enable threshold voltage (typ)
+  page: 5
+  unit: V
+  value: 1.2
+- conditions:
+    BOOT-SW: 6V
+    VIN: 12V
+    max: 0.19 ohm
+  label: High-side MOSFET on-resistance (typ)
+  page: 5
+  unit: ohm
+  value: 0.092
+- conditions:
+    BOOT-SW: 6V
+    vin: 12V
+  label: High-side MOSFET on-resistance (typ)
+  page: 5
+  unit: ohm
+  value: 0.092
+- conditions:
+    max: 4.48V
+    min: 4.1V
+  label: Internal undervoltage lockout threshold rising (typ)
+  page: 5
+  unit: V
+  value: 4.3
+- conditions: {}
+  label: Internal undervoltage lockout threshold rising (typ)
+  page: 5
+  unit: V
+  value: 4.3
+- conditions: {}
+  label: Junction-to-board thermal resistance
+  page: 4
+  unit: C/W
+  value: 23.4
+- conditions: {}
+  label: Junction-to-case (bottom) thermal resistance
+  page: 4
+  unit: C/W
+  value: 3.6
+- conditions: {}
+  label: Junction-to-case (top) thermal resistance
+  page: 4
+  unit: C/W
+  value: 45.8
+- conditions: {}
+  label: Output current (recommended) max
+  page: 4
+  unit: A
+  value: 5.0
+- conditions: {}
+  label: Output current IO (recommended max)
+  page: 4
+  unit: A
+  value: 5.0
+- conditions:
+    min: -40C
+  label: Recommended junction temperature max
+  page: 4
+  unit: C
+  value: 150.0
+- conditions: {}
+  label: "R\u03B8JB Junction-to-board thermal resistance"
+  page: 4
+  unit: C/W
+  value: 23.4
+- conditions: {}
+  label: "R\u03B8JC(bot) Junction-to-case (bottom) thermal resistance"
+  page: 4
+  unit: C/W
+  value: 3.6
+- conditions:
+    max: 550kHz
+    min: 450kHz
+  label: Switching frequency RT=200k (typ)
+  page: 5
+  unit: Hz
+  value: 500000.0
+- conditions: {}
+  label: Switching frequency RT=200k (typ)
+  page: 5
+  unit: Hz
+  value: 500000.0
+- conditions: {}
+  label: Switching frequency range using RT mode max
+  page: 5
+  unit: Hz
+  value: 2500000.0
+- conditions: {}
+  label: Thermal shutdown
+  page: 5
+  unit: C
+  value: 176.0
+part_class: step-down DC/DC converter (buck regulator)
+vocab: 710670161df3
