@@ -1,0 +1,20 @@
+{
+  "bom": "8f76a4a0f6b9528afefb2a23019a0031f717c06a89378d9a9fa0254ef85c4aa7",
+  "bom_fields": "Reference,Value,Footprint,MPN,${DNP}",
+  "kicad_cli": "10.0.7",
+  "netlist": "4061571dcc1e64d1788c700bfaff2006f02db12c25a95ee9559fe6b29d3c3e29",
+  "sources": {
+    "RS485.kicad_sch": "3d7e1cc2810179ece46deb0eaaa86c0951c88c8fbdf9772c63544b89cb2c704f",
+    "lighting.kicad_sch": "8cc8dbda996502fefa423490d1990b316e718b65a1a9fa269711f0200e922087",
+    "microcontroller.kicad_sch": "4d088e1db055e363d38eae0690b5b32a8f0a67e68b0e57e9fcc20c576e4ee437",
+    "mobo.kicad_pro": "4a77da8bf08412d2ef3725610da19add6dbf131be7bc563ef5d110ace6048c8f",
+    "mobo.kicad_sch": "f53649ee580c0673637ab92b2f387f8f95efba54e5b3a9f8fa01167a7f815d7a",
+    "mosfet.kicad_sch": "9dc6724fe9cfab805649d70efe4827110490295ad5e6fa5684fe432b9ebc4d26",
+    "motor_driver.kicad_sch": "cca0118f7ab5709b1fed3262c18e5e6a242279350114da585ead64b754b2d0f7",
+    "power.kicad_sch": "a65b3cec443b535ea732ca8316150cdcc640c3c2da2cbe809d848020e1dcc354",
+    "switches.kicad_sch": "816dc4b9d1086cfe875399355a943d090f430a3befcf098779345e8739d8939c",
+    "usb.kicad_sch": "f161de4dc443bcb01295ab1bb886948b4fa15eb8439c92154c8f29619885e43f",
+    "vacuum_sensors.kicad_sch": "6bc031aa594c467b175a309440e97b3a13f5506253ce6a726c70171a460b0830"
+  },
+  "version": 1
+}

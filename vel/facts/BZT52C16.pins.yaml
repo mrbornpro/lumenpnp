@@ -1,0 +1,13 @@
+reads:
+- candidates:
+  - SOD-123F
+  footprint: Diode_SMD:D_SOD-123
+  package: ''
+  pad_count: 2
+  pads:
+  - '1'
+  - '2'
+  read_key: 84e4365df19b5d30bf56399ae9fc39dd0f354a0a2a31de32ebceec2fa2ffedae
+  rows: []
+  sha256: ada2fc2ecf5e0524bdba71978c0eac7c1500feb81310b57e315e0b347c6c6c5d
+  told: ''
