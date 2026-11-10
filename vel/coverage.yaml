@@ -1,0 +1,100 @@
+- id: CV-1
+  quantity: voltage
+  why: 'goal REQ-001: 24V input rail within PSU regulation'
+  source: goal
+  refs:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  priority: must
+  derived: true
+- id: CV-2
+  quantity: current_idle
+  why: 'goal REQ-004: motherboard idle current draw on 24V input'
+  source: goal
+  refs:
+  - REQ-004
+  priority: must
+  derived: true
+- id: CV-3
+  quantity: mass
+  why: 'goal REQ-005: total machine mass'
+  source: goal
+  refs:
+  - REQ-005
+  priority: must
+  derived: true
+- id: CV-4
+  quantity: dimension
+  why: 'goal REQ-006: machine depth fits a 71cm bench'
+  source: goal
+  refs:
+  - REQ-006
+  priority: must
+  derived: true
+- id: CV-5
+  quantity: resistance
+  why: 'goal REQ-007: harness conductor continuity end-to-end'
+  source: goal
+  refs:
+  - REQ-007
+  priority: must
+  derived: true
+- id: CV-6
+  quantity: torque
+  why: 'goal REQ-008: frame v-slot joint fastener torque'
+  source: goal
+  refs:
+  - REQ-008
+  priority: must
+  derived: true
+- id: CV-7
+  quantity: how voltage is checked
+  why: 'goal REQ-001: 24V input rail within PSU regulation'
+  source: design
+  refs:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  derived: true
+  kind: decision
+- id: CV-8
+  quantity: how current_idle is checked
+  why: 'goal REQ-004: motherboard idle current draw on 24V input'
+  source: design
+  refs:
+  - REQ-004
+  derived: true
+  kind: decision
+- id: CV-9
+  quantity: how mass is checked
+  why: 'goal REQ-005: total machine mass'
+  source: design
+  refs:
+  - REQ-005
+  derived: true
+  kind: decision
+- id: CV-10
+  quantity: how dimension is checked
+  why: 'goal REQ-006: machine depth fits a 71cm bench'
+  source: design
+  refs:
+  - REQ-006
+  derived: true
+  kind: decision
+- id: CV-11
+  quantity: how resistance is checked
+  why: 'goal REQ-007: harness conductor continuity end-to-end'
+  source: design
+  refs:
+  - REQ-007
+  derived: true
+  kind: decision
+- id: CV-12
+  quantity: how torque is checked
+  why: 'goal REQ-008: frame v-slot joint fastener torque'
+  source: design
+  refs:
+  - REQ-008
+  derived: true
+  kind: decision
