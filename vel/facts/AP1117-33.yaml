@@ -1,9 +1,34 @@
 absent: []
-at: '2026-10-10T22:37:50.001185+00:00'
+at: '2026-11-11T05:56:22.275106+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: datasheets/AP1117-33.pdf
 doc_sha256: 102b3e3e42ab8cd5fe8ee89420706a2b33d8a0093358945b8fc68459929c90b2
 facts:
+- conditions:
+    rating: Output current capability
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 1.0
+  page: 1
+  qualifiers:
+    mode: operating
+  quantity: i_out_max
+  record: '{"id":"fact:AP1117-33:i_out_max:b66f98b7","claim":"AP1117-33 i_out_max
+    is typ 1 A at rating=Output current capability","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of AP1117-33.pdf shows typ 1 A","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: A
+  verified: confirmed
 - conditions:
     note: tab is VOUT
     package: SOT223
@@ -22,13 +47,93 @@ facts:
     says The SOT223 top-view diagram shows three numbered pins: 1 Adj (GND), 2 VOUT,
     and 3 VIN. It states \"Tab is VOUT.\" (Page 1, Pin Assignments, SOT223 top-view
     diagram and caption beneath it.); the claim: AP1117-33 pin_count is typ 3  at
-    package=SOT223, note=tab is VOUT (read from AP1117-33.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    package=SOT223, note=tab is VOUT (read from AP1117-33.pdf page 1)","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     AP1117-33.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: the claim gives no unit."}]}'
   review: pending
   reviewed_at: null
   unit: ''
+  verified: confirmed
+- conditions:
+    package: SOT223
+    tab: VOUT
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 3.0
+  page: 2
+  qualifiers: {}
+  quantity: pin_count
+  record: '{"id":"fact:AP1117-33:pin_count:96ebe615","claim":"AP1117-33 pin_count
+    is typ 3 1 at package=SOT223, tab=VOUT","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    2 of AP1117-33.pdf shows typ 3 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 2 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: '1'
+  verified: confirmed
+- conditions:
+    rating: Absolute Maximum Ratings
+  confidence: 0.0
+  hi: 150.0
+  lo: null
+  nominal: null
+  page: 3
+  qualifiers:
+    measured_on: junction
+  quantity: temp_max
+  record: '{"id":"fact:AP1117-33:temp_max:1b5d89fa","claim":"AP1117-33 temp_max is
+    max 150 C at rating=Absolute Maximum Ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    3 of AP1117-33.pdf shows max 150 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
+  verified: confirmed
+- conditions:
+    rating: Recommended Operating Conditions
+    variant: AP1117
+  confidence: 0.0
+  hi: 125.0
+  lo: 0.0
+  nominal: null
+  page: 3
+  qualifiers:
+    measured_on: junction
+    mode: operating
+  quantity: temp_max
+  record: '{"id":"fact:AP1117-33:temp_max:cd3711dd","claim":"AP1117-33 temp_max is
+    min 0, max 125 C at rating=Recommended Operating Conditions, variant=AP1117","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    3 of AP1117-33.pdf shows min 0, max 125 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C
   verified: confirmed
 - conditions:
     table: Absolute Maximum Ratings
@@ -54,11 +159,14 @@ facts:
     C in the Rating column. This is an absolute maximum rating, not a typical value.\
     \ (Page 3, continuation of Absolute Maximum Ratings, TMJ / Maximum Junction Temperature\
     \ row, Rating and Unit columns.); the claim: AP1117-33 temp_max is typ 150 C at\
-    \ table=Absolute Maximum Ratings (read from AP1117-33.pdf page 3)\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\":[\"the\
-    \ unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
-    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ table=Absolute Maximum Ratings (read from AP1117-33.pdf page 3)\",\"at\":null},{\"\
+    kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
+    \ could not read AP1117-33.pdf for this; it tries again next compile\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
     \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
     }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
     explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
@@ -72,6 +180,37 @@ facts:
   review: pending
   reviewed_at: null
   unit: C
+  verified: confirmed
+- conditions:
+    air_flow: None
+    board: FR-4 substrate, single-sided PCB, 2oz copper
+    circuit: Control Circuitry/Power Transistor
+    package: SOT223
+    temp: 25C ambient
+    thermal_pad: 5mm x 5mm
+  confidence: 0.0
+  hi: null
+  lo: null
+  nominal: 107.0
+  page: 4
+  qualifiers: {}
+  quantity: theta_ja
+  record: '{"id":"fact:AP1117-33:theta_ja:a3c64f81","claim":"AP1117-33 theta_ja is
+    typ 107 C/W at package=SOT223, circuit=Control Circuitry/Power Transistor, board=FR-4
+    substrate, single-sided PCB, 2oz copper, thermal_pad=5mm x 5mm, air_flow=None,
+    temp=25C ambient","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    4 of AP1117-33.pdf shows typ 107 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: C/W
   verified: confirmed
 - conditions:
     board: FR-4 single sided, 2oz copper, 5mm x 5mm thermal pad, no air flow
@@ -101,16 +240,157 @@ facts:
     \ Junction-to-Ambient row, Typ and Unit columns; Note 9 below the table.); the\
     \ claim: AP1117-33 theta_ja is typ 107 C/W at package=SOT223, board=FR-4 single\
     \ sided, 2oz copper, 5mm x 5mm thermal pad, no air flow (read from AP1117-33.pdf\
-    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
-    would_settle\":[{\"action\":\"open AP1117-33.pdf page 4 and check the unit it\
-    \ gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"\
-    ],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"\
-    belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
-    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
-    \ Nothing to compare: no unit is expected.\"}]}"
+    \ page 4)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
+    :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
+    result\":\"couldnt_run\",\"detail\":\"a second reader could not read AP1117-33.pdf\
+    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AP1117-33.pdf page 4 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C/W
+  verified: confirmed
+- conditions:
+    rating: Absolute Maximum Ratings
+    temp: 25C ambient
+  confidence: 0.0
+  hi: 18.0
+  lo: null
+  nominal: null
+  page: 3
+  qualifiers: {}
+  quantity: v_in_max
+  record: '{"id":"fact:AP1117-33:v_in_max:10271292","claim":"AP1117-33 v_in_max is
+    max 18 V at rating=Absolute Maximum Ratings, temp=25C ambient","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    3 of AP1117-33.pdf shows max 18 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    scope: AP1117 family
+    source: 'Description: input supply for well-regulated outputs of 1.25V to 5.0V'
+  confidence: 0.0
+  hi: 18.0
+  lo: null
+  nominal: null
+  page: 1
+  qualifiers:
+    mode: operating
+  quantity: v_in_max
+  record: '{"id":"fact:AP1117-33:v_in_max:b07080b1","claim":"AP1117-33 v_in_max is
+    max 18 V at source=Description: input supply for well-regulated outputs of 1.25V
+    to 5.0V, scope=AP1117 family","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of AP1117-33.pdf shows max 18 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    rating: Absolute Maximum Ratings
+    temp: 25C ambient
+  confidence: 0.0
+  hi: null
+  lo: -0.3
+  nominal: null
+  page: 3
+  qualifiers: {}
+  quantity: v_in_min
+  record: '{"id":"fact:AP1117-33:v_in_min:10271292","claim":"AP1117-33 v_in_min is
+    min -0.3 V at rating=Absolute Maximum Ratings, temp=25C ambient","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    3 of AP1117-33.pdf shows min -0.3 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    scope: AP1117 family
+    source: 'Description: input supply for well-regulated outputs of 1.25V to 5.0V'
+  confidence: 0.0
+  hi: null
+  lo: 6.4
+  nominal: null
+  page: 1
+  qualifiers:
+    mode: operating
+  quantity: v_in_min
+  record: '{"id":"fact:AP1117-33:v_in_min:b07080b1","claim":"AP1117-33 v_in_min is
+    min 6.4 V at source=Description: input supply for well-regulated outputs of 1.25V
+    to 5.0V, scope=AP1117 family","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    1 of AP1117-33.pdf shows min 6.4 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    Nothing to compare: no unit is expected."}]}'
+  review: pending
+  reviewed_at: null
+  unit: V
+  verified: confirmed
+- conditions:
+    i_out: 0.01A
+    temp: 25C ambient
+    v_in: 4.8V to 12V
+    variant: AP1117-3.3
+  confidence: 0.0
+  hi: 3.365
+  lo: 3.235
+  nominal: 3.3
+  page: 3
+  qualifiers:
+    form: fixed
+    mode: operating
+  quantity: v_out
+  record: '{"id":"fact:AP1117-33:v_out:63ba63fe","claim":"AP1117-33 v_out is typ 3.3,
+    min 3.235, max 3.365 V at i_out=0.01A, temp=25C ambient, v_in=4.8V to 12V, variant=AP1117-3.3","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
+    from AP1117-33.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
+    3 of AP1117-33.pdf shows typ 3.3, min 3.235, max 3.365 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
+    to compare: no unit is expected.","at":null},{"kind":"plausibility","by":"code","who":"skanda.confidence.checks","company":null,"result":"agrees","detail":"The
+    claim says 3.3 V, inside 3.235 to 3.365 V from the same row''s min and max in
+    AP1117-33.pdf.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
+    second reader could not read AP1117-33.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    AP1117-33.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
+    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
+    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
+    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    The claim says 3.3 V, inside 3.235 to 3.365 V from the same row''s min and max
+    in AP1117-33.pdf."}]}'
+  review: pending
+  reviewed_at: null
+  unit: V
   verified: confirmed
 - conditions:
     iout: 10mA
@@ -144,14 +424,19 @@ facts:
     C, 4.8 V \u2264 VIN \u2264 12 V. (Page 3, Electrical Characteristics, Output Voltage\
     \ group, AP1117-3.3 row, Conditions, Min, Typ, Max, and Unit columns.); the claim:\
     \ AP1117-33 v_out is typ 3.3, min 3.235, max 3.365 V at variant=AP1117-3.3, iout=10mA,\
-    \ temp=25C, vin=4.8V to 12V (read from AP1117-33.pdf page 3)\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\":[\"the\
-    \ unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"\
-    standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\"\
-    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
-    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 3.3\
-    \ V, inside 3.235 to 3.365 V from the same row's min and max in AP1117-33.pdf.\"\
+    \ temp=25C, vin=4.8V to 12V (read from AP1117-33.pdf page 3)\",\"at\":null},{\"\
+    kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
+    \ could not read AP1117-33.pdf for this; it tries again next compile\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
+    \ 3.3 V, inside 3.235 to 3.365 V from the same row's min and max in AP1117-33.pdf.\"\
     }]}"
   review: pending
   reviewed_at: null
@@ -189,28 +474,80 @@ facts:
     \ = 1.5 V, IO = 10 mA. (Page 3, Electrical Characteristics, Reference Voltage\
     \ / AP1117-ADJ row, Conditions, Min, Typ, Max, and Unit columns.); the claim:\
     \ AP1117-33 v_ref is typ 1.25, min 1.225, max 1.275 V at variant=AP1117-ADJ, vin_minus_vout=1.5V,\
-    \ io=10mA, temp=25C (read from AP1117-33.pdf page 3)\",\"at\":null}],\"supports\"\
-    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AP1117-33.pdf\
-    \ page 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
-    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
-    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
-    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: The claim says 1.25 V, inside 1.225 to 1.275\
-    \ V from the same row's min and max in AP1117-33.pdf.\"}]}"
+    \ io=10mA, temp=25C (read from AP1117-33.pdf page 3)\",\"at\":null},{\"kind\"\
+    :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
+    \ could not read AP1117-33.pdf for this; it tries again next compile\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open AP1117-33.pdf page 3 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
+    \ 1.25 V, inside 1.225 to 1.275 V from the same row's min and max in AP1117-33.pdf.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: V
   verified: confirmed
 manufacturer: Diodes Incorporated
-model: anthropic/claude-opus-5-5
+model: azure/gpt-6.1-sol
 mpn: AP1117-33
 observations:
+- conditions:
+    column: Minimum
+    temp: 25C ambient
+    v_in_minus_v_out: 5V
+  label: Current Limit
+  page: 4
+  unit: A
+  value: 1.1
 - conditions:
     vin_minus_vout: 5V
   label: Current Limit (min)
   page: 4
   unit: A
   value: 1.1
+- conditions:
+    column: Maximum
+    delta_v_out: 1% VOUT
+    i_out: 0.8A
+    temp: 0C to 125C junction
+  label: Dropout Voltage (VIN-VOUT)
+  page: 4
+  unit: V
+  value: 1.3
+- conditions:
+    column: Maximum
+    delta_v_out: 1% VOUT
+    i_out: 1A
+    temp: 0C to 125C junction
+    variant: AP1117
+  label: Dropout Voltage (VIN-VOUT)
+  page: 4
+  unit: V
+  value: 1.4
+- conditions:
+    column: Typical
+    delta_v_out: 1% VOUT
+    i_out: 0.8A
+    temp: 0C to 125C junction
+  label: Dropout Voltage (VIN-VOUT)
+  page: 4
+  unit: V
+  value: 1.2
+- conditions:
+    column: Typical
+    delta_v_out: 1% VOUT
+    i_out: 1A
+    temp: 0C to 125C junction
+    variant: AP1117
+  label: Dropout Voltage (VIN-VOUT)
+  page: 4
+  unit: V
+  value: 1.3
 - conditions:
     tj: 0C to 125C (AP1117I -40C to 125C)
     typ: 1.3V
@@ -226,12 +563,45 @@ observations:
   unit: V
   value: 1.3
 - conditions:
+    column: Maximum
+    i_out: 0.01A
+    temp: 25C ambient
+    v_in: VOUT + 1.5V < VIN < 12V
+  label: Line Regulation
+  page: 3
+  unit: '%'
+  value: 0.2
+- conditions:
     io: 10mA
     vin: VOUT+1.5V to 12V
   label: Line Regulation AP1117-XXX (max)
   page: 3
   unit: '%'
   value: 0.2
+- conditions:
+    column: Maximum
+    i_out: 0A to 1A
+    measurement: Constant junction temperature, low-duty-cycle pulse testing; output
+      lead 1/18 inch from package
+    temp: 25C ambient
+    v_in: 5V
+    variant: AP1117-3.3
+  label: Load Regulation
+  page: 3
+  unit: V
+  value: 0.033
+- conditions:
+    column: Typical
+    i_out: 0A to 1A
+    measurement: Constant junction temperature, low-duty-cycle pulse testing; output
+      lead 1/18 inch from package
+    temp: 25C ambient
+    v_in: 5V
+    variant: AP1117-3.3
+  label: Load Regulation
+  page: 3
+  unit: V
+  value: 0.026
 - conditions:
     iout: 0 to 1A
     temp: 25C
@@ -241,6 +611,24 @@ observations:
   page: 3
   unit: V
   value: 0.033
+- conditions:
+    column: Maximum
+    note: At 12V input/output differential, regulation is guaranteed if output current
+      is greater than 10mA
+    temp: 0C to 125C junction
+  label: Minimum Load Current
+  page: 4
+  unit: A
+  value: 0.01
+- conditions:
+    column: Typical
+    note: Note 7 defines quiescent current as minimum output current required to maintain
+      regulation; this is not a supply-current measurement
+    temp: 0C to 125C junction
+  label: Minimum Load Current
+  page: 4
+  unit: A
+  value: 0.005
 - conditions:
     tj: 0C to 125C
     typ: 5mA
@@ -255,11 +643,42 @@ observations:
   unit: C
   value: 125.0
 - conditions:
+    limit: Internally limited by maximum junction temperature of +150C (Note 4); no
+      numeric power limit specified
+    package: SOT223
+    rating: Absolute Maximum Ratings
+  label: Power Dissipation
+  page: 3
+  unit: W
+  value: null
+- conditions:
     note: Internally limited by maximum junction temperature of +150C
   label: Power Dissipation SOT223
   page: 3
   unit: ''
   value: null
+- conditions:
+    c_out: 0.000025F tantalum
+    column: Maximum
+    frequency: 180Hz
+    i_out: 1A
+    temp: 25C ambient
+    v_in: VOUT + 3V
+  label: Ripple Rejection
+  page: 4
+  unit: dB
+  value: 70.0
+- conditions:
+    c_out: 0.000025F tantalum
+    column: Typical
+    frequency: 180Hz
+    i_out: 1A
+    temp: 25C ambient
+    v_in: VOUT + 3V
+  label: Ripple Rejection
+  page: 4
+  unit: dB
+  value: 60.0
 - conditions:
     f: 180Hz
     iout: 1A
@@ -270,17 +689,54 @@ observations:
   unit: dB
   value: 70.0
 - conditions:
+    column: Maximum
+    rating: Absolute Maximum Ratings
+  label: Storage Temperature
+  page: 3
+  unit: C
+  value: 150.0
+- conditions:
+    column: Minimum
+    rating: Absolute Maximum Ratings
+  label: Storage Temperature
+  page: 3
+  unit: C
+  value: -65.0
+- conditions:
     min: -65C
   label: Storage Temperature (max)
   page: 3
   unit: C
   value: 150.0
 - conditions:
+    column: Typical
+    i_out: 0.01A
+  label: Temperature Stability
+  page: 4
+  unit: '%'
+  value: 0.5
+- conditions:
     io: 10mA
   label: Temperature Stability (typ)
   page: 4
   unit: '%'
   value: 0.5
+- conditions:
+    column: Maximum
+    pulse: 30ms
+    temp: 25C ambient
+  label: Thermal Regulation
+  page: 4
+  unit: '%/W'
+  value: 0.04
+- conditions:
+    column: Typical
+    pulse: 30ms
+    temp: 25C ambient
+  label: Thermal Regulation
+  page: 4
+  unit: '%/W'
+  value: 0.008
 - conditions:
     pulse: 30ms
     typ: 0.008%/W
@@ -289,15 +745,36 @@ observations:
   unit: '%/W'
   value: 0.04
 - conditions:
+    board: FR-4 substrate, single-sided PCB, 2oz copper, 5mm x 5mm thermal pad, no
+      air flow
+    case_point: Thermal tab
+    circuit: Control Circuitry/Power Transistor
+    column: Typical
+    package: SOT223
+  label: Thermal Resistance Junction-to-Case
+  page: 4
+  unit: C/W
+  value: 15.0
+- conditions:
     min: -0.3V
   label: VIN DC Supply Voltage (absolute maximum)
   page: 3
   unit: V
   value: 18.0
+- conditions:
+    meaning: Line and load regulation are guaranteed up to this power dissipation;
+      not an absolute maximum power rating
+    restriction: Guaranteed maximum power dissipation will not be available over the
+      full input/output range
+    source: Note 6
+  label: maximum power dissipation
+  page: 3
+  unit: W
+  value: 15.0
 - conditions: {}
   label: "\u03B8JC Thermal Resistance Junction-to-Case SOT223"
   page: 4
   unit: C/W
   value: 15.0
-part_class: LDO linear regulator
-vocab: 710670161df3
+part_class: Low-dropout fixed positive voltage regulator
+vocab: a0a777d7857c8a8ef4d3d247b55796109d8ef5956f012b7e9e3ed5f0812f1eb7
