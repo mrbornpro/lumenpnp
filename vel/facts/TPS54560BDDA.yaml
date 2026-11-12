@@ -1,5 +1,5 @@
 absent: []
-at: '2026-11-11T05:56:22.545414+00:00'
+at: '2026-11-11T06:55:12.170777+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: datasheets/TPS54560BDDA.pdf
 doc_sha256: a941117b779ded588724f785356659557c85382e02c22056165609695ed7336d
@@ -30,18 +30,19 @@ facts:
     detail\":\"The claim says 146 \xB5A, inside at most 175 \xB5A from the same row's\
     \ min and max in TPS54560BDDA.pdf.\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 146 \xB5A, inside at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
-    }]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Typical: 146 \xB5A (0.000146 A), Maximum: 175 \xB5A (0.000175 A) at FB=0.9 V,\
+    \ TA=25\xB0C, VIN=4.5 V to 60 V. (Page 5, Electrical Characteristics table, 'Operating:\
+    \ nonswitching supply current' row.); the claim: TPS54560BDDA current_active is\
+    \ typ 0.000146, max 0.000175 A at FB=0.9 V, ambient_temperature=25 C, VIN=4.5\
+    \ to 60 V (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 146 \xB5A, inside at most 175\
+    \ \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: A
@@ -77,17 +78,18 @@ facts:
     \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, TA=25C (read from\
     \ TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
     :\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
-    :\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader could not\
-    \ read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\":null}],\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Typical:\
+    \ 146 \xB5A (0.000146 A), Maximum: 175 \xB5A (0.000175 A) at FB=0.9 V, TA=25\xB0\
+    C. (Page 5, Electrical Characteristics table, 'Operating: nonswitching supply\
+    \ current' row.); the claim: TPS54560BDDA current_active is typ 0.000146, max\
+    \ 0.000175 A at FB=0.9V, TA=25C (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"\
     supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
     :\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\":[\"\
-    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
-    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 146 \xB5A, inside at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
+    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"\
+    standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 146\
+    \ \xB5A, inside at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
     }]}"
   review: pending
   reviewed_at: null
@@ -124,18 +126,19 @@ facts:
     \ current_active is typ 0.000146, max 0.000175 A at FB=0.9V, temp=TA=25C (read\
     \ from TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 146 \xB5A, inside at most 175 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
-    }]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Typical: 146 \xB5A (0.000146 A), Maximum: 175 \xB5A (0.000175 A) at FB=0.9 V,\
+    \ TA=25\xB0C. (Page 5, Electrical Characteristics table, 'Operating: nonswitching\
+    \ supply current' row.); the claim: TPS54560BDDA current_active is typ 0.000146,\
+    \ max 0.000175 A at FB=0.9V, temp=TA=25C (read from TPS54560BDDA.pdf page 5)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ The claim says 146 \xB5A, inside at most 175 \xB5A from the same row's min and\
+    \ max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: A
@@ -165,18 +168,19 @@ facts:
     company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 2.25 \xB5A, inside\
     \ at most 4.5 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\",\"\
     at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 2.25 \xB5A, inside at most 4.5 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
-    }]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Typical: 2.25 \xB5A (2.25e-06 A), Maximum: 4.5 \xB5A (4.5e-06 A) at EN=0 V,\
+    \ 25\xB0C, VIN=4.5 V to 60 V. (Page 5, Electrical Characteristics table, 'Shutdown\
+    \ supply current' row.); the claim: TPS54560BDDA current_idle is typ 2.25e-06,\
+    \ max 4.5e-06 A at EN=0 V, temp=25 C, VIN=4.5 to 60 V (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: The claim says 2.25 \xB5A, inside at most 4.5 \xB5A from the\
+    \ same row's min and max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: A
@@ -213,18 +217,19 @@ facts:
     \ current_idle is typ 2.25e-06, max 4.5e-06 A at EN=0V, temp=25C, vin=4.5V to\
     \ 60V (read from TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 2.25 \xB5A, inside at most 4.5 \xB5A from the same row's min and max in TPS54560BDDA.pdf.\"\
-    }]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Typical: 2.25 \xB5A (2.25e-06 A), Maximum: 4.5 \xB5A (4.5e-06 A) at EN=0 V,\
+    \ 25\xB0C, VIN=4.5 V to 60 V. (Page 5, Electrical Characteristics table, 'Shutdown\
+    \ supply current' row.); the claim: TPS54560BDDA current_idle is typ 2.25e-06,\
+    \ max 4.5e-06 A at EN=0V, temp=25C, vin=4.5V to 60V (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: The claim says 2.25 \xB5A, inside at most 4.5 \xB5A from the\
+    \ same row's min and max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: A
@@ -243,12 +248,13 @@ facts:
     is min 0, max 5 A at rating=Recommended Operating Conditions","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     4 of TPS54560BDDA.pdf shows min 0, max 5 A","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Output current (IO): 0 A (min), 5 A (max) at Recommended Operating Conditions.
+    (Page 4, Recommended Operating Conditions table.); the claim: TPS54560BDDA i_out_max
+    is min 0, max 5 A at rating=Recommended Operating Conditions (read from TPS54560BDDA.pdf
+    page 4)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -278,17 +284,16 @@ facts:
     \ column heading.); the claim: TPS54560BDDA pin_count is typ 8  at package=DDA\
     \ (HSOIC) (read from TPS54560BDDA.pdf page 4)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ the claim gives no unit.\"}]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Package: DDA (HSOIC) with 8 pins. (Page 4, Thermal Information section.); the\
+    \ claim: TPS54560BDDA pin_count is typ 8  at package=DDA (HSOIC) (read from TPS54560BDDA.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: the claim gives no unit.\"}]}"
   review: pending
   reviewed_at: null
   unit: ''
@@ -302,17 +307,34 @@ facts:
   page: 3
   qualifiers: {}
   quantity: pin_count
-  record: '{"id":"fact:TPS54560BDDA:pin_count:9511f9a9","claim":"TPS54560BDDA pin_count
-    is typ 8 1 at package=DDA, HSOIC with PowerPAD","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    3 of TPS54560BDDA.pdf shows typ 8 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:pin_count:9511f9a9\",\"claim\":\"TPS54560BDDA\
+    \ pin_count is typ 8 1 at package=DDA, HSOIC with PowerPAD\",\"kind\":\"value\"\
+    ,\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 3\",\"checks\":[{\"\
+    kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 3 of TPS54560BDDA.pdf\
+    \ shows typ 8 1\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Package: DDA (HSOIC) with 8 pins and a PowerPAD (thermal pad). The document\
+    \ does not state '8 1'. (Page 3, Pin Configuration and Functions section.); the\
+    \ claim: TPS54560BDDA pin_count is typ 8 1 at package=DDA, HSOIC with PowerPAD\
+    \ (read from TPS54560BDDA.pdf page 3)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: TPS54560BDDA.pdf says Package:\
+    \ DDA (HSOIC) with 8 pins and a PowerPAD (thermal pad). The document does not\
+    \ state '8 1'. (Page 3, Pin Configuration and Functions section.); the claim:\
+    \ TPS54560BDDA pin_count is typ 8 1 at package=DDA, HSOIC with PowerPAD (read\
+    \ from TPS54560BDDA.pdf page 3)\"}]}"
   review: pending
   reviewed_at: null
   unit: '1'
@@ -327,17 +349,33 @@ facts:
   page: 42
   qualifiers: {}
   quantity: pin_count
-  record: '{"id":"fact:TPS54560BDDA:pin_count:41aa6f2a","claim":"TPS54560BDDA pin_count
-    is typ 8 1 at part_number=TPS54560BDDA, package=SO PowerPAD (DDA)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 42","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    42 of TPS54560BDDA.pdf shows typ 8 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 42 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:pin_count:41aa6f2a\",\"claim\":\"TPS54560BDDA\
+    \ pin_count is typ 8 1 at part_number=TPS54560BDDA, package=SO PowerPAD (DDA)\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page\
+    \ 42\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 42 of TPS54560BDDA.pdf\
+    \ shows typ 8 1\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Package: SO PowerPAD (DDA) with 8 pins. The document does not state '8 1'. (Page\
+    \ 42, Orderable Part Number table.); the claim: TPS54560BDDA pin_count is typ\
+    \ 8 1 at part_number=TPS54560BDDA, package=SO PowerPAD (DDA) (read from TPS54560BDDA.pdf\
+    \ page 42)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 42 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
+    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
+    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\",\"\
+    probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\"\
+    :0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\"\
+    :null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
+    text\":\"likely \u2192 contradicted: TPS54560BDDA.pdf says Package: SO PowerPAD\
+    \ (DDA) with 8 pins. The document does not state '8 1'. (Page 42, Orderable Part\
+    \ Number table.); the claim: TPS54560BDDA pin_count is typ 8 1 at part_number=TPS54560BDDA,\
+    \ package=SO PowerPAD (DDA) (read from TPS54560BDDA.pdf page 42)\"}]}"
   review: pending
   reviewed_at: null
   unit: '1'
@@ -371,24 +409,25 @@ facts:
     \ -40, max 150 C at table=Absolute Maximum Ratings, parameter=Operating junction\
     \ temperature (read from TPS54560BDDA.pdf page 4)\",\"at\":null},{\"kind\":\"\
     independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"\
-    the claimed value is there: it stands\",\"another value is there: correct it\"\
-    ],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the\
-    \ unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
-    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
-    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
-    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
-    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
-    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
-    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
-    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says Operating junction temperature:\
-    \ MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings,\
-    \ Operating junction temperature row, MIN and MAX cells.); the claim: TPS54560BDDA\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Operating junction temperature: -40\xB0C (min), 150\xB0C (max). (Page 4, Absolute\
+    \ Maximum Ratings table, 'Operating junction temperature' row.); the claim: TPS54560BDDA\
     \ temp_max is min -40, max 150 C at table=Absolute Maximum Ratings, parameter=Operating\
-    \ junction temperature (read from TPS54560BDDA.pdf page 4)\"}]}"
+    \ junction temperature (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"the claimed\
+    \ value is there: it stands\",\"another value is there: correct it\"],\"effort\"\
+    :\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\"\
+    ,\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"unverified:\
+    \ Nothing to compare: no unit is expected.\"},{\"at\":null,\"text\":\"unverified\
+    \ \u2192 likely: TPS54560BDDA.pdf says Operating junction temperature: MIN \u2013\
+    40\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings, Operating junction\
+    \ temperature row, MIN and MAX cells.); the claim: TPS54560BDDA temp_max is min\
+    \ -40, max 150 C at table=Absolute Maximum Ratings, parameter=Operating junction\
+    \ temperature (read from TPS54560BDDA.pdf page 4)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -422,15 +461,16 @@ facts:
     \ Maximum Ratings, parameter=Storage temperature range, Tstg (read from TPS54560BDDA.pdf\
     \ page 4)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
-    \ 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Storage temperature range\
+    \ (Tstg): -65\xB0C (min), 150\xB0C (max). (Page 4, Absolute Maximum Ratings table,\
+    \ 'Storage temperature range, Tstg' row.); the claim: TPS54560BDDA temp_max is\
+    \ min -65, max 150 C at table=Absolute Maximum Ratings, parameter=Storage temperature\
+    \ range, Tstg (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
     ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
     \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
     :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
     :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
     estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted: Nothing to compare:\
@@ -450,20 +490,39 @@ facts:
     measured_on: junction
     mode: operating
   quantity: temp_max
-  record: '{"id":"fact:TPS54560BDDA:temp_max:cfbd37dc","claim":"TPS54560BDDA temp_max
-    is min -40, max 150 C at rating=Absolute Maximum Ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"couldnt_run","detail":"min
-    -40, max 150 C appears on several pages of TPS54560BDDA.pdf; the read cited page
-    4, so which one is unclear","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 4 and read the value","outcomes":["the claimed value is
-    there: it stands","another value is there: correct it"],"effort":"desk"},{"action":"open
-    TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"unverified","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"unverified:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:cfbd37dc\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at rating=Absolute Maximum Ratings\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 4\",\"checks\"\
+    :[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"min -40, max 150 C appears\
+    \ on several pages of TPS54560BDDA.pdf; the read cited page 4, so which one is\
+    \ unclear\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf says Absolute\
+    \ Maximum Ratings include two ranges: -40\xB0C to 150\xB0C for operating junction\
+    \ temperature and -65\xB0C to 150\xB0C for storage temperature. The claim does\
+    \ not specify which range. (Page 4, Absolute Maximum Ratings table.); the claim:\
+    \ TPS54560BDDA temp_max is min -40, max 150 C at rating=Absolute Maximum Ratings\
+    \ (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
+    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
+    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"unverified: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"unverified \u2192 contradicted:\
+    \ TPS54560BDDA.pdf says Absolute Maximum Ratings include two ranges: -40\xB0C\
+    \ to 150\xB0C for operating junction temperature and -65\xB0C to 150\xB0C for\
+    \ storage temperature. The claim does not specify which range. (Page 4, Absolute\
+    \ Maximum Ratings table.); the claim: TPS54560BDDA temp_max is min -40, max 150\
+    \ C at rating=Absolute Maximum Ratings (read from TPS54560BDDA.pdf page 4)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -479,20 +538,34 @@ facts:
     measured_on: junction
     mode: operating
   quantity: temp_max
-  record: '{"id":"fact:TPS54560BDDA:temp_max:bfdea5e7","claim":"TPS54560BDDA temp_max
-    is min -40, max 150 C at rating=Recommended Operating Conditions","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"couldnt_run","detail":"min
-    -40, max 150 C appears on several pages of TPS54560BDDA.pdf; the read cited page
-    4, so which one is unclear","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 4 and read the value","outcomes":["the claimed value is
-    there: it stands","another value is there: correct it"],"effort":"desk"},{"action":"open
-    TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"unverified","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"unverified:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:temp_max:bfdea5e7\",\"claim\":\"TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at rating=Recommended Operating Conditions\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page\
+    \ 4\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"min -40, max 150 C appears\
+    \ on several pages of TPS54560BDDA.pdf; the read cited page 4, so which one is\
+    \ unclear\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Junction\
+    \ Temperature (TJ): -40\xB0C (min), 150\xB0C (max). (Page 4, Recommended Operating\
+    \ Conditions table.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at\
+    \ rating=Recommended Operating Conditions (read from TPS54560BDDA.pdf page 4)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\"\
+    :[\"the claimed value is there: it stands\",\"another value is there: correct\
+    \ it\"],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check\
+    \ the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit:\
+    \ correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
+    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says Junction Temperature\
+    \ (TJ): -40\xB0C (min), 150\xB0C (max). (Page 4, Recommended Operating Conditions\
+    \ table.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at rating=Recommended\
+    \ Operating Conditions (read from TPS54560BDDA.pdf page 4)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -524,23 +597,32 @@ facts:
     \ temperature row.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at\
     \ source=Absolute Maximum Ratings (read from TPS54560BDDA.pdf page 4)\",\"at\"\
     :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"\
-    the claimed value is there: it stands\",\"another value is there: correct it\"\
-    ],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the\
-    \ unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
-    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
-    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
-    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
-    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
-    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
-    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
-    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says Operating junction temperature:\
-    \ MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.1 Absolute Maximum Ratings,\
-    \ Operating junction temperature row.); the claim: TPS54560BDDA temp_max is min\
-    \ -40, max 150 C at source=Absolute Maximum Ratings (read from TPS54560BDDA.pdf\
+    ,\"company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf\
+    \ says Absolute Maximum Ratings include two ranges: -40\xB0C to 150\xB0C for operating\
+    \ junction temperature and -65\xB0C to 150\xB0C for storage temperature. The claim\
+    \ does not specify which range. (Page 4, Absolute Maximum Ratings table.); the\
+    \ claim: TPS54560BDDA temp_max is min -40, max 150 C at source=Absolute Maximum\
+    \ Ratings (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 4 and read the value\",\"outcomes\":[\"the claimed value is there: it stands\"\
+    ,\"another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
+    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
+    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"unverified: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"unverified \u2192 likely: TPS54560BDDA.pdf\
+    \ says Operating junction temperature: MIN \u201340\xB0C, MAX 150\xB0C. (Page\
+    \ 4, \xA76.1 Absolute Maximum Ratings, Operating junction temperature row.); the\
+    \ claim: TPS54560BDDA temp_max is min -40, max 150 C at source=Absolute Maximum\
+    \ Ratings (read from TPS54560BDDA.pdf page 4)\"},{\"at\":null,\"text\":\"likely\
+    \ \u2192 contradicted: TPS54560BDDA.pdf says Absolute Maximum Ratings include\
+    \ two ranges: -40\xB0C to 150\xB0C for operating junction temperature and -65\xB0\
+    C to 150\xB0C for storage temperature. The claim does not specify which range.\
+    \ (Page 4, Absolute Maximum Ratings table.); the claim: TPS54560BDDA temp_max\
+    \ is min -40, max 150 C at source=Absolute Maximum Ratings (read from TPS54560BDDA.pdf\
     \ page 4)\"}]}"
   review: pending
   reviewed_at: null
@@ -572,19 +654,20 @@ facts:
     \ TPS54560BDDA temp_max is min -65, max 150 C at source=Absolute Maximum Ratings\
     \ (read from TPS54560BDDA.pdf page 4)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"\
-    the claimed value is there: it stands\",\"another value is there: correct it\"\
-    ],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the\
-    \ unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
-    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
-    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
-    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\",\"\
-    probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\"\
-    :0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\"\
-    :null,\"text\":\"contradicted: Nothing to compare: no unit is expected.\"}]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Storage temperature range (Tstg): -65\xB0C (min), 150\xB0C (max). (Page 4, Absolute\
+    \ Maximum Ratings table, 'Storage temperature range, Tstg' row.); the claim: TPS54560BDDA\
+    \ temp_max is min -65, max 150 C at source=Absolute Maximum Ratings (read from\
+    \ TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and\
+    \ read the value\",\"outcomes\":[\"the claimed value is there: it stands\",\"\
+    another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
+    \ TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted: Nothing to compare:\
+    \ no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -616,24 +699,24 @@ facts:
     \ Temperature row.); the claim: TPS54560BDDA temp_max is min -40, max 150 C at\
     \ table=Recommended Operating Conditions (read from TPS54560BDDA.pdf page 4)\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and read the value\",\"outcomes\":[\"\
-    the claimed value is there: it stands\",\"another value is there: correct it\"\
-    ],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page 4 and check the\
-    \ unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
-    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
-    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
-    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
-    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
-    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
-    text\":\"unverified: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
-    text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says TJ, Junction Temperature:\
-    \ MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.3 Recommended Operating Conditions,\
-    \ TJ Junction Temperature row.); the claim: TPS54560BDDA temp_max is min -40,\
-    \ max 150 C at table=Recommended Operating Conditions (read from TPS54560BDDA.pdf\
-    \ page 4)\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Junction Temperature (TJ): -40\xB0C (min), 150\xB0C (max). (Page 4, Recommended\
+    \ Operating Conditions table.); the claim: TPS54560BDDA temp_max is min -40, max\
+    \ 150 C at table=Recommended Operating Conditions (read from TPS54560BDDA.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and read the value\"\
+    ,\"outcomes\":[\"the claimed value is there: it stands\",\"another value is there:\
+    \ correct it\"],\"effort\":\"desk\"},{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"unverified: Nothing to compare: no unit is expected.\"\
+    },{\"at\":null,\"text\":\"unverified \u2192 likely: TPS54560BDDA.pdf says TJ,\
+    \ Junction Temperature: MIN \u201340\xB0C, MAX 150\xB0C. (Page 4, \xA76.3 Recommended\
+    \ Operating Conditions, TJ Junction Temperature row.); the claim: TPS54560BDDA\
+    \ temp_max is min -40, max 150 C at table=Recommended Operating Conditions (read\
+    \ from TPS54560BDDA.pdf page 4)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -663,17 +746,17 @@ facts:
     JA row and device/package column heading.); the claim: TPS54560BDDA theta_ja is\
     \ typ 42 C/W at package=DDA (HSOIC) 8 pins (read from TPS54560BDDA.pdf page 4)\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ R\u03B8JA (Junction-to-ambient thermal resistance): 42\xB0C/W. (Page 4, Thermal\
+    \ Information table, 'Junction-to-ambient thermal resistance' row.); the claim:\
+    \ TPS54560BDDA theta_ja is typ 42 C/W at package=DDA (HSOIC) 8 pins (read from\
+    \ TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C/W
@@ -687,17 +770,27 @@ facts:
   page: 4
   qualifiers: {}
   quantity: theta_ja
-  record: '{"id":"fact:TPS54560BDDA:theta_ja:3b688619","claim":"TPS54560BDDA theta_ja
-    is typ 42 C/W at package=DDA (HSOIC), 8 pins","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    4 of TPS54560BDDA.pdf shows typ 42 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:theta_ja:3b688619\",\"claim\":\"TPS54560BDDA\
+    \ theta_ja is typ 42 C/W at package=DDA (HSOIC), 8 pins\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 4\",\"checks\":[{\"\
+    kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 4 of TPS54560BDDA.pdf\
+    \ shows typ 42 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ R\u03B8JA (Junction-to-ambient thermal resistance): 42\xB0C/W. (Page 4, Thermal\
+    \ Information table, 'Junction-to-ambient thermal resistance' row.); the claim:\
+    \ TPS54560BDDA theta_ja is typ 42 C/W at package=DDA (HSOIC), 8 pins (read from\
+    \ TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C/W
@@ -711,17 +804,34 @@ facts:
   page: 1
   qualifiers: {}
   quantity: tolerance_pct
-  record: '{"id":"fact:TPS54560BDDA:tolerance_pct:82fa1ba7","claim":"TPS54560BDDA
-    tolerance_pct is typ 1 % at applies_to=Internal voltage reference","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of TPS54560BDDA.pdf shows typ 1 %","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 1 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:tolerance_pct:82fa1ba7\",\"claim\":\"TPS54560BDDA\
+    \ tolerance_pct is typ 1 % at applies_to=Internal voltage reference\",\"kind\"\
+    :\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page 1\",\"checks\"\
+    :[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of TPS54560BDDA.pdf\
+    \ shows typ 1 %\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"\
+    skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ The document does not explicitly state a 1% tolerance for the internal voltage\
+    \ reference. (Page 1 and Page 5, Electrical Characteristics table, 'Voltage reference'\
+    \ row.); the claim: TPS54560BDDA tolerance_pct is typ 1 % at applies_to=Internal\
+    \ voltage reference (read from TPS54560BDDA.pdf page 1)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second\
+    \ reader check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader\
+    \ disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\"\
+    :\"contradicted\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: TPS54560BDDA.pdf says The document\
+    \ does not explicitly state a 1% tolerance for the internal voltage reference.\
+    \ (Page 1 and Page 5, Electrical Characteristics table, 'Voltage reference' row.);\
+    \ the claim: TPS54560BDDA tolerance_pct is typ 1 % at applies_to=Internal voltage\
+    \ reference (read from TPS54560BDDA.pdf page 1)\"}]}"
   review: pending
   reviewed_at: null
   unit: '%'
@@ -750,17 +860,25 @@ facts:
     \ the claim: TPS54560BDDA tolerance_pct is typ 1 % at applies_to=internal voltage\
     \ reference 0.8 V (read from TPS54560BDDA.pdf page 1)\",\"at\":null},{\"kind\"\
     :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 1 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    ,\"company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"TPS54560BDDA.pdf\
+    \ says The document does not explicitly state a 1% tolerance for the internal\
+    \ voltage reference. (Page 1 and Page 5, Electrical Characteristics table, 'Voltage\
+    \ reference' row.); the claim: TPS54560BDDA tolerance_pct is typ 1 % at applies_to=internal\
+    \ voltage reference 0.8 V (read from TPS54560BDDA.pdf page 1)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open TPS54560BDDA.pdf page 1 and check the unit it gives\",\"outcomes\":[\"\
+    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
+    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
     \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
     explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
     :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
+    \ TPS54560BDDA.pdf says The document does not explicitly state a 1% tolerance\
+    \ for the internal voltage reference. (Page 1 and Page 5, Electrical Characteristics\
+    \ table, 'Voltage reference' row.); the claim: TPS54560BDDA tolerance_pct is typ\
+    \ 1 % at applies_to=internal voltage reference 0.8 V (read from TPS54560BDDA.pdf\
+    \ page 1)\"}]}"
   review: pending
   reviewed_at: null
   unit: '%'
@@ -793,8 +911,12 @@ facts:
     \ applies_to=voltage reference, note=derived from 0.792/0.8/0.808 V limits; not\
     \ printed as percent (read from TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\"\
     :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Voltage reference: 0.792 V (min), 0.8 V (typ), 0.808 V (max). Tolerance: \xB1\
+    1% (derived from 0.792/0.8/0.808 V limits). (Page 5, Electrical Characteristics\
+    \ table, 'Voltage reference' row.); the claim: TPS54560BDDA tolerance_pct is min\
+    \ -1, max 1 % at applies_to=voltage reference, note=derived from 0.792/0.8/0.808\
+    \ V limits; not printed as percent (read from TPS54560BDDA.pdf page 5)\",\"at\"\
     :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
     action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
     :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
@@ -829,12 +951,13 @@ facts:
     150 C","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 5","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     5 of TPS54560BDDA.pdf shows max 60 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Operating input voltage: 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics
+    table, ''Operating input voltage'' row.); the claim: TPS54560BDDA v_in_max is
+    max 60 V at rating=Electrical Characteristics, junction_temperature=-40 to 150
+    C (read from TPS54560BDDA.pdf page 5)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 5 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -869,16 +992,17 @@ facts:
     \ Conditions, parameter=VIN supply input voltage, min=VO + VDO (read from TPS54560BDDA.pdf\
     \ page 4)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
-    \ 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
-    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
-    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+    result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says VIN Supply input voltage:\
+    \ VO + VDO (min), 60 V (max). (Page 4, Recommended Operating Conditions table.);\
+    \ the claim: TPS54560BDDA v_in_max is max 60 V at table=Recommended Operating\
+    \ Conditions, parameter=VIN supply input voltage, min=VO + VDO (read from TPS54560BDDA.pdf\
+    \ page 4)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -899,12 +1023,13 @@ facts:
     + VDO","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     4 of TPS54560BDDA.pdf shows max 60 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says VIN Supply input voltage: VO + VDO (min), 60 V (max). (Page 4, Recommended
+    Operating Conditions table.); the claim: TPS54560BDDA v_in_max is max 60 V at
+    rating=Recommended Operating Conditions, minimum_input_voltage=VO + VDO (read
+    from TPS54560BDDA.pdf page 4)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -938,16 +1063,17 @@ facts:
     \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
     \ page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
-    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
-    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
-    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+    result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating input voltage:\
+    \ 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics table, 'Operating\
+    \ input voltage' row.); the claim: TPS54560BDDA v_in_max is max 60 V at table=Electrical\
+    \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -966,12 +1092,13 @@ facts:
     is max 65 V at rating=Absolute Maximum Ratings, pin=VIN","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     4 of TPS54560BDDA.pdf shows max 65 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Absolute Maximum Rating for VIN: -0.3 V (min), 65 V (max). (Page 4, Absolute
+    Maximum Ratings table, ''VIN'' row.); the claim: TPS54560BDDA v_in_max is max
+    65 V at rating=Absolute Maximum Ratings, pin=VIN (read from TPS54560BDDA.pdf page
+    4)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1003,17 +1130,17 @@ facts:
     \ 60 V at source=Electrical Characteristics, operating input voltage (read from\
     \ TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
     :\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
-    :\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader could not\
-    \ read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\":[\"\
-    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
-    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating\
+    \ input voltage: 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics\
+    \ table, 'Operating input voltage' row.); the claim: TPS54560BDDA v_in_max is\
+    \ max 60 V at source=Electrical Characteristics, operating input voltage (read\
+    \ from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1043,17 +1170,17 @@ facts:
     \ input voltage row.); the claim: TPS54560BDDA v_in_max is max 60 V at source=Recommended\
     \ Operating Conditions; min is VO + VDO (read from TPS54560BDDA.pdf page 4)\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ VIN Supply input voltage: VO + VDO (min), 60 V (max). (Page 4, Recommended Operating\
+    \ Conditions table.); the claim: TPS54560BDDA v_in_max is max 60 V at source=Recommended\
+    \ Operating Conditions; min is VO + VDO (read from TPS54560BDDA.pdf page 4)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open TPS54560BDDA.pdf page 4 and check the unit it gives\",\"\
+    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1071,12 +1198,12 @@ facts:
     is max 60 V","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     3 of TPS54560BDDA.pdf shows max 60 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Operating input voltage: 4.5 V (min), 60 V (max). Recommended Operating Conditions:
+    VO + VDO (min), 60 V (max). (Pages 4 and 5.); the claim: TPS54560BDDA v_in_max
+    is max 60 V (read from TPS54560BDDA.pdf page 3)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1098,12 +1225,13 @@ facts:
     150 C","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 5","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     5 of TPS54560BDDA.pdf shows min 4.5 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Operating input voltage: 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics
+    table, ''Operating input voltage'' row.); the claim: TPS54560BDDA v_in_min is
+    min 4.5 V at rating=Electrical Characteristics, junction_temperature=-40 to 150
+    C (read from TPS54560BDDA.pdf page 5)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 5 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1137,16 +1265,17 @@ facts:
     \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
     \ page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
-    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
-    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
-    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+    result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating input voltage:\
+    \ 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics table, 'Operating\
+    \ input voltage' row.); the claim: TPS54560BDDA v_in_min is min 4.5 V at table=Electrical\
+    \ Characteristics, parameter=Operating input voltage (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1165,14 +1294,15 @@ facts:
     is min -0.3 V at rating=Absolute Maximum Ratings, pin=VIN","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"disagrees","detail":"min
     -0.3 V is on no page of TPS54560BDDA.pdf; the read cited page 4","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Absolute Maximum Rating for VIN: -0.3 V (min), 65 V (max). (Page 4, Absolute
+    Maximum Ratings table, ''VIN'' row.); the claim: TPS54560BDDA v_in_min is min
+    -0.3 V at rating=Absolute Maximum Ratings, pin=VIN (read from TPS54560BDDA.pdf
+    page 4)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 4 and read the value","outcomes":["the claimed value is
     there: it stands","another value is there: correct it"],"effort":"desk"},{"action":"open
     TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"contradicted","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"contradicted:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"contradicted","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"contradicted:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1204,17 +1334,17 @@ facts:
     \ 4.5 V at source=Electrical Characteristics, operating input voltage (read from\
     \ TPS54560BDDA.pdf page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
     :\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
-    :\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader could not\
-    \ read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\":[\"\
-    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
-    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Operating\
+    \ input voltage: 4.5 V (min), 60 V (max). (Page 5, Electrical Characteristics\
+    \ table, 'Operating input voltage' row.); the claim: TPS54560BDDA v_in_min is\
+    \ min 4.5 V at source=Electrical Characteristics, operating input voltage (read\
+    \ from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
+    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1232,12 +1362,11 @@ facts:
     is min 4.5 V","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     3 of TPS54560BDDA.pdf shows min 4.5 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Operating input voltage: 4.5 V (min), 60 V (max). (Pages 3, 4, and 5.); the
+    claim: TPS54560BDDA v_in_min is min 4.5 V (read from TPS54560BDDA.pdf page 3)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1258,12 +1387,12 @@ facts:
     min 0.8, max 58.8 V at rating=Recommended Operating Conditions","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from TPS54560BDDA.pdf page 4","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     4 of TPS54560BDDA.pdf shows min 0.8, max 58.8 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"TPS54560BDDA.pdf
+    says Output voltage (VO): 0.8 V (min), 58.8 V (max). (Page 4, Recommended Operating
+    Conditions table.); the claim: TPS54560BDDA v_out is min 0.8, max 58.8 V at rating=Recommended
+    Operating Conditions (read from TPS54560BDDA.pdf page 4)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     TPS54560BDDA.pdf page 4 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -1295,13 +1424,13 @@ facts:
     \ V at source=Recommended Operating Conditions (read from TPS54560BDDA.pdf page\
     \ 4)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"\
     bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"result\"\
-    :\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Output voltage (VO): 0.8 V (min),\
+    \ 58.8 V (max). (Page 4, Recommended Operating Conditions table.); the claim:\
+    \ TPS54560BDDA v_out is min 0.8, max 58.8 V at source=Recommended Operating Conditions\
+    \ (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\"\
     :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
     \ 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
     ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
     untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
     :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
@@ -1335,13 +1464,13 @@ facts:
     \ V at table=Recommended Operating Conditions (read from TPS54560BDDA.pdf page\
     \ 4)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"\
     bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"result\"\
-    :\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Output voltage (VO): 0.8 V (min),\
+    \ 58.8 V (max). (Page 4, Recommended Operating Conditions table.); the claim:\
+    \ TPS54560BDDA v_out is min 0.8, max 58.8 V at table=Recommended Operating Conditions\
+    \ (read from TPS54560BDDA.pdf page 4)\",\"at\":null}],\"supports\":[],\"contradicts\"\
     :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
     \ 4 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
     ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
     untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
     :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
@@ -1378,18 +1507,18 @@ facts:
     \ Voltage reference row.); the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792,\
     \ max 0.808 V at TJ=-40C to 150C (read from TPS54560BDDA.pdf page 5)\",\"at\"\
     :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read TPS54560BDDA.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
-    \ 800 mV, inside 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\"\
-    }]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Voltage reference: 0.792 V (min), 0.8 V (typ), 0.808 V (max) at TJ=-40\xB0C\
+    \ to 150\xB0C. (Page 5, Electrical Characteristics table, 'Voltage reference'\
+    \ row.); the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792, max 0.808 V at TJ=-40C\
+    \ to 150C (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf\
+    \ page 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 800 mV, inside 792 to 808 mV\
+    \ from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1404,20 +1533,32 @@ facts:
   page: 5
   qualifiers: {}
   quantity: v_ref
-  record: '{"id":"fact:TPS54560BDDA:v_ref:9bd1e067","claim":"TPS54560BDDA v_ref is
-    typ 0.8, min 0.792, max 0.808 V at junction_temperature=-40 to 150 C, VIN=4.5
-    to 60 V","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from TPS54560BDDA.pdf page 5","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    5 of TPS54560BDDA.pdf shows typ 0.8, min 0.792, max 0.808 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"plausibility","by":"code","who":"skanda.confidence.checks","company":null,"result":"agrees","detail":"The
-    claim says 800 mV, inside 792 to 808 mV from the same row''s min and max in TPS54560BDDA.pdf.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read TPS54560BDDA.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    TPS54560BDDA.pdf page 5 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    The claim says 800 mV, inside 792 to 808 mV from the same row''s min and max in
-    TPS54560BDDA.pdf."}]}'
+  record: "{\"id\":\"fact:TPS54560BDDA:v_ref:9bd1e067\",\"claim\":\"TPS54560BDDA v_ref\
+    \ is typ 0.8, min 0.792, max 0.808 V at junction_temperature=-40 to 150 C, VIN=4.5\
+    \ to 60 V\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"at\":null},\"basis\":\"read from TPS54560BDDA.pdf page\
+    \ 5\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 5 of TPS54560BDDA.pdf\
+    \ shows typ 0.8, min 0.792, max 0.808 V\",\"at\":null},{\"kind\":\"units\",\"\
+    by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\"\
+    :null},{\"kind\":\"plausibility\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"The claim says 800 mV, inside\
+    \ 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\",\"at\"\
+    :null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says\
+    \ Voltage reference: 0.792 V (min), 0.8 V (typ), 0.808 V (max) at TJ=-40\xB0C\
+    \ to 150\xB0C, VIN=4.5 V to 60 V. (Page 5, Electrical Characteristics table, 'Voltage\
+    \ reference' row.); the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792, max 0.808\
+    \ V at junction_temperature=-40 to 150 C, VIN=4.5 to 60 V (read from TPS54560BDDA.pdf\
+    \ page 5)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page 5 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: The claim says 800 mV, inside 792 to 808 mV from the same row's\
+    \ min and max in TPS54560BDDA.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -1453,17 +1594,19 @@ facts:
     \ max 0.808 V at temp=TJ -40C to 150C, vin=4.5V to 60V (read from TPS54560BDDA.pdf\
     \ page 5)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read TPS54560BDDA.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open TPS54560BDDA.pdf page\
-    \ 5 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"\
-    another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
-    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
-    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: The claim says 800 mV, inside 792 to 808 mV\
-    \ from the same row's min and max in TPS54560BDDA.pdf.\"}]}"
+    result\":\"agrees\",\"detail\":\"TPS54560BDDA.pdf says Voltage reference: 0.792\
+    \ V (min), 0.8 V (typ), 0.808 V (max) at TJ=-40\xB0C to 150\xB0C, VIN=4.5 V to\
+    \ 60 V. (Page 5, Electrical Characteristics table, 'Voltage reference' row.);\
+    \ the claim: TPS54560BDDA v_ref is typ 0.8, min 0.792, max 0.808 V at temp=TJ\
+    \ -40C to 150C, vin=4.5V to 60V (read from TPS54560BDDA.pdf page 5)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open TPS54560BDDA.pdf page 5 and check the unit it gives\",\"outcomes\":[\"\
+    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"\
+    standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 800\
+    \ mV, inside 792 to 808 mV from the same row's min and max in TPS54560BDDA.pdf.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: V

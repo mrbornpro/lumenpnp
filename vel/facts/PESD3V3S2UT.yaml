@@ -1,5 +1,5 @@
 absent: []
-at: '2026-11-11T05:56:22.363242+00:00'
+at: '2026-11-11T06:55:11.922997+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: datasheets/PESD3V3S2UT.pdf
 doc_sha256: 3f156078f2050aacc7a8af9d5b560b66bfc6762a2b55b87b37b3fdcdf1806b01
@@ -17,12 +17,11 @@ facts:
     is typ 3 1 at package=SOT23","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from PESD3V3S2UT.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     2 of PESD3V3S2UT.pdf shows typ 3 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read PESD3V3S2UT.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"PESD3V3S2UT.pdf
+    says 3 (Page 2, Table 2 (Pinning information), Package = SOT23); the claim: PESD3V3S2UT
+    pin_count is typ 3 1 at package=SOT23 (read from PESD3V3S2UT.pdf page 2)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     PESD3V3S2UT.pdf page 2 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    it stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -38,17 +37,27 @@ facts:
   qualifiers:
     measured_on: ambient
   quantity: temp_max
-  record: '{"id":"fact:PESD3V3S2UT:temp_max:81c951b8","claim":"PESD3V3S2UT temp_max
-    is min -65, max 150 C at rating=absolute maximum","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from PESD3V3S2UT.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    3 of PESD3V3S2UT.pdf shows min -65, max 150 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read PESD3V3S2UT.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    PESD3V3S2UT.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:PESD3V3S2UT:temp_max:81c951b8\",\"claim\":\"PESD3V3S2UT\
+    \ temp_max is min -65, max 150 C at rating=absolute maximum\",\"kind\":\"value\"\
+    ,\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from PESD3V3S2UT.pdf page 3\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 3 of PESD3V3S2UT.pdf\
+    \ shows min -65, max 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\"\
+    ,\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\"\
+    :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"PESD3V3S2UT.pdf says\
+    \ Storage temperature (Tstg): -65 \xB0C to 150 \xB0C; Ambient temperature (Tamb):\
+    \ -65 \xB0C to 150 \xB0C (Page 3, Table 5 (Limiting values), rows for Tstg and\
+    \ Tamb); the claim: PESD3V3S2UT temp_max is min -65, max 150 C at rating=absolute\
+    \ maximum (read from PESD3V3S2UT.pdf page 3)\",\"at\":null}],\"supports\":[],\"\
+    contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf\
+    \ page 3 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -63,17 +72,27 @@ facts:
   qualifiers:
     measured_on: junction
   quantity: temp_max
-  record: '{"id":"fact:PESD3V3S2UT:temp_max:dcf0e47f","claim":"PESD3V3S2UT temp_max
-    is max 150 C at rating=absolute maximum","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from PESD3V3S2UT.pdf page 3","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    3 of PESD3V3S2UT.pdf shows max 150 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read PESD3V3S2UT.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    PESD3V3S2UT.pdf page 3 and check the unit it gives","outcomes":["the unit fits:
-    it stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:PESD3V3S2UT:temp_max:dcf0e47f\",\"claim\":\"PESD3V3S2UT\
+    \ temp_max is max 150 C at rating=absolute maximum\",\"kind\":\"value\",\"origin\"\
+    :{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\"\
+    :null},\"basis\":\"read from PESD3V3S2UT.pdf page 3\",\"checks\":[{\"kind\":\"\
+    source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"\
+    company\":null,\"result\":\"agrees\",\"detail\":\"page 3 of PESD3V3S2UT.pdf shows\
+    \ max 150 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"PESD3V3S2UT.pdf says Storage temperature\
+    \ (Tstg): 150 \xB0C; Ambient temperature (Tamb): 150 \xB0C (Page 3, Table 5 (Limiting\
+    \ values), rows for Tstg and Tamb (maximum values only)); the claim: PESD3V3S2UT\
+    \ temp_max is max 150 C at rating=absolute maximum (read from PESD3V3S2UT.pdf\
+    \ page 3)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf page 3 and check the unit it\
+    \ gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"\
+    ],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"\
+    belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -102,17 +121,17 @@ facts:
     \ Min, Max and Unit columns.); the claim: PESD3V3S2UT temp_max is min -65, max\
     \ 150 C (read from PESD3V3S2UT.pdf page 3)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read PESD3V3S2UT.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open PESD3V3S2UT.pdf page 3 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"PESD3V3S2UT.pdf says\
+    \ Storage temperature (Tstg): -65 \xB0C to 150 \xB0C; Ambient temperature (Tamb):\
+    \ -65 \xB0C to 150 \xB0C (Page 3, Table 5 (Limiting values), rows for Tstg and\
+    \ Tamb); the claim: PESD3V3S2UT temp_max is min -65, max 150 C (read from PESD3V3S2UT.pdf\
+    \ page 3)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf page 3 and check the unit it\
+    \ gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"\
+    ],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"\
+    belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -141,16 +160,16 @@ facts:
     \ Max and Unit columns.); the claim: PESD3V3S2UT temp_max is max 150 C (read from\
     \ PESD3V3S2UT.pdf page 3)\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
     :\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
-    :\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader could not\
-    \ read PESD3V3S2UT.pdf for this; it tries again next compile\",\"at\":null}],\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"PESD3V3S2UT.pdf says Storage temperature\
+    \ (Tstg): 150 \xB0C; Ambient temperature (Tamb): 150 \xB0C (Page 3, Table 5 (Limiting\
+    \ values), rows for Tstg and Tamb (maximum values only)); the claim: PESD3V3S2UT\
+    \ temp_max is max 150 C (read from PESD3V3S2UT.pdf page 3)\",\"at\":null}],\"\
     supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
     :\"open PESD3V3S2UT.pdf page 3 and check the unit it gives\",\"outcomes\":[\"\
-    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
-    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"\
+    standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\"\
+    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
+    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
     \ no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
@@ -180,17 +199,17 @@ facts:
     \ Min, Max and Unit columns.); the claim: PESD3V3S2UT temp_max is min -65, max\
     \ 150 C (read from PESD3V3S2UT.pdf page 3)\",\"at\":null},{\"kind\":\"independent_read\"\
     ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
-    company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read PESD3V3S2UT.pdf for this; it tries again next compile\",\"at\"\
-    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
-    action\":\"open PESD3V3S2UT.pdf page 3 and check the unit it gives\",\"outcomes\"\
-    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
-    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
-    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
-    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
-    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
-    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"PESD3V3S2UT.pdf says\
+    \ Storage temperature (Tstg): -65 \xB0C to 150 \xB0C; Ambient temperature (Tamb):\
+    \ -65 \xB0C to 150 \xB0C (Page 3, Table 5 (Limiting values), rows for Tstg and\
+    \ Tamb); the claim: PESD3V3S2UT temp_max is min -65, max 150 C (read from PESD3V3S2UT.pdf\
+    \ page 3)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open PESD3V3S2UT.pdf page 3 and check the unit it\
+    \ gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"\
+    ],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"\
+    belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C

@@ -1,5 +1,5 @@
 absent: []
-at: '2026-11-11T05:56:22.450694+00:00'
+at: '2026-11-11T06:55:12.028079+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: vel/datasheets/SRV05-4.pdf
 doc_sha256: d2567e7f7b6e55c52a924a56e7b2e849eff013485e941d147a0528cc940e10ce
@@ -29,17 +29,17 @@ facts:
     \ pin_count is typ 6  at package=TSOP-6 (Case 318G) (read from SRV05-4.pdf page\
     \ 1)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"\
     bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"result\"\
-    :\"couldnt_run\",\"detail\":\"a second reader could not read SRV05-4.pdf for this;\
-    \ it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and\
-    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
-    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
-    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
-    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: Nothing to compare: the claim gives no unit.\"\
-    }]}"
+    :\"agrees\",\"detail\":\"SRV05-4.pdf says Package: TSOP-6 (Case 318G) (Page 1,\
+    \ under \\\"ORDERING INFORMATION\\\" and \\\"PIN CONFIGURATION AND SCHEMATIC\\\
+    \" sections, and in the marking diagram.); the claim: SRV05-4 pin_count is typ\
+    \ 6  at package=TSOP-6 (Case 318G) (read from SRV05-4.pdf page 1)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open SRV05-4.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
+    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
+    :0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare: the claim\
+    \ gives no unit.\"}]}"
   review: pending
   reviewed_at: null
   unit: ''
@@ -57,12 +57,12 @@ facts:
     6  at package=TSOP-6","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from SRV05-4.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     1 of SRV05-4.pdf shows typ 6 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SRV05-4.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"SRV05-4.pdf
+    says Package: TSOP-6 (Case 318G) (Page 1, under \"ORDERING INFORMATION\" and \"PIN
+    CONFIGURATION AND SCHEMATIC\" sections, and in the marking diagram.); the claim:
+    SRV05-4 pin_count is typ 6  at package=TSOP-6 (read from SRV05-4.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     SRV05-4.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: the claim gives no unit."}]}'
   review: pending
   reviewed_at: null
@@ -81,18 +81,30 @@ facts:
   page: 1
   qualifiers: {}
   quantity: power_max
-  record: '{"id":"fact:SRV05-4:power_max:48985d30","claim":"SRV05-4 power_max is max
-    300 W at rating=Absolute maximum peak power dissipation, pulse=8 x 20 us, non-repetitive,
-    ambient_temperature=25 C, connection=Pin 5 to Pin 2, junction_temperature=25 C","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SRV05-4.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of SRV05-4.pdf shows max 300 W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SRV05-4.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SRV05-4.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SRV05-4:power_max:48985d30\",\"claim\":\"SRV05-4 power_max\
+    \ is max 300 W at rating=Absolute maximum peak power dissipation, pulse=8 x 20\
+    \ us, non-repetitive, ambient_temperature=25 C, connection=Pin 5 to Pin 2, junction_temperature=25\
+    \ C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"at\":null},\"basis\":\"read from SRV05-4.pdf page 1\"\
+    ,\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of SRV05-4.pdf shows\
+    \ max 300 W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"SRV05-4.pdf says Peak Power Dissipation\
+    \ (Ppk): 300 W, 8 x 20 \xB5s pulse, non-repetitive, TA = 25 \xB0C, Pin 5 to Pin\
+    \ 2 (Page 1, under \\\"MAXIMUM RATINGS\\\" table, row for \\\"Peak Power Dissipation\\\
+    \".); the claim: SRV05-4 power_max is max 300 W at rating=Absolute maximum peak\
+    \ power dissipation, pulse=8 x 20 us, non-repetitive, ambient_temperature=25 C,\
+    \ connection=Pin 5 to Pin 2, junction_temperature=25 C (read from SRV05-4.pdf\
+    \ page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and check the unit it gives\"\
+    ,\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: W
@@ -109,19 +121,30 @@ facts:
     measured_on: junction
     mode: operating
   quantity: temp_max
-  record: '{"id":"fact:SRV05-4:temp_max:c037b023","claim":"SRV05-4 temp_max is min
-    -55, max 125 C at rating=Maximum ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SRV05-4.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"disagrees","detail":"min
-    -55, max 125 C is on no page of SRV05-4.pdf; the read cited page 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SRV05-4.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SRV05-4.pdf page 1 and read the value","outcomes":["the claimed value is there:
-    it stands","another value is there: correct it"],"effort":"desk"},{"action":"open
-    SRV05-4.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"contradicted","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"contradicted:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SRV05-4:temp_max:c037b023\",\"claim\":\"SRV05-4 temp_max\
+    \ is min -55, max 125 C at rating=Maximum ratings\",\"kind\":\"value\",\"origin\"\
+    :{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\"\
+    :null},\"basis\":\"read from SRV05-4.pdf page 1\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"disagrees\",\"detail\":\"min -55, max 125 C is on no page of\
+    \ SRV05-4.pdf; the read cited page 1\",\"at\":null},{\"kind\":\"units\",\"by\"\
+    :\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"\
+    couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\",\"at\":null},{\"\
+    kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"SRV05-4.pdf says Operating\
+    \ Junction Temperature Range (TJ): -55 to +125 \xB0C (Page 1, under \\\"MAXIMUM\
+    \ RATINGS\\\" table, row for \\\"Operating Junction Temperature Range\\\".); the\
+    \ claim: SRV05-4 temp_max is min -55, max 125 C at rating=Maximum ratings (read\
+    \ from SRV05-4.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and read\
+    \ the value\",\"outcomes\":[\"the claimed value is there: it stands\",\"another\
+    \ value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open SRV05-4.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    contradicted\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"contradicted: Nothing to compare: no unit is expected.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -152,19 +175,19 @@ facts:
     \ Temperature Range row, Value and Unit columns.); the claim: SRV05-4 temp_max\
     \ is min -55, max 125 C (read from SRV05-4.pdf page 1)\",\"at\":null},{\"kind\"\
     :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read SRV05-4.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open SRV05-4.pdf page 1 and read the value\",\"outcomes\":[\"the claimed value\
-    \ is there: it stands\",\"another value is there: correct it\"],\"effort\":\"\
-    desk\"},{\"action\":\"open SRV05-4.pdf page 1 and check the unit it gives\",\"\
-    outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
-    :\"desk\"},{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader\
-    \ agrees: it stands\",\"the reader disagrees: the engineer decides\"],\"effort\"\
-    :\"desk\"}],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\"\
-    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
-    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted:\
-    \ Nothing to compare: no unit is expected.\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"SRV05-4.pdf says Operating\
+    \ Junction Temperature Range (TJ): -55 to +125 \xB0C (Page 1, under \\\"MAXIMUM\
+    \ RATINGS\\\" table, row for \\\"Operating Junction Temperature Range\\\".); the\
+    \ claim: SRV05-4 temp_max is min -55, max 125 C (read from SRV05-4.pdf page 1)\"\
+    ,\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open SRV05-4.pdf page 1 and read the value\",\"outcomes\":[\"\
+    the claimed value is there: it stands\",\"another value is there: correct it\"\
+    ],\"effort\":\"desk\"},{\"action\":\"open SRV05-4.pdf page 1 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"contradicted: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -195,19 +218,23 @@ facts:
     \ columns.); the claim: SRV05-4 temp_max is min -55, max 150 C (read from SRV05-4.pdf\
     \ page 1)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read SRV05-4.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
-    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and\
-    \ read the value\",\"outcomes\":[\"the claimed value is there: it stands\",\"\
-    another value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open\
-    \ SRV05-4.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits:\
-    \ it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"\
-    have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
-    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
-    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
-    estimated\":0},\"history\":[{\"at\":null,\"text\":\"contradicted: Nothing to compare:\
-    \ no unit is expected.\"}]}"
+    result\":\"disagrees\",\"detail\":\"SRV05-4.pdf says Storage Temperature Range\
+    \ (Tstg): -55 to +150 \xB0C (Page 1, under \\\"MAXIMUM RATINGS\\\" table, row\
+    \ for \\\"Storage Temperature Range\\\". The claim states 150 \xB0C as temp_max,\
+    \ but the document distinguishes between operating (125 \xB0C) and storage (150\
+    \ \xB0C) temperatures.); the claim: SRV05-4 temp_max is min -55, max 150 C (read\
+    \ from SRV05-4.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"\
+    assumes\":[],\"would_settle\":[{\"action\":\"open SRV05-4.pdf page 1 and read\
+    \ the value\",\"outcomes\":[\"the claimed value is there: it stands\",\"another\
+    \ value is there: correct it\"],\"effort\":\"desk\"},{\"action\":\"open SRV05-4.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second\
+    \ reader check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader\
+    \ disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\"\
+    :\"contradicted\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"contradicted: Nothing to compare: no unit is expected.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: C

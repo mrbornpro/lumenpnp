@@ -1,5 +1,5 @@
 absent: []
-at: '2026-11-11T05:56:22.195513+00:00'
+at: '2026-11-11T06:55:11.767834+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: vel/datasheets/AO3400A.pdf
 doc_sha256: 9c60d0b6c1ddc7609a4b788a91181468d8ffe6c3e9ba425c3d8ffc5ba88c5033
@@ -16,19 +16,31 @@ facts:
   page: 2
   qualifiers: {}
   quantity: forward_voltage
-  record: '{"id":"fact:AO3400A:forward_voltage:be2faf8e","claim":"AO3400A forward_voltage
-    is typ 0.7, max 1 V at if=1A, vgs=0V, tj=25C, diode=Body diode","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of AO3400A.pdf shows typ 0.7, max 1 V","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"plausibility","by":"code","who":"skanda.confidence.checks","company":null,"result":"agrees","detail":"The
-    claim says 700 mV, inside at most 1 V from the same row''s min and max in AO3400A.pdf.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    The claim says 700 mV, inside at most 1 V from the same row''s min and max in
-    AO3400A.pdf."}]}'
+  record: "{\"id\":\"fact:AO3400A:forward_voltage:be2faf8e\",\"claim\":\"AO3400A forward_voltage\
+    \ is typ 0.7, max 1 V at if=1A, vgs=0V, tj=25C, diode=Body diode\",\"kind\":\"\
+    value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\"\
+    :\"openai\",\"at\":null},\"basis\":\"read from AO3400A.pdf page 2\",\"checks\"\
+    :[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of AO3400A.pdf shows\
+    \ typ 0.7, max 1 V\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\"\
+    ,\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\"\
+    :\"agrees\",\"detail\":\"The claim says 700 mV, inside at most 1 V from the same\
+    \ row's min and max in AO3400A.pdf.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says VSD\
+    \ (Diode Forward Voltage) is typ 0.7 V, max 1 V at IS=1A, VGS=0V, TJ=25\xB0C (Body\
+    \ Diode). (Page 2, Electrical Characteristics table, row labeled 'VSD'.); the\
+    \ claim: AO3400A forward_voltage is typ 0.7, max 1 V at if=1A, vgs=0V, tj=25C,\
+    \ diode=Body diode (read from AO3400A.pdf page 2)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf\
+    \ page 2 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 700 mV, inside at most 1 V from\
+    \ the same row's min and max in AO3400A.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -47,12 +59,13 @@ facts:
     3  at package=SOT23, source=Top View / Bottom View: G, D, S","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     1 of AO3400A.pdf shows typ 3 ","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: the claim gives no unit.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"AO3400A.pdf
+    says Top View / Bottom View: G (Gate), D (Drain), S (Source). Package is SOT23.
+    (Page 1, under the SOT23 diagram and pin labels.); the claim: AO3400A pin_count
+    is typ 3  at package=SOT23, source=Top View / Bottom View: G, D, S (read from
+    AO3400A.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: the claim gives no unit."}]}'
   review: pending
   reviewed_at: null
@@ -75,12 +88,12 @@ facts:
     says The SOT23 top-view and bottom-view package illustrations each show three
     leads, labeled D, G, and S. (Page 1, SOT23 package illustrations above the Absolute
     Maximum Ratings table.); the claim: AO3400A pin_count is typ 3  at package=SOT23
-    (read from AO3400A.pdf page 1)","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    (read from AO3400A.pdf page 1)","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"AO3400A.pdf
+    says Package is SOT23, which has 3 pins. (Page 1, under the SOT23 diagram and
+    pin labels.); the claim: AO3400A pin_count is typ 3  at package=SOT23 (read from
+    AO3400A.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: the claim gives no unit."}]}'
   review: pending
   reviewed_at: null
@@ -98,18 +111,30 @@ facts:
   page: 1
   qualifiers: {}
   quantity: power_max
-  record: '{"id":"fact:AO3400A:power_max:da448ab7","claim":"AO3400A power_max is max
-    1.4 W at ta=25C, rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C; using <=10s
-    junction-to-ambient thermal resistance (note B)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of AO3400A.pdf shows max 1.4 W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:AO3400A:power_max:da448ab7\",\"claim\":\"AO3400A power_max\
+    \ is max 1.4 W at ta=25C, rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C;\
+    \ using <=10s junction-to-ambient thermal resistance (note B)\",\"kind\":\"value\"\
+    ,\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows\
+    \ max 1.4 W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Power Dissipation\
+    \ (PD) is max 1.4 W at TA=25\xB0C, using \u226410s junction-to-ambient thermal\
+    \ resistance (note B). Absolute Maximum Ratings table. (Page 1, Absolute Maximum\
+    \ Ratings table, row labeled 'Power Dissipation B'.); the claim: AO3400A power_max\
+    \ is max 1.4 W at ta=25C, rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C;\
+    \ using <=10s junction-to-ambient thermal resistance (note B) (read from AO3400A.pdf\
+    \ page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\"\
+    ,\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: W
@@ -126,18 +151,30 @@ facts:
   page: 1
   qualifiers: {}
   quantity: power_max
-  record: '{"id":"fact:AO3400A:power_max:7b33cf12","claim":"AO3400A power_max is max
-    0.9 W at ta=70C, rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C; using <=10s
-    junction-to-ambient thermal resistance (note B)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of AO3400A.pdf shows max 0.9 W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:AO3400A:power_max:7b33cf12\",\"claim\":\"AO3400A power_max\
+    \ is max 0.9 W at ta=70C, rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C;\
+    \ using <=10s junction-to-ambient thermal resistance (note B)\",\"kind\":\"value\"\
+    ,\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows\
+    \ max 0.9 W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Power Dissipation\
+    \ (PD) is max 0.9 W at TA=70\xB0C, based on TJ(MAX)=150\xB0C and \u226410s junction-to-ambient\
+    \ thermal resistance (note B). (Page 1, Absolute Maximum Ratings table, row labeled\
+    \ 'Power Dissipation B'.); the claim: AO3400A power_max is max 0.9 W at ta=70C,\
+    \ rating=Absolute Maximum Ratings, basis=TJ(MAX)=150C; using <=10s junction-to-ambient\
+    \ thermal resistance (note B) (read from AO3400A.pdf page 1)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
+    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
+    :0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is\
+    \ expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: W
@@ -167,22 +204,24 @@ facts:
     \ Power Dissipation row, TA=25\xB0C subrow, Maximum and Units columns.); the claim:\
     \ AO3400A power_max is typ 1.4 W at temp=TA=25C (read from AO3400A.pdf page 1)\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read AO3400A.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
-    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
-    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
-    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
-    \ AO3400A.pdf says Power Dissipation, PD, at TA=25\xB0C: 1.4 W in the Maximum\
-    \ column, not a typical value. (Page 1, Absolute Maximum Ratings table, Power\
-    \ Dissipation row, TA=25\xB0C subrow, Maximum and Units columns.); the claim:\
-    \ AO3400A power_max is typ 1.4 W at temp=TA=25C (read from AO3400A.pdf page 1)\"\
-    }]}"
+    ,\"company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"AO3400A.pdf says\
+    \ Power Dissipation (PD) is max 1.4 W at TA=25\xB0C. There is no 'typ' value provided\
+    \ for power dissipation. (Page 1, Absolute Maximum Ratings table, row labeled\
+    \ 'Power Dissipation B'.); the claim: AO3400A power_max is typ 1.4 W at temp=TA=25C\
+    \ (read from AO3400A.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: AO3400A.pdf says Power Dissipation,\
+    \ PD, at TA=25\xB0C: 1.4 W in the Maximum column, not a typical value. (Page 1,\
+    \ Absolute Maximum Ratings table, Power Dissipation row, TA=25\xB0C subrow, Maximum\
+    \ and Units columns.); the claim: AO3400A power_max is typ 1.4 W at temp=TA=25C\
+    \ (read from AO3400A.pdf page 1)\"}]}"
   review: pending
   reviewed_at: null
   unit: W
@@ -212,22 +251,24 @@ facts:
     \ Power Dissipation row, TA=70\xB0C subrow, Maximum and Units columns.); the claim:\
     \ AO3400A power_max is typ 0.9 W at temp=TA=70C (read from AO3400A.pdf page 1)\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read AO3400A.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
-    :{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"explains\"\
-    :0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"\
-    estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
-    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
-    \ AO3400A.pdf says Power Dissipation, PD, at TA=70\xB0C: 0.9 W in the Maximum\
-    \ column, not a typical value. (Page 1, Absolute Maximum Ratings table, Power\
-    \ Dissipation row, TA=70\xB0C subrow, Maximum and Units columns.); the claim:\
-    \ AO3400A power_max is typ 0.9 W at temp=TA=70C (read from AO3400A.pdf page 1)\"\
-    }]}"
+    ,\"company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"AO3400A.pdf says\
+    \ Power Dissipation (PD) is max 0.9 W at TA=70\xB0C. There is no 'typ' value provided\
+    \ for power dissipation. (Page 1, Absolute Maximum Ratings table, row labeled\
+    \ 'Power Dissipation B'.); the claim: AO3400A power_max is typ 0.9 W at temp=TA=70C\
+    \ (read from AO3400A.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: AO3400A.pdf says Power Dissipation,\
+    \ PD, at TA=70\xB0C: 0.9 W in the Maximum column, not a typical value. (Page 1,\
+    \ Absolute Maximum Ratings table, Power Dissipation row, TA=70\xB0C subrow, Maximum\
+    \ and Units columns.); the claim: AO3400A power_max is typ 0.9 W at temp=TA=70C\
+    \ (read from AO3400A.pdf page 1)\"}]}"
   review: pending
   reviewed_at: null
   unit: W
@@ -259,13 +300,14 @@ facts:
     \ max 150 C at note=Junction and Storage Temperature Range (read from AO3400A.pdf\
     \ page 1)\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\"\
     :\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\",\"\
-    result\":\"couldnt_run\",\"detail\":\"a second reader could not read AO3400A.pdf\
-    \ for this; it tries again next compile\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    result\":\"agrees\",\"detail\":\"AO3400A.pdf says Junction and Storage Temperature\
+    \ Range (TJ, TSTG) is min -55\xB0C, max 150\xB0C. (Page 1, Absolute Maximum Ratings\
+    \ table, row labeled 'Junction and Storage Temperature Range'.); the claim: AO3400A\
+    \ temp_max is min -55, max 150 C at note=Junction and Storage Temperature Range\
+    \ (read from AO3400A.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\"\
     :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and\
     \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
-    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
-    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
-    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    \ unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
     ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
     untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
     :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
@@ -284,18 +326,29 @@ facts:
   qualifiers:
     form: range
   quantity: temp_max
-  record: '{"id":"fact:AO3400A:temp_max:73931e83","claim":"AO3400A temp_max is min
-    -55, max 150 C at rating=Absolute Maximum Ratings, scope=Junction and Storage
-    Temperature Range (TJ, TSTG)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of AO3400A.pdf shows min -55, max 150 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:AO3400A:temp_max:73931e83\",\"claim\":\"AO3400A temp_max\
+    \ is min -55, max 150 C at rating=Absolute Maximum Ratings, scope=Junction and\
+    \ Storage Temperature Range (TJ, TSTG)\",\"kind\":\"value\",\"origin\":{\"by\"\
+    :\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\":null},\"\
+    basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows min -55, max 150\
+    \ C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Junction and\
+    \ Storage Temperature Range (TJ, TSTG) is min -55\xB0C, max 150\xB0C, under Absolute\
+    \ Maximum Ratings. (Page 1, Absolute Maximum Ratings table, row labeled 'TJ, TSTG'.);\
+    \ the claim: AO3400A temp_max is min -55, max 150 C at rating=Absolute Maximum\
+    \ Ratings, scope=Junction and Storage Temperature Range (TJ, TSTG) (read from\
+    \ AO3400A.pdf page 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\"\
+    :[],\"would_settle\":[{\"action\":\"open AO3400A.pdf page 1 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\"\
+    :null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"\
+    trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"\
+    text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -331,13 +384,15 @@ facts:
     \ the claim: AO3400A theta_ja is typ 100, max 125 C/W at duration=steady-state,\
     \ board=1in2 FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null},{\"\
     kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read AO3400A.pdf for this; it tries again next compile\",\"at\":null}],\"\
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Thermal\
+    \ Characteristics: R\u03B8JA (Junction-to-Ambient, Steady-State) is typ 100\xB0\
+    C/W, max 125\xB0C/W. Conditions: 1in\xB2 FR-4 board with 2oz Copper, still air\
+    \ (notes A, D). (Page 1, Thermal Characteristics table, row labeled 'Steady-State'.);\
+    \ the claim: AO3400A theta_ja is typ 100, max 125 C/W at duration=steady-state,\
+    \ board=1in2 FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null}],\"\
     supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
     :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
     :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
     contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
     :0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 100 C/W, inside\
@@ -377,17 +432,19 @@ facts:
     \ the claim: AO3400A theta_ja is typ 70, max 90 C/W at duration=t<=10s, board=1in2\
     \ FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null},{\"kind\"\
     :\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read AO3400A.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
-    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
-    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
-    :0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says 70 C/W, inside\
-    \ at most 90 C/W from the same row's min and max in AO3400A.pdf.\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Thermal\
+    \ Characteristics: R\u03B8JA (Junction-to-Ambient, t \u2264 10s) is typ 70\xB0\
+    C/W, max 90\xB0C/W. Conditions: 1in\xB2 FR-4 board with 2oz Copper, still air\
+    \ (note A). (Page 1, Thermal Characteristics table, row labeled 't \u2264 10s'.);\
+    \ the claim: AO3400A theta_ja is typ 70, max 90 C/W at duration=t<=10s, board=1in2\
+    \ FR-4, 2oz Cu, still air (read from AO3400A.pdf page 1)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open AO3400A.pdf\
+    \ page 1 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"\
+    likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: The claim says 70 C/W, inside at most 90 C/W\
+    \ from the same row's min and max in AO3400A.pdf.\"}]}"
   review: pending
   reviewed_at: null
   unit: C/W
@@ -403,21 +460,34 @@ facts:
   page: 1
   qualifiers: {}
   quantity: theta_ja
-  record: '{"id":"fact:AO3400A:theta_ja:c72b88b8","claim":"AO3400A theta_ja is typ
-    100, max 125 C/W at duration=Steady-State, ta=25C, mounting=1in^2 FR-4 board with
-    2oz. Copper, still air (notes A, D)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of AO3400A.pdf shows typ 100, max 125 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"plausibility","by":"code","who":"skanda.confidence.checks","company":null,"result":"agrees","detail":"The
-    claim says 100 C/W, inside at most 125 C/W from the same row''s min and max in
-    AO3400A.pdf.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    The claim says 100 C/W, inside at most 125 C/W from the same row''s min and max
-    in AO3400A.pdf."}]}'
+  record: "{\"id\":\"fact:AO3400A:theta_ja:c72b88b8\",\"claim\":\"AO3400A theta_ja\
+    \ is typ 100, max 125 C/W at duration=Steady-State, ta=25C, mounting=1in^2 FR-4\
+    \ board with 2oz. Copper, still air (notes A, D)\",\"kind\":\"value\",\"origin\"\
+    :{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\"\
+    :null},\"basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows typ 100,\
+    \ max 125 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"agrees\",\"\
+    detail\":\"The claim says 100 C/W, inside at most 125 C/W from the same row's\
+    \ min and max in AO3400A.pdf.\",\"at\":null},{\"kind\":\"independent_read\",\"\
+    by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Thermal Characteristics:\
+    \ R\u03B8JA (Junction-to-Ambient, Steady-State) is typ 100\xB0C/W, max 125\xB0\
+    C/W. Conditions: 1in\xB2 FR-4 board with 2oz Copper, still air (notes A, D), TA=25\xB0\
+    C. (Page 1, Thermal Characteristics table, row labeled 'Steady-State'.); the claim:\
+    \ AO3400A theta_ja is typ 100, max 125 C/W at duration=Steady-State, ta=25C, mounting=1in^2\
+    \ FR-4 board with 2oz. Copper, still air (notes A, D) (read from AO3400A.pdf page\
+    \ 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
+    \ 100 C/W, inside at most 125 C/W from the same row's min and max in AO3400A.pdf.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: C/W
@@ -433,20 +503,34 @@ facts:
   page: 1
   qualifiers: {}
   quantity: theta_ja
-  record: '{"id":"fact:AO3400A:theta_ja:3c87e596","claim":"AO3400A theta_ja is typ
-    70, max 90 C/W at duration=t <= 10s, ta=25C, mounting=1in^2 FR-4 board with 2oz.
-    Copper, still air (note A)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from AO3400A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of AO3400A.pdf shows typ 70, max 90 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"plausibility","by":"code","who":"skanda.confidence.checks","company":null,"result":"agrees","detail":"The
-    claim says 70 C/W, inside at most 90 C/W from the same row''s min and max in AO3400A.pdf.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read AO3400A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    AO3400A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    The claim says 70 C/W, inside at most 90 C/W from the same row''s min and max
-    in AO3400A.pdf."}]}'
+  record: "{\"id\":\"fact:AO3400A:theta_ja:3c87e596\",\"claim\":\"AO3400A theta_ja\
+    \ is typ 70, max 90 C/W at duration=t <= 10s, ta=25C, mounting=1in^2 FR-4 board\
+    \ with 2oz. Copper, still air (note A)\",\"kind\":\"value\",\"origin\":{\"by\"\
+    :\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\":null},\"\
+    basis\":\"read from AO3400A.pdf page 1\",\"checks\":[{\"kind\":\"source\",\"by\"\
+    :\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"\
+    result\":\"agrees\",\"detail\":\"page 1 of AO3400A.pdf shows typ 70, max 90 C/W\"\
+    ,\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"plausibility\",\"by\":\"code\"\
+    ,\"who\":\"skanda.confidence.checks\",\"company\":null,\"result\":\"agrees\",\"\
+    detail\":\"The claim says 70 C/W, inside at most 90 C/W from the same row's min\
+    \ and max in AO3400A.pdf.\",\"at\":null},{\"kind\":\"independent_read\",\"by\"\
+    :\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"AO3400A.pdf says Thermal Characteristics:\
+    \ R\u03B8JA (Junction-to-Ambient, t \u2264 10s) is typ 70\xB0C/W, max 90\xB0C/W.\
+    \ Conditions: 1in\xB2 FR-4 board with 2oz Copper, still air (note A), TA=25\xB0\
+    C. (Page 1, Thermal Characteristics table, row labeled 't \u2264 10s'.); the claim:\
+    \ AO3400A theta_ja is typ 70, max 90 C/W at duration=t <= 10s, ta=25C, mounting=1in^2\
+    \ FR-4 board with 2oz. Copper, still air (note A) (read from AO3400A.pdf page\
+    \ 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open AO3400A.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: The claim says\
+    \ 70 C/W, inside at most 90 C/W from the same row's min and max in AO3400A.pdf.\"\
+    }]}"
   review: pending
   reviewed_at: null
   unit: C/W

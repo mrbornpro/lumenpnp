@@ -1,5 +1,5 @@
 absent: []
-at: '2026-11-11T05:56:22.405965+00:00'
+at: '2026-11-11T06:55:11.968821+00:00'
 by: 50afe5ee-d649-4b9d-bf64-dfdf92c2d346
 doc_path: vel/datasheets/SMF28A.pdf
 doc_sha256: 4dcce5361b9c6c3a30e7b670755a1c9066bac6f6d7da71549e4263dd84f8317f
@@ -26,17 +26,18 @@ facts:
     kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\",\"company\"\
     :null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare: no unit is expected.\"\
     ,\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\"\
-    ,\"company\":\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader\
-    \ could not read SMF28A.pdf for this; it tries again next compile\",\"at\":null}],\"\
-    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
-    :\"open SMF28A.pdf page 2 and check the unit it gives\",\"outcomes\":[\"the unit\
-    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\"\
-    :\"have a second reader check it\",\"outcomes\":[\"the reader agrees: it stands\"\
-    ,\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\"\
-    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
-    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
-    :0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is\
-    \ expected.\"}]}"
+    ,\"company\":\"mistral\",\"result\":\"agrees\",\"detail\":\"SMF28A.pdf says Forward\
+    \ clamping voltage at IF = 50 A, tp = 400 \xB5s is 2.5 V. (Page 2, Absolute Maximum\
+    \ Ratings table, row labeled 'Forward clamping voltage', column 'VALUE'.); the\
+    \ claim: SMF28A forward_voltage is max 2.5 V at if=50A, tp=400\xB5s, temp=25C,\
+    \ rating=Absolute maximum ratings; forward clamping voltage (read from SMF28A.pdf\
+    \ page 2)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"\
+    would_settle\":[{\"action\":\"open SMF28A.pdf page 2 and check the unit it gives\"\
+    ,\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\"\
+    :\"desk\"}],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\"\
+    :null,\"explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\"\
+    :{\"verified\":0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely:\
+    \ Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: V
@@ -54,12 +55,12 @@ facts:
     package=SMF (DO-219AB)","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
     from SMF28A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
     1 of SMF28A.pdf shows typ 0.015 g","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
+    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"agrees","detail":"SMF28A.pdf
+    says Weight for package SMF (DO-219AB) is 15 mg (0.015 g). (Page 1, PACKAGE DATA
+    table, row labeled ''SMF (DO-219AB)'', column ''WEIGHT (mg)''.); the claim: SMF28A
+    mass is typ 0.015 g at package=SMF (DO-219AB) (read from SMF28A.pdf page 1)","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
     SMF28A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
+    stands","another unit: correct it"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
     Nothing to compare: no unit is expected."}]}'
   review: pending
   reviewed_at: null
@@ -73,17 +74,30 @@ facts:
   page: 1
   qualifiers: {}
   quantity: pin_count
-  record: '{"id":"fact:SMF28A:pin_count:bf21a9e8","claim":"SMF28A pin_count is typ
-    2 1","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SMF28A.pdf page 1","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    1 of SMF28A.pdf shows typ 2 1","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 1 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:pin_count:bf21a9e8\",\"claim\":\"SMF28A pin_count\
+    \ is typ 2 1\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\"\
+    ,\"company\":\"openai\",\"at\":null},\"basis\":\"read from SMF28A.pdf page 1\"\
+    ,\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 1 of SMF28A.pdf shows\
+    \ typ 2 1\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"disagrees\",\"detail\":\"SMF28A.pdf says The SMF (DO-219AB)\
+    \ package has 2 pins (labeled 1 and 2). (Page 1, MARKING section and package outline\
+    \ diagram.); the claim: SMF28A pin_count is typ 2 1 (read from SMF28A.pdf page\
+    \ 1)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open SMF28A.pdf page 1 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    },{\"action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"contradicted\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"},{\"at\":null,\"text\":\"likely \u2192 contradicted:\
+    \ SMF28A.pdf says The SMF (DO-219AB) package has 2 pins (labeled 1 and 2). (Page\
+    \ 1, MARKING section and package outline diagram.); the claim: SMF28A pin_count\
+    \ is typ 2 1 (read from SMF28A.pdf page 1)\"}]}"
   review: pending
   reviewed_at: null
   unit: '1'
@@ -99,18 +113,32 @@ facts:
     form: range
     mode: operating
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:af5773a3","claim":"SMF28A temp_max is min -65,
-    max 175 C at parameter=Operating temperature range Top","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:af5773a3\",\"claim\":\"SMF28A temp_max is\
+    \ min -65, max 175 C at parameter=Operating temperature range Top\",\"kind\":\"\
+    value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\",\"\
+    company\":\"anthropic\",\"at\":null},\"basis\":\"read from SMF28A.pdf page 2\"\
+    ,\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows\
+    \ min -65, max 175 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\"\
+    :\"couldnt_run\",\"detail\":\"a second reader could not read SMF28A.pdf for this;\
+    \ it tries again next compile\",\"at\":null},{\"kind\":\"independent_read\",\"\
+    by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"SMF28A.pdf says Operating temperature\
+    \ range Top is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum Ratings table,\
+    \ row labeled 'Operating temperature range', column 'VALUE'.); the claim: SMF28A\
+    \ temp_max is min -65, max 175 C at parameter=Operating temperature range Top\
+    \ (read from SMF28A.pdf page 2)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SMF28A.pdf page 2 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"likely\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -126,17 +154,34 @@ facts:
     form: range
     measured_on: storage
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:79dc7055","claim":"SMF28A temp_max is min -65,
-    max 175 C at rating=Absolute maximum ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:79dc7055\",\"claim\":\"SMF28A temp_max is\
+    \ min -65, max 175 C at rating=Absolute maximum ratings\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from SMF28A.pdf page 2\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows\
+    \ min -65, max 175 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"SMF28A.pdf says Storage\
+    \ temperature range Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum\
+    \ Ratings table, row labeled 'Storage temperature range', column 'VALUE'.); the\
+    \ claim: SMF28A temp_max is min -65, max 175 C at rating=Absolute maximum ratings\
+    \ (read from SMF28A.pdf page 2)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SMF28A.pdf page 2 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: SMF28A.pdf says Storage temperature\
+    \ range Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum Ratings table,\
+    \ row labeled 'Storage temperature range', column 'VALUE'.); the claim: SMF28A\
+    \ temp_max is min -65, max 175 C at rating=Absolute maximum ratings (read from\
+    \ SMF28A.pdf page 2)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -152,17 +197,34 @@ facts:
     form: range
     mode: operating
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:73e9a54b","claim":"SMF28A temp_max is min -65,
-    max 175 C at rating=Absolute maximum ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:73e9a54b\",\"claim\":\"SMF28A temp_max is\
+    \ min -65, max 175 C at rating=Absolute maximum ratings\",\"kind\":\"value\",\"\
+    origin\":{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\"\
+    ,\"at\":null},\"basis\":\"read from SMF28A.pdf page 2\",\"checks\":[{\"kind\"\
+    :\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows\
+    \ min -65, max 175 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\"\
+    :\"skanda.confidence.checks\",\"company\":null,\"result\":\"couldnt_run\",\"detail\"\
+    :\"Nothing to compare: no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\"\
+    ,\"by\":\"model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"\
+    company\":\"mistral\",\"result\":\"disagrees\",\"detail\":\"SMF28A.pdf says Storage\
+    \ temperature range Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum\
+    \ Ratings table, row labeled 'Storage temperature range', column 'VALUE'.); the\
+    \ claim: SMF28A temp_max is min -65, max 175 C at rating=Absolute maximum ratings\
+    \ (read from SMF28A.pdf page 2)\",\"at\":null}],\"supports\":[],\"contradicts\"\
+    :[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SMF28A.pdf page 2 and\
+    \ check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another\
+    \ unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader\
+    \ check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees:\
+    \ the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\"\
+    ,\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"\
+    untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: SMF28A.pdf says Storage temperature\
+    \ range Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum Ratings table,\
+    \ row labeled 'Storage temperature range', column 'VALUE'.); the claim: SMF28A\
+    \ temp_max is min -65, max 175 C at rating=Absolute maximum ratings (read from\
+    \ SMF28A.pdf page 2)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -177,17 +239,27 @@ facts:
   qualifiers:
     measured_on: junction
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:f8504fc9","claim":"SMF28A temp_max is max 175
-    C at rating=Absolute maximum ratings","kind":"value","origin":{"by":"model","name":"azure/gpt-6.1-sol","company":"openai","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:f8504fc9\",\"claim\":\"SMF28A temp_max is\
+    \ max 175 C at rating=Absolute maximum ratings\",\"kind\":\"value\",\"origin\"\
+    :{\"by\":\"model\",\"name\":\"azure/gpt-6.1-sol\",\"company\":\"openai\",\"at\"\
+    :null},\"basis\":\"read from SMF28A.pdf page 2\",\"checks\":[{\"kind\":\"source\"\
+    ,\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\",\"company\"\
+    :null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows max 175 C\"\
+    ,\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"SMF28A.pdf says Junction temperature\
+    \ TJ is 175 \xB0C (max). (Page 2, Absolute Maximum Ratings table, row labeled\
+    \ 'Junction temperature', column 'VALUE'.); the claim: SMF28A temp_max is max\
+    \ 175 C at rating=Absolute maximum ratings (read from SMF28A.pdf page 2)\",\"\
+    at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\"\
+    :[{\"action\":\"open SMF28A.pdf page 2 and check the unit it gives\",\"outcomes\"\
+    :[\"the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -202,18 +274,35 @@ facts:
     form: range
     measured_on: storage
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:5aa3f0b6","claim":"SMF28A temp_max is min -65,
-    max 175 C","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows min -65, max 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:5aa3f0b6\",\"claim\":\"SMF28A temp_max is\
+    \ min -65, max 175 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\"\
+    :\"anthropic/claude-opus-5-5\",\"company\":\"anthropic\",\"at\":null},\"basis\"\
+    :\"read from SMF28A.pdf page 2\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\"\
+    ,\"who\":\"skanda.compiler.documents.audit.verify\",\"company\":null,\"result\"\
+    :\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows min -65, max 175 C\",\"at\"\
+    :null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"couldnt_run\"\
+    ,\"detail\":\"a second reader could not read SMF28A.pdf for this; it tries again\
+    \ next compile\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\"\
+    ,\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\"\
+    ,\"result\":\"disagrees\",\"detail\":\"SMF28A.pdf says Storage temperature range\
+    \ Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum Ratings table, row\
+    \ labeled 'Storage temperature range', column 'VALUE'.); the claim: SMF28A temp_max\
+    \ is min -65, max 175 C (read from SMF28A.pdf page 2)\",\"at\":null}],\"supports\"\
+    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SMF28A.pdf\
+    \ page 2 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
+    ,\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second\
+    \ reader check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader\
+    \ disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\"\
+    :\"contradicted\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
+    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
+    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"\
+    at\":null,\"text\":\"likely \u2192 contradicted: SMF28A.pdf says Storage temperature\
+    \ range Tstg is -65 \xB0C to +175 \xB0C. (Page 2, Absolute Maximum Ratings table,\
+    \ row labeled 'Storage temperature range', column 'VALUE'.); the claim: SMF28A\
+    \ temp_max is min -65, max 175 C (read from SMF28A.pdf page 2)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -227,18 +316,34 @@ facts:
   qualifiers:
     measured_on: junction
   quantity: temp_max
-  record: '{"id":"fact:SMF28A:temp_max:30ddb3bf","claim":"SMF28A temp_max is typ 175
-    C","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows typ 175 C","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:temp_max:30ddb3bf\",\"claim\":\"SMF28A temp_max is\
+    \ typ 175 C\",\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from SMF28A.pdf page\
+    \ 2\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows\
+    \ typ 175 C\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"couldnt_run\"\
+    ,\"detail\":\"a second reader could not read SMF28A.pdf for this; it tries again\
+    \ next compile\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\"\
+    ,\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\"\
+    ,\"result\":\"disagrees\",\"detail\":\"SMF28A.pdf says No typical value for temperature\
+    \ is provided; the document specifies absolute maxima or ranges. (Page 2, Absolute\
+    \ Maximum Ratings table.); the claim: SMF28A temp_max is typ 175 C (read from\
+    \ SMF28A.pdf page 2)\",\"at\":null}],\"supports\":[],\"contradicts\":[],\"assumes\"\
+    :[],\"would_settle\":[{\"action\":\"open SMF28A.pdf page 2 and check the unit\
+    \ it gives\",\"outcomes\":[\"the unit fits: it stands\",\"another unit: correct\
+    \ it\"],\"effort\":\"desk\"},{\"action\":\"have a second reader check it\",\"\
+    outcomes\":[\"the reader agrees: it stands\",\"the reader disagrees: the engineer\
+    \ decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\":\"contradicted\",\"\
+    probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\":0,\"untested\"\
+    :0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\":[{\"at\"\
+    :null,\"text\":\"likely: Nothing to compare: no unit is expected.\"},{\"at\":null,\"\
+    text\":\"likely \u2192 contradicted: SMF28A.pdf says No typical value for temperature\
+    \ is provided; the document specifies absolute maxima or ranges. (Page 2, Absolute\
+    \ Maximum Ratings table.); the claim: SMF28A temp_max is typ 175 C (read from\
+    \ SMF28A.pdf page 2)\"}]}"
   review: pending
   reviewed_at: null
   unit: C
@@ -266,16 +371,19 @@ facts:
     ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
     \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
     model\",\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\"\
-    :\"mistral\",\"result\":\"couldnt_run\",\"detail\":\"a second reader could not\
-    \ read SMF28A.pdf for this; it tries again next compile\",\"at\":null}],\"supports\"\
-    :[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\":\"open SMF28A.pdf\
-    \ page 2 and check the unit it gives\",\"outcomes\":[\"the unit fits: it stands\"\
-    ,\"another unit: correct it\"],\"effort\":\"desk\"},{\"action\":\"have a second\
-    \ reader check it\",\"outcomes\":[\"the reader agrees: it stands\",\"the reader\
-    \ disagrees: the engineer decides\"],\"effort\":\"desk\"}],\"standing\":{\"level\"\
-    :\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"contradicted_by\"\
-    :0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\":0},\"history\"\
-    :[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is expected.\"}]}"
+    :\"mistral\",\"result\":\"agrees\",\"detail\":\"SMF28A.pdf says Thermal resistance\
+    \ RthJA is 180 K/W for mounting on epoxy glass PCB with 3 mm x 3 mm Cu pads (\u2265\
+    \ 40 \xB5m thick). (Page 2, Absolute Maximum Ratings table, row labeled 'Thermal\
+    \ resistance'.); the claim: SMF28A theta_ja is typ 180 K/W at mounting=Mounted\
+    \ on epoxy glass PCB with 3 mm x 3 mm Cu pads (\u2265 40 \xB5m thick), temp=25C,\
+    \ rating=Absolute maximum ratings (read from SMF28A.pdf page 2)\",\"at\":null}],\"\
+    supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"action\"\
+    :\"open SMF28A.pdf page 2 and check the unit it gives\",\"outcomes\":[\"the unit\
+    \ fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"}],\"standing\"\
+    :{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"explains\":0,\"\
+    contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\":0,\"estimated\"\
+    :0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare: no unit is\
+    \ expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: K/W
@@ -289,18 +397,33 @@ facts:
   page: 2
   qualifiers: {}
   quantity: theta_ja
-  record: '{"id":"fact:SMF28A:theta_ja:5f65bc6f","claim":"SMF28A theta_ja is typ 180
-    C/W at mounting=epoxy glass PCB, 3 mm x 3 mm Cu pads >= 40 um thick","kind":"value","origin":{"by":"model","name":"anthropic/claude-opus-5-5","company":"anthropic","at":null},"basis":"read
-    from SMF28A.pdf page 2","checks":[{"kind":"source","by":"code","who":"skanda.compiler.documents.audit.verify","company":null,"result":"agrees","detail":"page
-    2 of SMF28A.pdf shows typ 180 C/W","at":null},{"kind":"units","by":"code","who":"skanda.confidence.checks","company":null,"result":"couldnt_run","detail":"Nothing
-    to compare: no unit is expected.","at":null},{"kind":"independent_read","by":"model","who":"openai/gpt-6.1-sol","company":"openai","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null},{"kind":"independent_read","by":"model","who":"bedrock/mistral.mistral-large-3-675b-instruct","company":"mistral","result":"couldnt_run","detail":"a
-    second reader could not read SMF28A.pdf for this; it tries again next compile","at":null}],"supports":[],"contradicts":[],"assumes":[],"would_settle":[{"action":"open
-    SMF28A.pdf page 2 and check the unit it gives","outcomes":["the unit fits: it
-    stands","another unit: correct it"],"effort":"desk"},{"action":"have a second
-    reader check it","outcomes":["the reader agrees: it stands","the reader disagrees:
-    the engineer decides"],"effort":"desk"}],"standing":{"level":"likely","probability":null,"belief":null,"explains":0,"contradicted_by":0,"untested":0},"trust_of_inputs":{"verified":0,"estimated":0},"history":[{"at":null,"text":"likely:
-    Nothing to compare: no unit is expected."}]}'
+  record: "{\"id\":\"fact:SMF28A:theta_ja:5f65bc6f\",\"claim\":\"SMF28A theta_ja is\
+    \ typ 180 C/W at mounting=epoxy glass PCB, 3 mm x 3 mm Cu pads >= 40 um thick\"\
+    ,\"kind\":\"value\",\"origin\":{\"by\":\"model\",\"name\":\"anthropic/claude-opus-5-5\"\
+    ,\"company\":\"anthropic\",\"at\":null},\"basis\":\"read from SMF28A.pdf page\
+    \ 2\",\"checks\":[{\"kind\":\"source\",\"by\":\"code\",\"who\":\"skanda.compiler.documents.audit.verify\"\
+    ,\"company\":null,\"result\":\"agrees\",\"detail\":\"page 2 of SMF28A.pdf shows\
+    \ typ 180 C/W\",\"at\":null},{\"kind\":\"units\",\"by\":\"code\",\"who\":\"skanda.confidence.checks\"\
+    ,\"company\":null,\"result\":\"couldnt_run\",\"detail\":\"Nothing to compare:\
+    \ no unit is expected.\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"\
+    model\",\"who\":\"openai/gpt-6.1-sol\",\"company\":\"openai\",\"result\":\"couldnt_run\"\
+    ,\"detail\":\"a second reader could not read SMF28A.pdf for this; it tries again\
+    \ next compile\",\"at\":null},{\"kind\":\"independent_read\",\"by\":\"model\"\
+    ,\"who\":\"bedrock/mistral.mistral-large-3-675b-instruct\",\"company\":\"mistral\"\
+    ,\"result\":\"agrees\",\"detail\":\"SMF28A.pdf says Thermal resistance RthJA is\
+    \ 180 K/W for mounting on epoxy glass PCB with 3 mm x 3 mm Cu pads (\u2265 40\
+    \ \xB5m thick). (Page 2, Absolute Maximum Ratings table, row labeled 'Thermal\
+    \ resistance'.); the claim: SMF28A theta_ja is typ 180 C/W at mounting=epoxy glass\
+    \ PCB, 3 mm x 3 mm Cu pads >= 40 um thick (read from SMF28A.pdf page 2)\",\"at\"\
+    :null}],\"supports\":[],\"contradicts\":[],\"assumes\":[],\"would_settle\":[{\"\
+    action\":\"open SMF28A.pdf page 2 and check the unit it gives\",\"outcomes\":[\"\
+    the unit fits: it stands\",\"another unit: correct it\"],\"effort\":\"desk\"},{\"\
+    action\":\"have a second reader check it\",\"outcomes\":[\"the reader agrees:\
+    \ it stands\",\"the reader disagrees: the engineer decides\"],\"effort\":\"desk\"\
+    }],\"standing\":{\"level\":\"likely\",\"probability\":null,\"belief\":null,\"\
+    explains\":0,\"contradicted_by\":0,\"untested\":0},\"trust_of_inputs\":{\"verified\"\
+    :0,\"estimated\":0},\"history\":[{\"at\":null,\"text\":\"likely: Nothing to compare:\
+    \ no unit is expected.\"}]}"
   review: pending
   reviewed_at: null
   unit: C/W

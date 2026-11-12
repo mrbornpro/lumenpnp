@@ -1,0 +1,12 @@
+reads:
+- candidates: []
+  footprint: Diode_SMD:D_SMF
+  package: SMF (DO-219AB)
+  pad_count: 2
+  pads:
+  - '1'
+  - '2'
+  read_key: 2417781b65a67c74b7c37dfc84dedcb5f823834023757b889a19862a7171c273
+  rows: []
+  sha256: 4dcce5361b9c6c3a30e7b670755a1c9066bac6f6d7da71549e4263dd84f8317f
+  told: ''
