@@ -1,3 +1,4 @@
 # Vel's shared records: every file here is meant to be committed.
 !*
 .DS_Store
+/history/
